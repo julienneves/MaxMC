@@ -1,16 +1,16 @@
-#' S3 class mmc.
+#' S3 class \code{mmc}.
 #'
 #' @exportClass mmc
 #
 
-#' S3 class mmc object generating function
+#' S3 class \code{mmc} object generating function
 #'
-#' @param call Original call to \code{mmc}
-#' @param seed value of \code{.Random.seed} at the start of
+#' @param call An object of class \code{call}. Original call to \code{mmc}
+#' @param seed An integer vector. Value of \code{.Random.seed} at the start of
 #'  \code{mmc} call
-#' @param lmc if \code{par} is specified, it returns an object
-#' of class "\code{mc}" corresponding the Local Monte Carlo test
-#' @param opt_result an object returning the optimization results
+#' @param lmc An object of class \code{mc}. If \code{par} is specified, it returns an object
+#' of class \code{mc} corresponding the Local Monte Carlo test
+#' @param opt_result An object returning the optimization results
 #'
 #' @inheritParams mmc
 #' @inheritParams pvalue
@@ -19,7 +19,6 @@
 #'
 return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
                        method, alpha, control, call, seed, lmc, opt_result) {
-
     # Extract the p-value from the optimization results
     if (method == "GenSA") {
         pval <- abs(opt_result$value)
@@ -31,12 +30,11 @@ return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
         pval <- abs(opt_result$minfun)
     }
 
-
     out <- list(S0 = S0, pval = pval, data = y, statistic = statistic,
               dgp = dgp, est = est, lower = lower, upper = upper, N = N, type = type,
               method = method, control = control, call = call, seed = seed,
               lmc = lmc, opt_result = opt_result)
-
+    # If alpha is specified, test for rejection at specified level
     if (!is.null(alpha)){
       rejection <- out$pval <= alpha
       names(rejection) <- scales::percent(alpha)
@@ -46,13 +44,13 @@ return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
     return(out)
 }
 
-#' S3 class mc.
+#' S3 class \code{mc}.
 #'
 #' @exportClass mc
 #
 
-#' S3 class mmc object generating function
-#' @param pval Monte Carlo p-value of \code{statistic}
+#' S3 class \code{mc} object generating function
+#' @param pval An atomic vector. Monte Carlo p-value of \code{statistic}
 #'
 #' @inheritParams mc
 #' @inheritParams return_mmc

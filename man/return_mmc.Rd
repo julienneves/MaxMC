@@ -2,7 +2,7 @@
 % Please edit documentation in R/classes.R
 \name{return_mmc}
 \alias{return_mmc}
-\title{S3 class mmc.}
+\title{S3 class \code{mmc}.}
 \usage{
 return_mmc(S0, y, statistic, dgp, est, lower, upper, N, type, method, alpha,
   control, call, seed, lmc, opt_result)
@@ -18,23 +18,26 @@ how the statistic is computed. The function inputs the
 \code{y}, and outputs a scalar numeric.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuissance paramaters \code{v}, and
+\code{y} and a vector of nuisance paramaters \code{v}, and
 outputs a simulated \code{y} (i.e. an object of the same type
-as \code{y}). It is analogous to the data generating process
-under the null. The function can be specified without
-\code{v}. Default value is sample(y, replace = TRUE), the
- bootstrap resampling of \code{y}.}
+as \code{y}). It is important to respect the order of the arguments.
+It should represent the data generating process under the null.
+The function can be specified without any nuisance parameters
+(i.e. without \code{v}). Default value is sample(y, replace = TRUE),
+the bootstrap resampling of \code{y}.}
 
-\item{est}{A vector with length of v. Default is NULL, in
-which case, default values will be generated automatically.}
+\item{est}{A vector with length of v. It is the starting
+point of the algorithm. If \code{est} is a consistent estimate
+of \code{v} then \code{mmc} will return both the mmc and LMC.
+Default is NULL, in which case, default values will be generated automatically.}
 
 \item{lower}{A vector with length of v. Lower bounds for
-nuisance parameters under the null}
+nuisance parameters under the null.}
 
 \item{upper}{A vector with length of v. Upper bounds for
-nuisance parameters under the null}
+nuisance parameters under the null.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{type}{A character string. Specifies the type of test
@@ -44,28 +47,30 @@ the p-value function produce. The possible values are
 
 \item{method}{A character string. Type of algorithm to be
 used for global optimization. The four available methods
-are simulated annealing ("GenSA"), particle swarm ("pso"),
-genetic algorithm ("GA"), and grid search ("gridSearc")
-Default is "GenSA",}
+are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
+genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+Default is \code{GenSA},}
 
-\item{alpha}{A atomic vector. Default is NULL.}
+\item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
+p-value over \code{alpha}, then the algorithm will stop. This is particularly
+useful if we are only looking at testing a hypothesis at a particular level.
+Default is NULL.}
 
 \item{control}{A list. Arguments to be used to control the
-behavior of the algorithm chosen in \code{method}. See
-details.}
+behavior of the algorithm chosen in \code{method}. See Controls.}
 
-\item{call}{Original call to \code{mmc}}
+\item{call}{An object of class \code{call}. Original call to \code{mmc}}
 
-\item{seed}{value of \code{.Random.seed} at the start of
+\item{seed}{An integer vector. Value of \code{.Random.seed} at the start of
 \code{mmc} call}
 
-\item{lmc}{if \code{par} is specified, it returns an object
-of class "\code{mc}" corresponding the Local Monte Carlo test}
+\item{lmc}{An object of class \code{mc}. If \code{par} is specified, it returns an object
+of class \code{mc} corresponding the Local Monte Carlo test}
 
-\item{opt_result}{an object returning the optimization results}
+\item{opt_result}{An object returning the optimization results}
 }
 \description{
-S3 class mmc.
+S3 class \code{mmc}.
 }
 \keyword{internal}
 

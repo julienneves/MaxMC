@@ -2,7 +2,7 @@
 % Please edit documentation in R/methods.R
 \name{print.mmc}
 \alias{print.mmc}
-\title{Print a Summary of a Maximized Monte Carlo Object}
+\title{Print a Summary of a \code{mmc} Object}
 \usage{
 \method{print}{mmc}(x, digits = getOption("digits"), ...)
 }
@@ -14,8 +14,11 @@
 
 \item{...}{further arguments passed to or from other methods.}
 }
+\value{
+The \code{mmc} object is returned invisibly.
+}
 \description{
-This is a method for the function print() for objects of the
-class "mmc".
+This is a method for the function \code{print()} for objects of the
+class \code{mmc}.
 }
 

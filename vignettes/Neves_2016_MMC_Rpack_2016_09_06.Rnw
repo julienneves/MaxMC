@@ -30,7 +30,7 @@
 
 <<setup, echo=FALSE, message = FALSE, include = FALSE>>=
 library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=50))
+opts_chunk$set(tidy.opts=list(width.cutoff=50),fig.path="fig/")
 @
 
 \title{Maximized Monte Carlo: an \proglang{R} package}
@@ -668,7 +668,7 @@ If we return to the topic of global optimization, the choice of the method to us
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{figure/BF_compare}
+\includegraphics[width=0.9\linewidth]{fig/BF_compare}
 \caption{Density plot for evaluation time of mmc(y = data, statistic = statistic, dgp = dgp, est = est, lower = lower, upper = upper, N = 99,	type = ``absolute'') with different global optimization algorithms}
 \label{fig:bfcompare}
 \end{figure}
@@ -1654,7 +1654,7 @@ where $u_t \sim N(0,\sigma^2)$ and $n=25$. We set the Monte Carlo replications t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figure/c-drift}
+	\includegraphics[width=0.7\linewidth]{fig/c-drift}
 	\caption{}
 	\label{fig:c-drift}
 \end{figure}
@@ -1671,7 +1671,7 @@ where $u_t \sim N(0,\sigma^2)$ and $n=25$. Then in figure \ref{fig:ct-trend}, we
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figure/ct-trend}
+	\includegraphics[width=0.7\linewidth]{fig/ct-trend}
 	\caption{}
 	\label{fig:ct-trend}
 \end{figure}

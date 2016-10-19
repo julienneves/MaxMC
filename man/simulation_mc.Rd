@@ -15,13 +15,12 @@ how the statistic is computed. The function inputs the
 \code{y}, and outputs a scalar numeric.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y}, and outputs a simulated \code{y} (i.e. an object
-of the same type as \code{y}). It is analogous to the data
-generating process under the null. Default value is
-sample(y, replace = TRUE), the bootstrap resampling of
- \code{y}.}
+\code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
+It should represent the data generating process under the null.
+Default value is the function sample(y, replace = TRUE), the
+bootstrap resampling of \code{y}.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{...}{Other named arguments for statistic which are
@@ -31,8 +30,7 @@ passed unchanged each time it is called}
 The vector of replication of test statistic.
 }
 \description{
-Generates N Monte Carlo replicates of a statistic applied to
-data.
+Generates N Monte Carlo replicates of a statistic.
 }
 \keyword{internal}
 

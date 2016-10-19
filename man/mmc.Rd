@@ -20,23 +20,26 @@ how the statistic is computed. The function inputs the
 passed unchanged each time it is called}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuissance paramaters \code{v}, and
+\code{y} and a vector of nuisance paramaters \code{v}, and
 outputs a simulated \code{y} (i.e. an object of the same type
-as \code{y}). It is analogous to the data generating process
-under the null. The function can be specified without
-\code{v}. Default value is sample(y, replace = TRUE), the
- bootstrap resampling of \code{y}.}
+as \code{y}). It is important to respect the order of the arguments.
+It should represent the data generating process under the null.
+The function can be specified without any nuisance parameters
+(i.e. without \code{v}). Default value is sample(y, replace = TRUE),
+the bootstrap resampling of \code{y}.}
 
-\item{est}{A vector with length of v. Default is NULL, in
-which case, default values will be generated automatically.}
+\item{est}{A vector with length of v. It is the starting
+point of the algorithm. If \code{est} is a consistent estimate
+of \code{v} then \code{mmc} will return both the mmc and LMC.
+Default is NULL, in which case, default values will be generated automatically.}
 
 \item{lower}{A vector with length of v. Lower bounds for
-nuisance parameters under the null}
+nuisance parameters under the null.}
 
 \item{upper}{A vector with length of v. Upper bounds for
-nuisance parameters under the null}
+nuisance parameters under the null.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{type}{A character string. Specifies the type of test
@@ -46,22 +49,23 @@ the p-value function produce. The possible values are
 
 \item{method}{A character string. Type of algorithm to be
 used for global optimization. The four available methods
-are simulated annealing ("GenSA"), particle swarm ("pso"),
-genetic algorithm ("GA"), and grid search ("gridSearc")
-Default is "GenSA",}
+are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
+genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+Default is \code{GenSA},}
 
 \item{control}{A list. Arguments to be used to control the
-behavior of the algorithm chosen in \code{method}. See
-details.}
+behavior of the algorithm chosen in \code{method}. See Controls.}
 
-\item{alpha}{A atomic vector. Default is NULL.}
+\item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
+p-value over \code{alpha}, then the algorithm will stop. This is particularly
+useful if we are only looking at testing a hypothesis at a particular level.
+Default is NULL.}
 }
 \value{
-The returned value if an object of class "mmc",
+The returned value if an object of class \code{mmc},
 containing the following components:
  \item{S0}{Observed value of \code{statistic}}
- \item{pval}{Maximized Monte Carlo p-value of
- \code{statistic} under null}
+ \item{pval}{Maximized Monte Carlo p-value of \code{statistic} under null}
  \item{y}{Data specified in call}
  \item{statistic}{\code{statistic} function specified in
  call}
@@ -69,14 +73,14 @@ containing the following components:
  \item{est}{\code{est} vector if specified in call}
  \item{lower}{\code{lower} vector if specified in call}
  \item{upper}{\code{upper} vector if specified in call}
- \item{N}{Number of replication specified in call}
+ \item{N}{Number of replications specified in call}
  \item{type}{\code{type} of p-value specified in call}
  \item{method}{\code{method} specified in call}
  \item{call}{Original call to \code{mmc}}
- \item{seed}{value of \code{.Random.seed} at the start of
+ \item{seed}{Value of \code{.Random.seed} at the start of
  \code{mmc} call}
  \item{lmc}{if \code{par} is specified, it returns an
- object of class "\code{mc}" corresponding the Local Monte
+ object of class \code{mc} corresponding the Local Monte
  Carlo test}
  \item{opt_result}{an object returning the optimization
  results}
@@ -86,7 +90,7 @@ containing the following components:
 }
 \description{
 Find the Maximized Monte Carlo p-value on a set of nuisance
- parameters.
+parameters.
 }
 \details{
 The \code{ran.gen} function defined by the user is used to
@@ -99,31 +103,31 @@ p-value by ranking the statistic compared to its simulated
 values. Ties in the ranking are broken according to a
 uniform distribution.
 
-We allow for three-type of p-value: \code{leq}, \code{geq},
+We allow for four types of p-value: \code{leq}, \code{geq},
 \code{absolute} and \code{two-tailed}. For one-tailed test,
-\code{leq} returns  the proportion of simulated values
-smaller than the statistic while \code{geq} return the
-proportion of simulated values greater than the statistic.
-For two-tailed test, if the statistic is symmetric, one
-can use the absolute value of the statistic and its
-simulated value to retrieve a two-tailed test. If the
-statistic is not symmetric, one can specify the p-value
-type as \code{two-tailed} to obtained the p-value computed
-as the twice the minimum of \code{leq} and \code{geq}.
+\code{leq} returns the proportion of simulated values smaller
+than the statistic while \code{geq} return the proportion of
+simulated values greater than the statistic. For two-tailed
+test, if the statistic is symmetric, one can use the
+absolute value of the statistic and its simulated values to
+retrieve a two-tailed test (i.e. type = \code{absolute}).
+If the statistic is not symmetric, one can specify the p-value
+type as \code{two-tailed} which is equivalent to twice the minimum
+of \code{leq} and \code{geq}.
 
 Ties in the ranking are broken according to a uniform
 distribution.
 }
-\section{Control}{
+\section{Controls}{
 
-
-\subsection{Control - \code{\link{GenSA}}}{
+\subsection{Controls - \code{\link[GenSA]{GenSA}}}{
 \describe{
   \item{maxit}{Integer. Maximum number of iterations of
-  the algorithm.}
+  the algorithm. Defaults to
+  1000.}
   \item{nb.stop.improvement}{Integer. The program will
   stop when there is no any improvement in
-  nb.stop.improvement steps. Default to 25}
+  nb.stop.improvement steps. Defaults to 25}
   \item{smooth}{Logical.TRUE when the objective function
   is smooth, or differentiable almost everywhere in the
   region of par, FALSE otherwise. Default value is TRUE.}
@@ -141,7 +145,7 @@ distribution.
   complicated with many local minima.}
   }
 }
-\subsection{Control - \code{\link{psoptim}}}{
+\subsection{Controls - \code{\link[pso]{psoptim}}}{
 \describe{
  \item{maxit}{The maximum number of iterations. Defaults to
   1000.}
@@ -193,7 +197,7 @@ distribution.
  "SPSO2007".}
 }
 }
-\subsection{Control - \code{\link{GA}}}{
+\subsection{Controls - \code{\link[GA]{GA}}}{
 \describe{
 \item{popSize}{the population size.}
 \item{pcrossover}{the probability of crossover between
@@ -267,7 +271,7 @@ default monitor = FALSE so any output is suppressed.}
 }
 }
 
-\subsection{Control - \code{\link{gridSearch}}}{
+\subsection{Controls - \code{\link[NMOF]{gridSearch}}}{
 \describe{
 \item{n}{the number of levels. Default is 10.}
 \item{printDetail}{print information on the number of
@@ -288,24 +292,23 @@ kept?}
 }
 }
 \examples{
-## Example 1
+\donttest{## Example 1
 ## Exact Unit Root Test
 library(fUnitRoots)
 
 # Set seed
 set.seed(123)
 
-# Generate an double unit root AR(2) process with n = 50
-y <- filter(rnorm(50), c(2,-1), method = "recursive")
+# Generate an AR(2) process with phi = (2,-1), and n = 25
+y <- filter(rnorm(25), c(2,-1), method = "recursive")
 
-# Set bounds for nuissance parameters
+# Set bounds for the nuisance parameter v
 lower <- 0.8
 upper <- 1.2
 
 # Set the function to generate an AR(2) integrated process
 dgp <- function(y, v) {
-    ran.y <- filter(rnorm(length(y)), c(1-v,v),
-                    method = "recursive")
+    ran.y <- filter(rnorm(length(y)), c(1-v,v), method = "recursive")
 }
 
 # Set the Augmented-Dicky Fuller statistic
@@ -314,54 +317,82 @@ statistic <- function(y){
     return(out@test$statistic)
 }
 
-# Apply the MMC test
+# Apply the mmc procedure
 mmc(y, statistic = statistic , dgp = dgp, lower = lower,
     upper = upper, N = 99, type = "leq", method = "GenSA",
     control = list(max.time = 2))
 
 
 ## Example 2
-## Exact Unit Root Test
+## Behrens-Fisher Problem
 library(MASS)
 
 # Set seed
 set.seed(123)
 
-# Generate x1 ~ N(0,1) and x2 ~ N(0,100)
+# Generate sample x1 ~ N(0,1) and x2 ~ N(0,100)
 x1 <- rnorm(15, mean = 0, sd = 1)
 x2 <- rnorm(25, mean = 0, sd = 10)
 data <- list(x1 = x1, x2 = x2)
 
-# Fit the sample using maximum likelihood
+# Fit a normal distribution on x1 and x2 using maximum likelihood
 fit1 <- fitdistr(x1, "normal")
 fit2 <- fitdistr(x2, "normal")
 
-# Set the estimator value
+# Extract the estimate for the nuisance parameters v = (mu_2, sd_2, sd_1)
 est <- c(fit2$estimate, fit1$estimate["sd"])
 
-# Set the bounds as the 99\% confidence interval
+# Set the bounds of the nuisance parameters equal to the 99\% CI
 lower <- est - 2.577 * c(fit2$sd, fit1$sd["sd"])
 upper <- est + 2.577 * c(fit2$sd, fit1$sd["sd"])
 
-# Set the DGP function under the null (i.e. mu_1=mu_2)
+# Set the function for the DGP under the null (i.e. two population means are equal)
 dgp <- function(data, v) {
     x1 <- rnorm(length(data$x1), mean = v[1], sd = v[3])
     x2 <- rnorm(length(data$x2), mean = v[1], sd = v[2])
     return(list(x1 = x1, x2 = x2))
 }
 
-# Set the statistic function
-statistic <- function(data) {
+# Set the statistic function to Welch's t-test
+welch <- function(data) {
     test <- t.test(data$x2, data$x1)
     return(test$statistic)
 }
 
-# Apply the test statistic
+# Apply Welch's t-test
 t.test(data$x2, data$x1)
 
 # Apply the mmc procedure
-mmc(y = data, statistic = statistic, dgp = dgp, est = est,
+mmc(y = data, statistic = welch, dgp = dgp, est = est,
     lower = lower, upper = upper, N = 99,	type = "absolute",
     method = "pso")
+}
+}
+\references{
+Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+\emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+
+Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
+in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+
+Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
+Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume \bold{5/1}, June 2013. URL \url{http://journal.r-project.org/}.
+
+Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
+\url{https://CRAN.R-project.org/package=pso}
+
+Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of Statistical
+Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
+
+Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
+parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at
+arXiv URL \url{http://arxiv.org/abs/1605.01931}.
+
+Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and Optimization
+in Finance. \emph{Academic Press}.
+}
+\seealso{
+\code{\link{mc}}, \code{\link{pvalue}}
 }
 

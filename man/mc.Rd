@@ -18,13 +18,12 @@ how the statistic is computed. The function inputs the
 passed unchanged each time it is called}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y}, and outputs a simulated \code{y} (i.e. an object
-of the same type as \code{y}). It is analogous to the data
-generating process under the null. Default value is
-sample(y, replace = TRUE), the bootstrap resampling of
- \code{y}.}
+\code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
+It should represent the data generating process under the null.
+Default value is the function sample(y, replace = TRUE), the
+bootstrap resampling of \code{y}.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{type}{A character string. Specifies the type of test
@@ -33,14 +32,14 @@ the p-value function produce. The possible values are
  Default is \code{geq}.}
 }
 \value{
-The returned value if an object of class "mc",
+The returned value if an object of class \code{mc},
 containing the following components:
  \item{S0}{Observed value of \code{statistic}}
  \item{pval}{Monte Carlo p-value of \code{statistic}}
  \item{y}{Data specified in call}
  \item{statistic}{\code{statistic} function specified in call}
  \item{dgp}{\code{dgp} function specified in call}
- \item{N}{Number of replication specified in call}
+ \item{N}{Number of replications specified in call}
  \item{type}{\code{type} of p-value specified in call}
  \item{call}{Original call to \code{mmc}}
  \item{seed}{value of \code{.Random.seed} at the start of
@@ -61,14 +60,20 @@ p-value by ranking the statistic compared to its simulated
 values. Ties in the ranking are broken according to a uniform
 distribution.
 
-We allow for three-type of tests: \code{one-tailed},
-\code{absolute}, \code{two-tailed}. The \code{one-tailed}
-test simply returns the p-value of the statistic at the right
-end of the distribution. If the statistic is symmetric, one
-can use the absolute value of the statistic and its simulated
-value to retrieve a two-tailed test. If the statistic is not
-symmetric, one can specify the type as \code{two-tailed} to
-obtained the p-value computed at both end of the distribution.
+We allow for four types of p-value: \code{leq}, \code{geq},
+\code{absolute} and \code{two-tailed}. For one-tailed test,
+\code{leq} returns the proportion of simulated values smaller
+than the statistic while \code{geq} return the proportion of
+simulated values greater than the statistic. For two-tailed
+test, if the statistic is symmetric, one can use the
+absolute value of the statistic and its simulated values to
+retrieve a two-tailed test (i.e. type = \code{absolute}).
+If the statistic is not symmetric, one can specify the p-value
+type as \code{two-tailed} which is equivalent to twice the minimum
+of \code{leq} and \code{geq}.
+
+Ties in the ranking are broken according to a uniform
+distribution.
 }
 \examples{
 ## Example 1
@@ -83,14 +88,25 @@ y <- rgamma(8, shape = 2, rate = 1)
 # Set data generating process function
 dgp <- function(y)  rgamma(length(y), shape = 2, rate = 1)
 
-# Set the Kolomogorov-Smirnov test for gamma distribution
+# Set the statistic function to the Kolomogorov-Smirnov test for gamma distribution
 statistic <- function(y){
     out <- ks.test(y, "pgamma", shape = 2, rate = 1)
     return(out$statistic)
 }
 
-# Apply the MC test with tie-breaker
+# Apply the Monte Carlo test with tie-breaker
 mc(y, statistic = statistic, dgp = dgp, N = 999, type = "geq")
 
+}
+\references{
+Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+\emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+
+Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
+in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+}
+\seealso{
+\code{\link{mmc}}, \code{\link{pvalue}}
 }
 

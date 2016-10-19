@@ -15,19 +15,20 @@ how the statistic is computed. The function inputs the
 \code{y}, and outputs a scalar numeric.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuissance paramaters \code{v}, and
+\code{y} and a vector of nuisance paramaters \code{v}, and
 outputs a simulated \code{y} (i.e. an object of the same type
-as \code{y}). It is analogous to the data generating process
-under the null. The function can be specified without
-\code{v}. Default value is sample(y, replace = TRUE), the
- bootstrap resampling of \code{y}.}
+as \code{y}). It is important to respect the order of the arguments.
+It should represent the data generating process under the null.
+The function can be specified without any nuisance parameters
+(i.e. without \code{v}). Default value is sample(y, replace = TRUE),
+the bootstrap resampling of \code{y}.}
 
 \item{v}{A vector paramaters. The vector \code{v} is use to
 specify the \code{dgp}. Note that if \code{dgp} is a
 function  of only \code{y} then we do not need to specify
 \code{v}. Default value is NULL.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{...}{Other named arguments for statistic which are
@@ -37,8 +38,7 @@ passed unchanged each time it is called}
 The vector of replication of test statistic.
 }
 \description{
-Generates N Monte Carlo replicates of a statistic applied to
-data.
+Generates N Monte Carlo replicates of a statistic for given nuisance parameter value.
 }
 \keyword{internal}
 

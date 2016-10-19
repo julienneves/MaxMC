@@ -2,27 +2,27 @@
 % Please edit documentation in R/controls.R
 \name{get_control}
 \alias{get_control}
-\title{Print a Summary of a Maximized Monte Carlo Object}
+\title{Format the optimization method controls}
 \usage{
 get_control(method, control = list())
 }
 \arguments{
 \item{method}{A character string. Type of algorithm to be
 used for global optimization. The four available methods
-are simulated annealing ("GenSA"), particle swarm ("pso"),
-genetic algorithm ("GA"), and grid search ("gridSearc")
-Default is "GenSA",}
+are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
+genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+Default is \code{GenSA},}
 
 \item{control}{A list. Arguments to be used to control the
-behavior of the algorithm chosen in \code{method}. See
-details.}
+behavior of the algorithm chosen in \code{method}. See Controls.}
 }
 \value{
 A list. Arguments to be used to control the behavior
 of the algorithm chosen in \code{method}.
 }
 \description{
-This function
+This function provides a way to merge the user specified controls for the
+optimization methods with their respective default controls.
 }
 \keyword{internal}
 

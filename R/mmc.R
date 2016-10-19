@@ -1,7 +1,29 @@
+#' @title Maximized Monte Carlo
+#' @docType package
+#' @name mmc-package
+#' @author Julien Neves, neves.julien@gmail.com, (Maintainer)
+#' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+#'
+#' @description Functions that implements the Maximized Monte Carlo technique based of
+#' Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+#' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+#' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+#'
+#' The main functions of \pkg{mmc} is \code{\link{mmc}} and \code{\link{mc}}.
+#'
+#' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+#' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+#' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+#'
+#' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#'
+NA
+
 #' Maximized Monte Carlo
 #'
 #' Find the Maximized Monte Carlo p-value on a set of nuisance
-#'  parameters.
+#' parameters.
 #'
 #' The \code{ran.gen} function defined by the user is used to
 #' generate new observations in order to compute the simulated
@@ -13,30 +35,30 @@
 #' values. Ties in the ranking are broken according to a
 #' uniform distribution.
 #'
-#' We allow for three-type of p-value: \code{leq}, \code{geq},
+#' We allow for four types of p-value: \code{leq}, \code{geq},
 #' \code{absolute} and \code{two-tailed}. For one-tailed test,
-#' \code{leq} returns  the proportion of simulated values
-#' smaller than the statistic while \code{geq} return the
-#' proportion of simulated values greater than the statistic.
-#' For two-tailed test, if the statistic is symmetric, one
-#' can use the absolute value of the statistic and its
-#' simulated value to retrieve a two-tailed test. If the
-#' statistic is not symmetric, one can specify the p-value
-#' type as \code{two-tailed} to obtained the p-value computed
-#' as the twice the minimum of \code{leq} and \code{geq}.
+#' \code{leq} returns the proportion of simulated values smaller
+#' than the statistic while \code{geq} return the proportion of
+#' simulated values greater than the statistic. For two-tailed
+#' test, if the statistic is symmetric, one can use the
+#' absolute value of the statistic and its simulated values to
+#' retrieve a two-tailed test (i.e. type = \code{absolute}).
+#' If the statistic is not symmetric, one can specify the p-value
+#' type as \code{two-tailed} which is equivalent to twice the minimum
+#' of \code{leq} and \code{geq}.
 #'
 #' Ties in the ranking are broken according to a uniform
 #' distribution.
 #'
-#' @section Control:
-#'
-#'\subsection{Control - \code{\link{GenSA}}}{
+#' @section Controls:
+#'\subsection{Controls - \code{\link[GenSA]{GenSA}}}{
 #' \describe{
 #'   \item{maxit}{Integer. Maximum number of iterations of
-#'   the algorithm.}
+#'   the algorithm. Defaults to
+#'   1000.}
 #'   \item{nb.stop.improvement}{Integer. The program will
 #'   stop when there is no any improvement in
-#'   nb.stop.improvement steps. Default to 25}
+#'   nb.stop.improvement steps. Defaults to 25}
 #'   \item{smooth}{Logical.TRUE when the objective function
 #'   is smooth, or differentiable almost everywhere in the
 #'   region of par, FALSE otherwise. Default value is TRUE.}
@@ -54,7 +76,7 @@
 #'   complicated with many local minima.}
 #'   }
 #'}
-#' \subsection{Control - \code{\link{psoptim}}}{
+#' \subsection{Controls - \code{\link[pso]{psoptim}}}{
 #' \describe{
 #'  \item{maxit}{The maximum number of iterations. Defaults to
 #'   1000.}
@@ -106,7 +128,7 @@
 #'  "SPSO2007".}
 #'}
 #'}
-#' \subsection{Control - \code{\link{GA}}}{
+#' \subsection{Controls - \code{\link[GA]{GA}}}{
 #' \describe{
 #' \item{popSize}{the population size.}
 #' \item{pcrossover}{the probability of crossover between
@@ -180,7 +202,7 @@
 #' }
 #'}
 #'
-#'\subsection{Control - \code{\link{gridSearch}}}{
+#'\subsection{Controls - \code{\link[NMOF]{gridSearch}}}{
 #' \describe{
 #' \item{n}{the number of levels. Default is 10.}
 #' \item{printDetail}{print information on the number of
@@ -200,44 +222,49 @@
 #' }
 #' }
 #'
+#'
 #' @param y A vector or data frame.
 #' @param statistic A function or a character string. Specifies
 #' how the statistic is computed. The function inputs the
 #' \code{y}, and outputs a scalar numeric.
 #' @param dgp A function. The function inputs the first argument
-#' \code{y} and a vector of nuissance paramaters \code{v}, and
+#' \code{y} and a vector of nuisance paramaters \code{v}, and
 #' outputs a simulated \code{y} (i.e. an object of the same type
-#' as \code{y}). It is analogous to the data generating process
-#' under the null. The function can be specified without
-#' \code{v}. Default value is sample(y, replace = TRUE), the
-#'  bootstrap resampling of \code{y}.
-#' @param N An atomic vector. Number of replication of test
+#' as \code{y}). It is important to respect the order of the arguments.
+#' It should represent the data generating process under the null.
+#' The function can be specified without any nuisance parameters
+#' (i.e. without \code{v}). Default value is sample(y, replace = TRUE),
+#' the bootstrap resampling of \code{y}.
+#' @param N An atomic vector. Number of replications of the test
 #' statistic.
 #' @param ... Other named arguments for statistic which are
 #' passed unchanged each time it is called
-#' @param est A vector with length of v. Default is NULL, in
-#' which case, default values will be generated automatically.
+#' @param est A vector with length of v. It is the starting
+#' point of the algorithm. If \code{est} is a consistent estimate
+#' of \code{v} then \code{mmc} will return both the mmc and LMC.
+#' Default is NULL, in which case, default values will be generated automatically.
 #' @param lower A vector with length of v. Lower bounds for
-#' nuisance parameters under the null
+#' nuisance parameters under the null.
 #' @param upper A vector with length of v. Upper bounds for
-#' nuisance parameters under the null
+#' nuisance parameters under the null.
 #' @param method A character string. Type of algorithm to be
 #' used for global optimization. The four available methods
-#' are simulated annealing ("GenSA"), particle swarm ("pso"),
-#' genetic algorithm ("GA"), and grid search ("gridSearc")
-#' Default is "GenSA",
+#' are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
+#' genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+#' Default is \code{GenSA},
 #' @param control A list. Arguments to be used to control the
-#' behavior of the algorithm chosen in \code{method}. See
-#' details.
-#' @param alpha A atomic vector. Default is NULL.
+#' behavior of the algorithm chosen in \code{method}. See Controls.
+#' @param alpha A atomic vector. Default is NULL. If \code{mmc} finds a
+#' p-value over \code{alpha}, then the algorithm will stop. This is particularly
+#' useful if we are only looking at testing a hypothesis at a particular level.
+#' Default is NULL.
 #'
 #' @inheritParams pvalue
 #'
-#' @return The returned value if an object of class "mmc",
+#' @return The returned value if an object of class \code{mmc},
 #' containing the following components:
 #'  \item{S0}{Observed value of \code{statistic}}
-#'  \item{pval}{Maximized Monte Carlo p-value of
-#'  \code{statistic} under null}
+#'  \item{pval}{Maximized Monte Carlo p-value of \code{statistic} under null}
 #'  \item{y}{Data specified in call}
 #'  \item{statistic}{\code{statistic} function specified in
 #'  call}
@@ -245,14 +272,14 @@
 #'  \item{est}{\code{est} vector if specified in call}
 #'  \item{lower}{\code{lower} vector if specified in call}
 #'  \item{upper}{\code{upper} vector if specified in call}
-#'  \item{N}{Number of replication specified in call}
+#'  \item{N}{Number of replications specified in call}
 #'  \item{type}{\code{type} of p-value specified in call}
 #'  \item{method}{\code{method} specified in call}
 #'  \item{call}{Original call to \code{mmc}}
-#'  \item{seed}{value of \code{.Random.seed} at the start of
+#'  \item{seed}{Value of \code{.Random.seed} at the start of
 #'  \code{mmc} call}
 #'  \item{lmc}{if \code{par} is specified, it returns an
-#'  object of class "\code{mc}" corresponding the Local Monte
+#'  object of class \code{mc} corresponding the Local Monte
 #'  Carlo test}
 #'  \item{opt_result}{an object returning the optimization
 #'  results}
@@ -260,14 +287,42 @@
 #'  an vector specifying is the hypothesis was rejected or
 #'  not at level \code{alpha}}
 #'
-#' @export
 #'
-#' @example \exec\mmc_example.R
+#' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+#' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+#' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+#'
+#' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#'
+#' @references Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
+#' Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume \bold{5/1}, June 2013. URL \url{http://journal.r-project.org/}.
+#'
+#' @references Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
+#' \url{https://CRAN.R-project.org/package=pso}
+#'
+#' @references Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of Statistical
+#' Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
+#'
+#' @references Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
+#' parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at
+#' arXiv URL \url{http://arxiv.org/abs/1605.01931}.
+#'
+#' @references Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and Optimization
+#' in Finance. \emph{Academic Press}.
+#'
+#'
+#' @seealso \code{\link{mc}}, \code{\link{pvalue}}
+#'
+#' @example \inst\examples\mmc_example.R
+#'
+#' @export
 #'
 mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE),
                 est = NULL, lower, upper, N = 99,
                 type = c("geq", "leq", "absolute", "two-tailed"),
-                method = c("GenSA", "pso", "GA", "gridSearch"), control = list(), alpha = NULL) {
+                method = c("GenSA", "pso", "GA", "gridSearch"),
+                control = list(), alpha = NULL) {
 
     # Match type, method and extract exact call
     type <- match.arg(type)
@@ -404,7 +459,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
                                        asList = opt_control$asList)
         }
 
-    # Return results
+    # Return "mmc" object
     return_mmc(S0 = S0, y = y, statistic = statistic, dgp = dgp, est = est, lower = lower,
                upper = upper, N = N, type = type, method = method, alpha = alpha,
                control = control, call = call, seed = seed, lmc = lmc, opt_result = opt_result)

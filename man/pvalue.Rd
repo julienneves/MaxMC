@@ -2,7 +2,7 @@
 % Please edit documentation in R/pvalue.R
 \name{pvalue}
 \alias{pvalue}
-\title{P-value function}
+\title{p-value Function}
 \usage{
 pvalue(S0, S, type = c("geq", "leq", "absolute", "two-tailed"))
 }
@@ -10,8 +10,8 @@ pvalue(S0, S, type = c("geq", "leq", "absolute", "two-tailed"))
 \item{S0}{An atomic vector. Value of the test statistic
 applied to the data.}
 
-\item{S}{An atomic vector. Replication of the test statistic.
-S must have length greater than one, with no missing values.}
+\item{S}{A vector. Replications of the test statistic.
+\code{S} must have length greater than one, with no missing values.}
 
 \item{type}{A character string. Specifies the type of test
 the p-value function produce. The possible values are
@@ -19,27 +19,34 @@ the p-value function produce. The possible values are
  Default is \code{geq}.}
 }
 \value{
-The p-value of S0 given the vector of replication S.
+The p-value of the statistic \code{S0} given a vector of replications \code{S}.
 }
 \description{
 Computes the p-value of the statistic by computing its rank
 compared to its simulated values.
 }
 \details{
-We allow for three-type of p-value: \code{leq}, \code{geq},
+We allow for four types of p-value: \code{leq}, \code{geq},
 \code{absolute} and \code{two-tailed}. For one-tailed test,
 \code{leq} returns the proportion of simulated values smaller
- than the statistic while \code{geq} return the proportion of
- simulated values greater than the statistic. For two-tailed
- test, if the statistic is symmetric, one can use the
- absolute value of the statistic and its simulated value to
- retrieve a two-tailed test. If the statistic is not
- symmetric,
- one can specify the p-value type as \code{two-tailed} to
- obtained the p-value computed as the twice the minimum of
- \code{leq} and \code{geq}.
+than the statistic while \code{geq} return the proportion of
+simulated values greater than the statistic. For two-tailed
+test, if the statistic is symmetric, one can use the
+absolute value of the statistic and its simulated values to
+retrieve a two-tailed test (i.e. type = \code{absolute}).
+If the statistic is not symmetric, one can specify the p-value
+type as \code{two-tailed} which is equivalent to twice the minimum
+of \code{leq} and \code{geq}.
 
 Ties in the ranking are broken according to a uniform
 distribution.
+}
+\references{
+Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
+A general approach to finite sample inference and nonstandard asymptotics in econometrics.
+\emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
+
+Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
+in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 }
 

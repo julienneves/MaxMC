@@ -1,6 +1,7 @@
 Package: mmc
 Type: Package
 Title: Maximized Monte Carlo
+Date: 2016-10-18
 Version: 0.1.0.9012
 Authors@R: c(person("Julien", "Neves", email = "neves.julien@gmail.com", role = c("aut", "cre")), person("Jean-Marie", "Dufour", email = "jean-marie.dufour@mcgill.ca", role = c("aut", "ths")))
 Maintainer: Julien Neves <neves.julien@gmail.com>

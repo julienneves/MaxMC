@@ -2,7 +2,7 @@
 % Please edit documentation in R/classes.R
 \name{return_mc}
 \alias{return_mc}
-\title{S3 class mc.}
+\title{S3 class \code{mc}.}
 \usage{
 return_mc(S0, y, statistic, dgp, N, type, call, seed, pval)
 }
@@ -17,13 +17,12 @@ how the statistic is computed. The function inputs the
 \code{y}, and outputs a scalar numeric.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y}, and outputs a simulated \code{y} (i.e. an object
-of the same type as \code{y}). It is analogous to the data
-generating process under the null. Default value is
-sample(y, replace = TRUE), the bootstrap resampling of
- \code{y}.}
+\code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
+It should represent the data generating process under the null.
+Default value is the function sample(y, replace = TRUE), the
+bootstrap resampling of \code{y}.}
 
-\item{N}{An atomic vector. Number of replication of test
+\item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
 \item{type}{A character string. Specifies the type of test
@@ -31,15 +30,15 @@ the p-value function produce. The possible values are
 \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
  Default is \code{geq}.}
 
-\item{call}{Original call to \code{mmc}}
+\item{call}{An object of class \code{call}. Original call to \code{mmc}}
 
-\item{seed}{value of \code{.Random.seed} at the start of
+\item{seed}{An integer vector. Value of \code{.Random.seed} at the start of
 \code{mmc} call}
 
-\item{pval}{Monte Carlo p-value of \code{statistic}}
+\item{pval}{An atomic vector. Monte Carlo p-value of \code{statistic}}
 }
 \description{
-S3 class mc.
+S3 class \code{mc}.
 }
 \keyword{internal}
 
