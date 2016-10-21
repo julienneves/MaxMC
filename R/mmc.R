@@ -189,16 +189,6 @@ NA
 #' on Windows only 'snow' type functionality is available,
 #' while on Unix/Linux/Mac OSX both 'snow' and 'multicore'
 #' (default) functionalities are available.}
-#' \item{monitor}{a logical or an R function which takes as
-#' input the current state of the ga-class object and show
-#' the evolution of the search. By default, for interactive
-#' sessions, the function gaMonitor or gaMonitor2, depending
-#' on whether or not is an RStudio session, prints the
-#' average and best fitness values at each iteration. If set
-#' to plot these information are plotted on a graphical
-#' device. Other functions can be written by the user and
-#' supplied as argument. In non interactive sessions, by
-#' default monitor = FALSE so any output is suppressed.}
 #' }
 #'}
 #'
@@ -258,6 +248,14 @@ NA
 #' p-value over \code{alpha}, then the algorithm will stop. This is particularly
 #' useful if we are only looking at testing a hypothesis at a particular level.
 #' Default is NULL.
+#' @param monitor A logical. By default, for interactive
+#' sessions, the function gaMonitor or gaMonitor2, depending
+#' on whether or not is an RStudio session, prints the
+#' average and best fitness values at each iteration. If set
+#' to plot these information are plotted on a graphical
+#' device. Other functions can be written by the user and
+#' supplied as argument. In non interactive sessions, by
+#' default monitor = FALSE so any output is suppressed.
 #'
 #' @inheritParams pvalue
 #'
@@ -322,7 +320,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
                 est = NULL, lower, upper, N = 99,
                 type = c("geq", "leq", "absolute", "two-tailed"),
                 method = c("GenSA", "pso", "GA", "gridSearch"),
-                control = list(), alpha = NULL) {
+                control = list(), alpha = NULL, monitor = TRUE) {
 
     # Match type, method and extract exact call
     type <- match.arg(type)
@@ -382,20 +380,30 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
              length = 1")
     }
 
+    # Initialize iteration counter
+    ite <- 0
+
     # P-value function to maximize
     max_fn <- function(v, ...) {
         temp <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)
         assign(".Random.seed", seed, envir = .GlobalEnv, inherits = FALSE)
         on.exit(assign(".Random.seed", temp, envir = .GlobalEnv, inherits = FALSE))
 
+        # Update iteration counter
+        ite <<- ite + 1
+
         # Simulate statistic
         S <- simulation_mmc(y, statistic, dgp, v, N, ...)
 
         # Calculate p-value
         pval <- pvalue(S0, S, type)
+
+        # Update iteration count
+        monitor_mmc(ite, pval, monitor)
+
         return(pval)
     }
-    # P-value function to minimize
+    # Wrapper for algorithms that need function to minimize
     min_fn <- function(v, ...) {
         -max_fn(v, ...)
     }

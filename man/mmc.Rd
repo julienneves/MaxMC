@@ -7,7 +7,7 @@
 mmc(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE),
   est = NULL, lower, upper, N = 99, type = c("geq", "leq", "absolute",
   "two-tailed"), method = c("GenSA", "pso", "GA", "gridSearch"),
-  control = list(), alpha = NULL)
+  control = list(), alpha = NULL, monitor = TRUE)
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -60,6 +60,15 @@ behavior of the algorithm chosen in \code{method}. See Controls.}
 p-value over \code{alpha}, then the algorithm will stop. This is particularly
 useful if we are only looking at testing a hypothesis at a particular level.
 Default is NULL.}
+
+\item{monitor}{A logical. By default, for interactive
+sessions, the function gaMonitor or gaMonitor2, depending
+on whether or not is an RStudio session, prints the
+average and best fitness values at each iteration. If set
+to plot these information are plotted on a graphical
+device. Other functions can be written by the user and
+supplied as argument. In non interactive sessions, by
+default monitor = FALSE so any output is suppressed.}
 }
 \value{
 The returned value if an object of class \code{mmc},
@@ -258,16 +267,6 @@ functionality of parallelization depends on system OS:
 on Windows only 'snow' type functionality is available,
 while on Unix/Linux/Mac OSX both 'snow' and 'multicore'
 (default) functionalities are available.}
-\item{monitor}{a logical or an R function which takes as
-input the current state of the ga-class object and show
-the evolution of the search. By default, for interactive
-sessions, the function gaMonitor or gaMonitor2, depending
-on whether or not is an RStudio session, prints the
-average and best fitness values at each iteration. If set
-to plot these information are plotted on a graphical
-device. Other functions can be written by the user and
-supplied as argument. In non interactive sessions, by
-default monitor = FALSE so any output is suppressed.}
 }
 }
 
