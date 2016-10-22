@@ -22,6 +22,5 @@ Imports:
   pso,
   GA,
   NMOF,
-  scales,
-  ggplot2
+  scales
 VignetteBuilder: knitr

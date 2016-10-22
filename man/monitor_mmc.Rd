@@ -4,12 +4,15 @@
 \alias{monitor_mmc}
 \title{Format the optimization method controls}
 \usage{
-monitor_mmc(ite, pval, monitor)
+monitor_mmc(opt_monitor, alpha, monitor = TRUE)
 }
 \arguments{
-\item{ite}{A}
+\item{opt_monitor}{A data.frame}
 
-\item{pval}{A}
+\item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
+p-value over \code{alpha}, then the algorithm will stop. This is particularly
+useful if we are only looking at testing a hypothesis at a particular level.
+Default is NULL.}
 
 \item{monitor}{A logical. By default, for interactive
 sessions, the function gaMonitor or gaMonitor2, depending

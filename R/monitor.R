@@ -3,8 +3,7 @@
 #' This function provides a way to merge the user specified controls for the
 #' optimization methods with their respective default controls.
 #'
-#' @param ite A
-#' @param pval A
+#' @param opt_monitor A data.frame
 #' @inheritParams mmc
 #'
 #' @return A list. Arguments to be used to control the behavior
@@ -12,20 +11,18 @@
 #'
 #' @keywords internal
 #'
-monitor_mmc <- function(ite, pval, monitor){
-    if(monitor==TRUE){
-        if(ite==1){
-            plot(NULL, xlim=c(1,1000), ylim=c(0,1),
-                 xlab="Iterations", ylab="P-value", main = "Evolution of mmc p-value")
-            points(ite,pval)
-            cat("Maximized Monte Carlo\n")
-            cat("Iteration", ite, "| P-value", pval, "\r")
-            flush.console()
-        }
-        else{
-            points(ite,pval)
-            cat("Iteration", ite, "| P-value", pval,"\r")
-            flush.console()
-        }
+monitor_mmc <- function(opt_monitor, alpha, monitor = TRUE){
+
+    if(monitor==FALSE){
+        return()
+    } else {
+        opt_monitor<- opt_monitor[!is.na(opt_monitor),]
+        current <- opt_monitor[length(opt_monitor),]
+        plot(opt_monitor$ite,opt_monitor$pval,
+             xlab="Iterations", ylab="P-value", main = "Evolution of mmc p-value")
+        lines(opt_monitor$max,col="red")
+        cat("Iteration", current$ite, "| Current", current$pval,
+                "| Best", current$max, "\r")
+        flush.console()
     }
 }

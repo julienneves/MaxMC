@@ -388,7 +388,6 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         temp <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)
         assign(".Random.seed", seed, envir = .GlobalEnv, inherits = FALSE)
         on.exit(assign(".Random.seed", temp, envir = .GlobalEnv, inherits = FALSE))
-
         # Update iteration counter
         ite <<- ite + 1
 
@@ -398,8 +397,9 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         # Calculate p-value
         pval <- pvalue(S0, S, type)
 
-        # Update iteration count
-        monitor_mmc(ite, pval, monitor)
+        opt_monitor[ite,] <<- c(ite,pval,max(pval,opt_monitor$pval, na.rm = TRUE))
+
+        monitor_mmc(opt_monitor, alpha, monitor)
 
         return(pval)
     }
@@ -416,6 +416,11 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
             control$threshold.stop <- -max(alpha)  - 1/(N + 1)
         }
         opt_control <- get_control(method, control)
+
+        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
+                                            dimnames = list(NULL,c("ite","pval","max"))))
+
+
         # Run simulated annealing on min_fn
         opt_result <- GenSA::GenSA(par = par, fn = min_fn, lower = lower,
                                    upper = upper, control = opt_control, ...)
@@ -431,6 +436,11 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
             control$abstol <- -max(alpha) - 1/(N + 1)
         }
         opt_control <- get_control(method, control)
+
+
+        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
+                                            dimnames = list(NULL,c("ite","pval","max"))))
+
         # Run particle swarm optimization on min_fn
         opt_result <- pso::psoptim(par = par, fn = min_fn, gr = NULL, ...,
                                    lower = lower, upper = upper, control = opt_control)
@@ -443,6 +453,10 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         }
         # Get controls for global optimization
         opt_control <- get_control(method, control)
+
+        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxiter, 3,
+                                            dimnames = list(NULL,c("ite","pval","max"))))
+
         # Run Genetic Algorithm on max_fn
         opt_result <- GA::ga(type = "real-valued", max_fn, ..., min = lower, max = upper,
                              popSize = opt_control$popSize,
@@ -457,6 +471,9 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
     } else if (method == "gridSearch") {
         # Get controls for global optimization
         opt_control <- get_control(method, control)
+
+        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$n^length(lower), 3,
+                                            dimnames = list(NULL,c("ite","pval","max"))))
         # Run Genetic Algorithm on max_fn
         opt_result <- NMOF::gridSearch(fun = min_fn, lower = lower, upper = upper,
                                        npar = opt_control$npar, n = opt_control$n,
