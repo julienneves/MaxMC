@@ -294,19 +294,23 @@ NA
 #' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 #'
 #' @references Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
-#' Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume \bold{5/1}, June 2013. URL \url{http://journal.r-project.org/}.
+#' Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume
+#' \bold{5/1}, June 2013.
+#' URL \url{http://journal.r-project.org/}.
 #'
 #' @references Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
 #' \url{https://CRAN.R-project.org/package=pso}
 #'
-#' @references Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of Statistical
+#' @references Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of
+#' Statistical
 #' Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
 #'
 #' @references Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
 #' parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at
 #' arXiv URL \url{http://arxiv.org/abs/1605.01931}.
 #'
-#' @references Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and Optimization
+#' @references Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and
+#' Optimization
 #' in Finance. \emph{Academic Press}.
 #'
 #'
@@ -320,7 +324,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
                 est = NULL, lower, upper, N = 99,
                 type = c("geq", "leq", "absolute", "two-tailed"),
                 method = c("GenSA", "pso", "GA", "gridSearch"),
-                control = list(), alpha = NULL, monitor = TRUE) {
+                control = list(), alpha = NULL, monitor = FALSE) {
 
     # Match type, method and extract exact call
     type <- match.arg(type)
@@ -388,8 +392,6 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         temp <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)
         assign(".Random.seed", seed, envir = .GlobalEnv, inherits = FALSE)
         on.exit(assign(".Random.seed", temp, envir = .GlobalEnv, inherits = FALSE))
-        # Update iteration counter
-        ite <<- ite + 1
 
         # Simulate statistic
         S <- simulation_mmc(y, statistic, dgp, v, N, ...)
@@ -397,9 +399,11 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         # Calculate p-value
         pval <- pvalue(S0, S, type)
 
+        # Update iteration counter
+        ite <<- ite + 1
         opt_monitor[ite,] <<- c(ite,pval,max(pval,opt_monitor$pval, na.rm = TRUE))
 
-        monitor_mmc(opt_monitor, alpha, monitor)
+        monitor_mmc(opt_monitor, alpha = alpha, monitor = monitor)
 
         return(pval)
     }
@@ -487,5 +491,6 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
     # Return "mmc" object
     return_mmc(S0 = S0, y = y, statistic = statistic, dgp = dgp, est = est, lower = lower,
                upper = upper, N = N, type = type, method = method, alpha = alpha,
-               control = control, call = call, seed = seed, lmc = lmc, opt_result = opt_result)
+               control = control, call = call, seed = seed, lmc = lmc,
+               opt_result = opt_result, opt_monitor = opt_monitor)
 }

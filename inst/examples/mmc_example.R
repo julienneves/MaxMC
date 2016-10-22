@@ -19,7 +19,7 @@ dgp <- function(y, v) {
 
 # Set the Augmented-Dicky Fuller statistic
 statistic <- function(y){
-    out <- adfTest(y, lags = 2, type = "nc")
+    out <- suppressWarnings(adfTest(y, lags = 2, type = "nc"))
     return(out@test$statistic)
 }
 

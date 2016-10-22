@@ -4,10 +4,10 @@
 \alias{monitor_mmc}
 \title{Format the optimization method controls}
 \usage{
-monitor_mmc(opt_monitor, alpha, monitor = TRUE)
+monitor_mmc(object, alpha = NULL, monitor = TRUE)
 }
 \arguments{
-\item{opt_monitor}{A data.frame}
+\item{object}{A data.frame}
 
 \item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
 p-value over \code{alpha}, then the algorithm will stop. This is particularly

@@ -7,7 +7,7 @@
 mmc(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE),
   est = NULL, lower, upper, N = 99, type = c("geq", "leq", "absolute",
   "two-tailed"), method = c("GenSA", "pso", "GA", "gridSearch"),
-  control = list(), alpha = NULL, monitor = TRUE)
+  control = list(), alpha = NULL, monitor = FALSE)
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -312,7 +312,7 @@ dgp <- function(y, v) {
 
 # Set the Augmented-Dicky Fuller statistic
 statistic <- function(y){
-    out <- adfTest(y, lags = 2, type = "nc")
+    out <- suppressWarnings(adfTest(y, lags = 2, type = "nc"))
     return(out@test$statistic)
 }
 
@@ -376,19 +376,23 @@ Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 
 Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
-Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume \bold{5/1}, June 2013. URL \url{http://journal.r-project.org/}.
+Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume
+\bold{5/1}, June 2013.
+URL \url{http://journal.r-project.org/}.
 
 Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
 \url{https://CRAN.R-project.org/package=pso}
 
-Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of Statistical
+Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of
+Statistical
 Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
 
 Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
 parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at
 arXiv URL \url{http://arxiv.org/abs/1605.01931}.
 
-Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and Optimization
+Manfred Gilli (2011), Dietmar Maringer and Enrico Schumann. Numerical Methods and
+Optimization
 in Finance. \emph{Academic Press}.
 }
 \seealso{
