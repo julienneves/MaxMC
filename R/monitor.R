@@ -22,10 +22,7 @@ monitor_mmc <- function(object, alpha = NULL, monitor = TRUE){
         cat("Iteration", current$ite, "| Current", current$pval,
             "| Best", current$max, "\r")
         flush.console()
-
-        if(current$ite %% 10 == 0){
-            x <- list(opt_monitor = object, alpha = alpha)
-            plot.mmc(x)
-        }
+        x <- list(opt_monitor = object, alpha = alpha)
+        plot.mmc(x)
     }
 }
