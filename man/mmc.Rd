@@ -329,9 +329,9 @@ library(MASS)
 # Set seed
 set.seed(123)
 
-# Generate sample x1 ~ N(0,1) and x2 ~ N(0,100)
+# Generate sample x1 ~ N(0,1) and x2 ~ N(0,4)
 x1 <- rnorm(15, mean = 0, sd = 1)
-x2 <- rnorm(25, mean = 0, sd = 10)
+x2 <- rnorm(25, mean = 0, sd = 2)
 data <- list(x1 = x1, x2 = x2)
 
 # Fit a normal distribution on x1 and x2 using maximum likelihood

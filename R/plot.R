@@ -6,15 +6,15 @@
 #' @return The \code{mmc} object is returned invisibly.
 #'
 #' @inheritParams base::plot
+#' @param x An object of class "mmc"
 #' @export
 #'
 plot.mmc <- function(x, ...) {
     opt_monitor <- x$opt_monitor
     alpha <- x$alpha
 
-
     plot(opt_monitor$pval, xlab="Iterations",
-         ylab="P-value", main = "Evolution of mmc p-value")
+         ylab="P-value", main = "Evolution of mmc")
     lines(opt_monitor$max,col="green")
 
     if(!is.null(alpha)){

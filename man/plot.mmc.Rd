@@ -6,6 +6,9 @@
 \usage{
 \method{plot}{mmc}(x, ...)
 }
+\arguments{
+\item{x}{An object of class "mmc"}
+}
 \value{
 The \code{mmc} object is returned invisibly.
 }
