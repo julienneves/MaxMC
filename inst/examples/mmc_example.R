@@ -45,17 +45,17 @@ data <- list(x1 = x1, x2 = x2)
 fit1 <- fitdistr(x1, "normal")
 fit2 <- fitdistr(x2, "normal")
 
-# Extract the estimate for the nuisance parameters v = (mu_2, sd_2, sd_1)
-est <- c(fit2$estimate, fit1$estimate["sd"])
+# Extract the estimate for the nuisance parameters v = (sd_1, sd_2)
+est <- c(fit1$estimate["sd"], fit2$estimate["sd"])
 
 # Set the bounds of the nuisance parameters equal to the 99% CI
-lower <- est - 2.577 * c(fit2$sd, fit1$sd["sd"])
-upper <- est + 2.577 * c(fit2$sd, fit1$sd["sd"])
+lower <- est - 2.577 * c(fit2$sd["sd"], fit1$sd["sd"])
+upper <- est + 2.577 * c(fit2$sd["sd"], fit1$sd["sd"])
 
 # Set the function for the DGP under the null (i.e. two population means are equal)
 dgp <- function(data, v) {
-    x1 <- rnorm(length(data$x1), mean = v[1], sd = v[3])
-    x2 <- rnorm(length(data$x2), mean = v[1], sd = v[2])
+    x1 <- rnorm(length(data$x1), mean = 0, sd = v[1])
+    x2 <- rnorm(length(data$x2), mean = 0, sd = v[2])
     return(list(x1 = x1, x2 = x2))
 }
 

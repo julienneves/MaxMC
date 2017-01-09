@@ -14,17 +14,16 @@
 #' @keywords internal
 #'
 simulation_mmc <- function(y, statistic, dgp = function(y, v) sample(y, replace = TRUE),
-                           v, N, ...) {
-  # Generate an empty array to store the simulated statistics
-  S <- rep(NA, N)
+                           v, N = 99, ...) {
+    stat <- function(y, v, ...) {
+      # Generate new observation y
+      ran.y <- dgp(y,v)
+      # Compute the statistic on this new observation y
+      statistic(ran.y, ...)
+    }
 
-  for (i in 1:N) {
-    # Generate some simulation of y under the null
-    ran.y <- dgp(y, v)
-    # Compute the statistic on this new y
-    S[i] <- statistic(ran.y, ...)
-  }
-  return(S)
+    S <- replicate(N, stat(y, v), ...)
+    return(S)
 }
 
 #' Monte Carlo Simulation
@@ -36,15 +35,15 @@ simulation_mmc <- function(y, statistic, dgp = function(y, v) sample(y, replace 
 #'
 #' @keywords internal
 #'
-simulation_mc <- function(y, statistic, dgp = function(y) sample(y, replace = TRUE), N, ...) {
-  # Generate an empty array to store the simulated statistics
-  S <- rep(NA, N)
+simulation_mc <- function(y, statistic, dgp = function(y) sample(y, replace = TRUE),
+                          N = 99, ...) {
+    stat <- function(y, ...) {
+        # Generate new observation y
+        ran.y <- dgp(y)
+        # Compute the statistic on this new observation y
+        statistic(ran.y, ...)
+    }
 
-  for (i in 1:N) {
-    # Generate some simulation of y under the null
-    ran.y <- dgp(y)
-    # Compute the statistic on this new y
-    S[i] <- statistic(ran.y, ...)
-  }
-  return(S)
+    S <- replicate(N, stat(y), ...)
+    return(S)
 }
