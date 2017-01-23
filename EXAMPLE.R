@@ -1,5 +1,6 @@
 ## Behrens-Fisher Problem
 library(MASS)
+library(mmc)
 
 bf_norm <- function(delta, rho, N1, N2, alpha) {
   # Generate sample x1 ~ N(0,1) and x2 ~ N(0,4)
@@ -70,13 +71,17 @@ bf_t <- function(delta, rho, df, N1, N2, alpha) {
 }
 
 
-repl <- 1000
-delta <- 0
-rho <- 2
-df <- 1
-N1 <- 100
-N2 <- 10
+repl <- 250
 alpha <- 0.05
 
-S <- replicate(repl, bf_t(delta = delta, rho = rho, df = df, N1 = N1, N2 = N2, alpha = alpha))
-rowSums(S < alpha)/repl
+data <- expand.grid(delta = c(0), rho = c(1,5,10,100),
+                    df = c(1,2,3), N1 = c(10,25,1000), N2 = c(10,25,1000))
+
+test <- function(data){
+    S <- replicate(repl, bf_t(data$delta, data$rho, data$df, data$N1, data$N2, alpha))
+    level <- rowSums(S <= alpha)/repl * 100
+    return(level)
+}
+
+S <- sapply(1:2, function(x) test(data[x,]))
+
