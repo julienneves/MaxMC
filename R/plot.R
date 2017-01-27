@@ -14,7 +14,7 @@ plot.mmc <- function(x, ...) {
     alpha <- x$alpha
 
     plot(opt_monitor$pval, xlab="Iterations",
-         ylab="P-value", main = "Evolution of mmc")
+         ylab="P-value", main = "Evolution of mmc", ...)
     lines(opt_monitor$max,col="green")
 
     if(!is.null(alpha)){
