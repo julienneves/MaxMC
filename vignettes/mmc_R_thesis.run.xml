@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>Maximized_Monte_Carlo.bcf</file>
+      <file>mmc_R_thesis.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>Maximized_Monte_Carlo.bbl</file>
+      <file>mmc_R_thesis.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -65,22 +65,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>Maximized_Monte_Carlo</infile>
+      <infile>mmc_R_thesis</infile>
     </cmdline>
     <input>
-      <file>Maximized_Monte_Carlo.bcf</file>
+      <file>mmc_R_thesis.bcf</file>
     </input>
     <output>
-      <file>Maximized_Monte_Carlo.bbl</file>
+      <file>mmc_R_thesis.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>Maximized_Monte_Carlo.bbl</file>
+      <file>mmc_R_thesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>Maximized_Monte_Carlo.bcf</file>
+      <file>mmc_R_thesis.bcf</file>
     </requires>
     <requires type="editable">
-      <file>mmc_biblio.bib</file>
+      <file>mmc_R_biblio.bib</file>
     </requires>
   </external>
 </requests>
