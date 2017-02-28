@@ -71,17 +71,17 @@ bf_t <- function(delta, rho, df, N1, N2, alpha) {
 }
 
 
-repl <- 250
-alpha <- 0.05
+#repl <- 250
+#alpha <- 0.05
 
-data <- expand.grid(delta = c(0), rho = c(1,5,10,100),
-                    df = c(1,2,3), N1 = c(10,25,1000), N2 = c(10,25,1000))
+#data <- expand.grid(delta = c(0), rho = c(1,5,10,100),
+#                    df = c(1,2,3), N1 = c(10,25,1000), N2 = c(10,25,1000))
 
-test <- function(data){
-    S <- replicate(repl, bf_t(data$delta, data$rho, data$df, data$N1, data$N2, alpha))
-    level <- rowSums(S <= alpha)/repl * 100
-    return(level)
-}
+#test <- function(data){
+#    S <- replicate(repl, bf_t(data$delta, data$rho, data$df, data$N1, data$N2, alpha))
+#    level <- rowSums(S <= alpha)/repl * 100
+#    return(level)
+#}
 
-S <- sapply(1:2, function(x) test(data[x,]))
+#S <- sapply(1:2, function(x) test(data[x,]))
 

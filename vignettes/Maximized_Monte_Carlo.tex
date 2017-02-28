@@ -1,4 +1,54 @@
-\documentclass[]{article}
+\documentclass[]{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
 
 %\VignetteIndexEntry{MMC}
 %\VignetteEngine{knitr::knitr}
@@ -6,7 +56,7 @@
 
 \usepackage{graphicx, float, amssymb, amsmath, titlesec}
 \usepackage[citestyle=authoryear, natbib=true]{biblatex}
-\addbibresource{Neves_2016_MMC_Rpack.bib}
+\addbibresource{mmc_biblio.bib}
 
 \addcontentsline{toc}{section}{References}
 
@@ -28,11 +78,9 @@
 \DeclareMathOperator{\R}{\mathbb{R}}
 \DeclareMathOperator{\dist}{\mathcal{F}}
 
-<<setup, echo=FALSE, message = FALSE, include = FALSE>>=
-library(knitr)
-opts_chunk$set(tidy.opts=list(width.cutoff=50),fig.path="fig/")
-@
 
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
 \title{Maximized Monte Carlo: an \proglang{R} package}
@@ -346,10 +394,14 @@ where $u=(u_1,...u_n)$ is a vector of $i.i.d.$ random variables with known distr
 \section{Implementation}
 
 \pkg{MMC} is available on GitHub. In order to install it, simply make sure \pkg{devtools} \citep{wickham_devtools:_2016} is installed, and run the following command lines
-<<installation, eval=FALSE, tidy=TRUE>>=
-require(devtools)
-install_github("julienneves/MMC")
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{require}\hlstd{(devtools)}
+\hlkwd{install_github}\hlstd{(}\hlstr{"julienneves/MMC"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 In the next sections, we look more closely at the two functions at the core of \pkg{MMC} package: \code{mc} and \code{mmc}.
 
@@ -357,9 +409,14 @@ In the next sections, we look more closely at the two functions at the core of \
 
 The \code{mc} function implements the Monte Carlo technique with tie-breaker as described in the previous section.
 The function call is reproduced here for simplicity.
-<<eval=FALSE, tidy=TRUE>>=
-mc(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE), N = 99, type = c("geq", "leq", "absolute", "two-tailed"))
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{mc}\hlstd{(y, statistic, ...,} \hlkwc{dgp} \hlstd{=} \hlkwa{function}\hlstd{(}\hlkwc{y}\hlstd{)} \hlkwd{sample}\hlstd{(y,} \hlkwc{replace} \hlstd{=} \hlnum{TRUE}\hlstd{),}
+    \hlkwc{N} \hlstd{=} \hlnum{99}\hlstd{,} \hlkwc{type} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"geq"}\hlstd{,} \hlstr{"leq"}\hlstd{,} \hlstr{"absolute"}\hlstd{,} \hlstr{"two-tailed"}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 The arguments of the function are the following:
 \begin{description}
@@ -433,33 +490,58 @@ To solve this problem, we use the Kolmogorov-Smirnov statistic \citep{smirnoff_s
 	It is important to note that the KS is distribution free when the observations are $i.i.d.$ and follow a continuous distribution, but this property disappears if the observations follow a discrete distribution. Therefore, in order to retrieve an exact test even when the $X_i$ or $Y_i$ follow a discrete distribution, \cite{dufour_exact_2001} demonstrate that the MC procedure with tie-breaker can be fruitful.
 
 	In this example, we let $n=m=8$, $X_i \sim Poisson(4)$, and $Y_j \sim Poisson(4)$.
-	<<cache = TRUE, tidy = TRUE>>=
-	library(mmc)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(mmc)}
 
-	# Generate x ~ Poisson(4), y ~  Poisson(4)
-	x <- rpois(8, lambda = 4)
-	y <- rpois(8, lambda = 4)
-	data <- list(x = x, y = y)
+\hlcom{# Generate x ~ Poisson(4), y ~ Poisson(4)}
+\hlstd{x} \hlkwb{<-} \hlkwd{rpois}\hlstd{(}\hlnum{8}\hlstd{,} \hlkwc{lambda} \hlstd{=} \hlnum{4}\hlstd{)}
+\hlstd{y} \hlkwb{<-} \hlkwd{rpois}\hlstd{(}\hlnum{8}\hlstd{,} \hlkwc{lambda} \hlstd{=} \hlnum{4}\hlstd{)}
+\hlstd{data} \hlkwb{<-} \hlkwd{list}\hlstd{(}\hlkwc{x} \hlstd{= x,} \hlkwc{y} \hlstd{= y)}
 
-	# Set data generating process function
-	dgp <- function(data){
-	x <- rpois(length(data$x), lambda = 4)
-	y <- rpois(length(data$y), lambda = 4)
-	return(list(x = x, y = y))
-	}
+\hlcom{# Set data generating process function}
+\hlstd{dgp} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{data}\hlstd{) \{}
+    \hlstd{x} \hlkwb{<-} \hlkwd{rpois}\hlstd{(}\hlkwd{length}\hlstd{(data}\hlopt{$}\hlstd{x),} \hlkwc{lambda} \hlstd{=} \hlnum{4}\hlstd{)}
+    \hlstd{y} \hlkwb{<-} \hlkwd{rpois}\hlstd{(}\hlkwd{length}\hlstd{(data}\hlopt{$}\hlstd{y),} \hlkwc{lambda} \hlstd{=} \hlnum{4}\hlstd{)}
+    \hlkwd{return}\hlstd{(}\hlkwd{list}\hlstd{(}\hlkwc{x} \hlstd{= x,} \hlkwc{y} \hlstd{= y))}
+\hlstd{\}}
 
-	# Set the statistic function
-	statistic <- function(y){
-		out <- suppressWarnings(ks.test(data$x, data$y))
-		return(out$statistic)
-	}
+\hlcom{# Set the statistic function}
+\hlstd{statistic} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{y}\hlstd{) \{}
+    \hlstd{out} \hlkwb{<-} \hlkwd{suppressWarnings}\hlstd{(}\hlkwd{ks.test}\hlstd{(data}\hlopt{$}\hlstd{x, data}\hlopt{$}\hlstd{y))}
+    \hlkwd{return}\hlstd{(out}\hlopt{$}\hlstd{statistic)}
+\hlstd{\}}
 
-	# Apply the test statistic
-	ks.test(data$x, data$y)
+\hlcom{# Apply the test statistic}
+\hlkwd{ks.test}\hlstd{(data}\hlopt{$}\hlstd{x, data}\hlopt{$}\hlstd{y)}
+\end{alltt}
 
-	# Apply the mc procedure
-	mc(y = data, statistic = statistic, dgp = dgp, N = 999, type = "geq")
-	@
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in ks.test(data\$x, data\$y): cannot compute exact p-value with ties}}\begin{verbatim}
+## 
+## 	Two-sample Kolmogorov-Smirnov test
+## 
+## data:  data$x and data$y
+## D = 0.375, p-value = 0.6272
+## alternative hypothesis: two-sided
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Apply the mc procedure}
+\hlkwd{mc}\hlstd{(}\hlkwc{y} \hlstd{= data,} \hlkwc{statistic} \hlstd{= statistic,} \hlkwc{dgp} \hlstd{= dgp,} \hlkwc{N} \hlstd{=} \hlnum{999}\hlstd{,}
+    \hlkwc{type} \hlstd{=} \hlstr{"geq"}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Monte Carlo with Tie-Breaker
+## 
+## Call:
+## mc(y = data, statistic = statistic, dgp = dgp, N = 999, type = "geq")
+## 
+## D = 0.375, N = 999, p-value = 0.656
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
 
 	Note that we use the function \code{suppressWarnings} in order to prevent the generation of warnings messages every time the \code{mc} function calls the \code{statistic} function.
 
@@ -468,9 +550,17 @@ To solve this problem, we use the Kolmogorov-Smirnov statistic \citep{smirnoff_s
 \subsection{\code{mmc::mmc}}
 
 The \code{mmc} function implements the Maximized Monte Carlo technique with tie-breaker described in the previous section.
-<<eval=FALSE, tidy=TRUE>>=
-mmc(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE), est = NULL, lower, upper, N = 99, type = c("geq", "leq", "absolute", "two-tailed"), method = c("GenSA", "pso", "GA", "gridSearch"), control = list(), alpha = NULL)
-@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{mmc}\hlstd{(y, statistic, ...,} \hlkwc{dgp} \hlstd{=} \hlkwa{function}\hlstd{(}\hlkwc{y}\hlstd{,} \hlkwc{v}\hlstd{)} \hlkwd{sample}\hlstd{(y,}
+    \hlkwc{replace} \hlstd{=} \hlnum{TRUE}\hlstd{),} \hlkwc{est} \hlstd{=} \hlkwa{NULL}\hlstd{, lower, upper,} \hlkwc{N} \hlstd{=} \hlnum{99}\hlstd{,}
+    \hlkwc{type} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"geq"}\hlstd{,} \hlstr{"leq"}\hlstd{,} \hlstr{"absolute"}\hlstd{,} \hlstr{"two-tailed"}\hlstd{),}
+    \hlkwc{method} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"GenSA"}\hlstd{,} \hlstr{"pso"}\hlstd{,} \hlstr{"GA"}\hlstd{,} \hlstr{"gridSearch"}\hlstd{),}
+    \hlkwc{control} \hlstd{=} \hlkwd{list}\hlstd{(),} \hlkwc{alpha} \hlstd{=} \hlkwa{NULL}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
 
 The arguments for the function call are the following:
 \begin{description}
@@ -619,45 +709,78 @@ Note that one issue we have to face when choosing an algorithm is that the p-val
 
 	Therefore, as previously mentioned, an easy way to retrieve an exact test is to apply the MMC procedure. The following \proglang{R} code excerpt shows how the BF problem can be implemented for $X_{1i} \sim N(0,1)$ with $n_1=15$ and $X_{2i} \sim N(0,100)$ with $n_2=25$
 
-<<cache = TRUE, tidy=TRUE>>=
-library(mmc)
-library(MASS)
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(mmc)}
+\hlkwd{library}\hlstd{(MASS)}
 
-# Generate x1 ~ N(0,1) and x2 ~ N(0,100)
-x1 <- rnorm(15, mean = 0, sd = 1)
-x2 <- rnorm(25, mean = 0, sd = 10)
-data <- list(x1 = x1, x2 = x2)
+\hlcom{# Generate x1 ~ N(0,1) and x2 ~ N(0,100)}
+\hlstd{x1} \hlkwb{<-} \hlkwd{rnorm}\hlstd{(}\hlnum{15}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{1}\hlstd{)}
+\hlstd{x2} \hlkwb{<-} \hlkwd{rnorm}\hlstd{(}\hlnum{25}\hlstd{,} \hlkwc{mean} \hlstd{=} \hlnum{0}\hlstd{,} \hlkwc{sd} \hlstd{=} \hlnum{10}\hlstd{)}
+\hlstd{data} \hlkwb{<-} \hlkwd{list}\hlstd{(}\hlkwc{x1} \hlstd{= x1,} \hlkwc{x2} \hlstd{= x2)}
 
-# Fit the sample using maximum likelihood
-fit1 <- fitdistr(x1, "normal")
-fit2 <- fitdistr(x2, "normal")
+\hlcom{# Fit the sample using maximum likelihood}
+\hlstd{fit1} \hlkwb{<-} \hlkwd{fitdistr}\hlstd{(x1,} \hlstr{"normal"}\hlstd{)}
+\hlstd{fit2} \hlkwb{<-} \hlkwd{fitdistr}\hlstd{(x2,} \hlstr{"normal"}\hlstd{)}
 
-# Set the estimator value
-est <- c(fit2$estimate, fit1$estimate["sd"])
+\hlcom{# Set the estimator value}
+\hlstd{est} \hlkwb{<-} \hlkwd{c}\hlstd{(fit2}\hlopt{$}\hlstd{estimate, fit1}\hlopt{$}\hlstd{estimate[}\hlstr{"sd"}\hlstd{])}
 
-# Set the bounds such that we have a 99% CI
-lower <- est - 2.577 * c(fit2$sd, fit1$sd["sd"])
-upper <- est + 2.577 * c(fit2$sd, fit1$sd["sd"])
+\hlcom{# Set the bounds such that we have a 99% CI}
+\hlstd{lower} \hlkwb{<-} \hlstd{est} \hlopt{-} \hlnum{2.577} \hlopt{*} \hlkwd{c}\hlstd{(fit2}\hlopt{$}\hlstd{sd, fit1}\hlopt{$}\hlstd{sd[}\hlstr{"sd"}\hlstd{])}
+\hlstd{upper} \hlkwb{<-} \hlstd{est} \hlopt{+} \hlnum{2.577} \hlopt{*} \hlkwd{c}\hlstd{(fit2}\hlopt{$}\hlstd{sd, fit1}\hlopt{$}\hlstd{sd[}\hlstr{"sd"}\hlstd{])}
 
-# Set the DGP function under the null (i.e. mu_1=mu_2) where v = (mu_2,s_2_s1)
-dgp <- function(data, v) {
-x1 <- rnorm(length(data$x1), mean = v[1], sd = v[3])
-x2 <- rnorm(length(data$x2), mean = v[1], sd = v[2])
-return(list(x1 = x1, x2 = x2))
-}
+\hlcom{# Set the DGP function under the null (i.e.}
+\hlcom{# mu_1=mu_2) where v = (mu_2,s_2_s1)}
+\hlstd{dgp} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{data}\hlstd{,} \hlkwc{v}\hlstd{) \{}
+    \hlstd{x1} \hlkwb{<-} \hlkwd{rnorm}\hlstd{(}\hlkwd{length}\hlstd{(data}\hlopt{$}\hlstd{x1),} \hlkwc{mean} \hlstd{= v[}\hlnum{1}\hlstd{],} \hlkwc{sd} \hlstd{= v[}\hlnum{3}\hlstd{])}
+    \hlstd{x2} \hlkwb{<-} \hlkwd{rnorm}\hlstd{(}\hlkwd{length}\hlstd{(data}\hlopt{$}\hlstd{x2),} \hlkwc{mean} \hlstd{= v[}\hlnum{1}\hlstd{],} \hlkwc{sd} \hlstd{= v[}\hlnum{2}\hlstd{])}
+    \hlkwd{return}\hlstd{(}\hlkwd{list}\hlstd{(}\hlkwc{x1} \hlstd{= x1,} \hlkwc{x2} \hlstd{= x2))}
+\hlstd{\}}
 
-# Set the statistic function
-statistic <- function(data) {
-test <- t.test(data$x2, data$x1)
-return(test$statistic)
-}
+\hlcom{# Set the statistic function}
+\hlstd{statistic} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{data}\hlstd{) \{}
+    \hlstd{test} \hlkwb{<-} \hlkwd{t.test}\hlstd{(data}\hlopt{$}\hlstd{x2, data}\hlopt{$}\hlstd{x1)}
+    \hlkwd{return}\hlstd{(test}\hlopt{$}\hlstd{statistic)}
+\hlstd{\}}
 
-# Apply the test statistic
-t.test(data$x2, data$x1)
-
-# Apply the mmc procedure
-mmc(y = data, statistic = statistic, dgp = dgp, est = est, lower = lower, upper = upper, N = 99,	type = "absolute", method = "pso")
-@
+\hlcom{# Apply the test statistic}
+\hlkwd{t.test}\hlstd{(data}\hlopt{$}\hlstd{x2, data}\hlopt{$}\hlstd{x1)}
+\end{alltt}
+\begin{verbatim}
+## 
+## 	Welch Two Sample t-test
+## 
+## data:  data$x2 and data$x1
+## t = -0.69063, df = 25.615, p-value = 0.496
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -4.001754  1.990067
+## sample estimates:
+##  mean of x  mean of y 
+## -0.8528617  0.1529818
+\end{verbatim}
+\begin{alltt}
+\hlcom{# Apply the mmc procedure}
+\hlkwd{mmc}\hlstd{(}\hlkwc{y} \hlstd{= data,} \hlkwc{statistic} \hlstd{= statistic,} \hlkwc{dgp} \hlstd{= dgp,} \hlkwc{est} \hlstd{= est,}
+    \hlkwc{lower} \hlstd{= lower,} \hlkwc{upper} \hlstd{= upper,} \hlkwc{N} \hlstd{=} \hlnum{99}\hlstd{,} \hlkwc{type} \hlstd{=} \hlstr{"absolute"}\hlstd{,}
+    \hlkwc{method} \hlstd{=} \hlstr{"pso"}\hlstd{)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Maximized Monte Carlo
+## 
+## Call:
+## mmc(y = data, statistic = statistic, dgp = dgp, est = est, lower = lower, 
+##     upper = upper, N = 99, type = "absolute", method = "pso")
+## 
+## t = -0.69063, N = 99
+## Local Monte Carlo: p-value = 0.71
+## Maximized Monte Carlo: p-value = 0.82
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
 
 Note that we use the \pkg{MASS} package \citep{venables_modern_2002} to derive the 99\% confidence intervals for $\bar{X}_2$, $s_1$, $s_2$ using maximum likelihood, but any other technique to derive a consistent set of $\mu_2$, $\sigma_1$ and $\sigma_2$ would be satisfactory.
 

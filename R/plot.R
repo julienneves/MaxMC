@@ -10,6 +10,7 @@
 #' @export
 #'
 plot.mmc <- function(x, ...) {
+    # Extract information from mmc object
     opt_monitor <- x$opt_monitor
     alpha <- x$alpha
 
@@ -17,6 +18,7 @@ plot.mmc <- function(x, ...) {
          ylab="P-value", main = "Evolution of mmc", ...)
     graphics::lines(opt_monitor$max,col="green")
 
+    # Add line if level is specified
     if(!is.null(alpha)){
         lapply(alpha, function(alpha){graphics::abline(alpha,0,lty=2, col="red")})
     }

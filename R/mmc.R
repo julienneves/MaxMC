@@ -248,13 +248,9 @@ NA
 #' p-value over \code{alpha}, then the algorithm will stop. This is particularly
 #' useful if we are only looking at testing a hypothesis at a particular level.
 #' Default is NULL.
-#' @param monitor A logical. By default, for interactive
-#' sessions, the function gaMonitor or gaMonitor2, depending
-#' on whether or not is an RStudio session, prints the
-#' average and best fitness values at each iteration. If set
-#' to plot these information are plotted on a graphical
-#' device. Other functions can be written by the user and
-#' supplied as argument. In non interactive sessions, by
+#' @param monitor A logical. If set
+#' to plot the p-values at every iteration and the cummulative maximum p-value
+#' are plotted on a graphical device. In non interactive sessions, by
 #' default monitor = FALSE so any output is suppressed.
 #'
 #' @inheritParams pvalue
@@ -374,7 +370,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
     } else {
         # Compute the Local Monte Carlo if est is specified
         lmc <- mc(y = y, statistic = statistic, ..., dgp = function(y) dgp(y, est),
-              N = N, type = type)
+                  N = N, type = type)
         S0 <- lmc$S0
     }
 
