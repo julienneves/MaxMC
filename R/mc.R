@@ -78,7 +78,7 @@ mc <- function(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE),
   }
   # Generate seed if none is specified in GlobalEnv
   if (!exists(".Random.seed", envir = .GlobalEnv, inherits = FALSE)){
-    runif(1)
+    stats::runif(1)
   }
   # Extract seed integer vector
   seed <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)

@@ -16,12 +16,12 @@ monitor_mmc <- function(object, alpha = NULL, monitor = TRUE){
     if(monitor==FALSE){
         return()
     } else {
-        object<- na.omit(object)
+        object<- stats::na.omit(object)
         current <- object[nrow(object),]
 
         cat("Iteration", current$ite, "| Current", current$pval,
             "| Best", current$max, "\r")
-        flush.console()
+        utils::flush.console()
         x <- list(opt_monitor = object, alpha = alpha)
         plot.mmc(x)
     }

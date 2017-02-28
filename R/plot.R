@@ -5,8 +5,8 @@
 #'
 #' @return The \code{mmc} object is returned invisibly.
 #'
-#' @inheritParams graphics::plot
 #' @param x An object of class "mmc"
+#' @param ... Arguments to be passed to methods, such as \link{graphical parameters} (see \code{\link{par}}).
 #' @export
 #'
 plot.mmc <- function(x, ...) {

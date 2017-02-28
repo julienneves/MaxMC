@@ -47,7 +47,7 @@ pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
         set.S <- abs(S)
     }
     # Rank S0 and S
-    set.u <- runif(length(set.S[set.S == set.S[1]]))
+    set.u <- stats::runif(length(set.S[set.S == set.S[1]]))
     rank.S <- length(set.S[set.S < set.S[1]]) + length(set.u[set.u <= set.u[1]])
     # Compute the survival function
     survival.fun <- (N + 1 - rank.S[1])/N

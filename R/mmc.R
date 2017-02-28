@@ -363,7 +363,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
 
     # Get seed
     if (!exists(".Random.seed", envir = .GlobalEnv, inherits = FALSE)) {
-        runif(1)
+        stats::runif(1)
     }
     seed <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)
 

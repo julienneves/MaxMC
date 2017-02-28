@@ -31,7 +31,7 @@ return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
         pval <- abs(opt_result$minfun)
     }
 
-    opt_monitor<- na.omit(opt_monitor)
+    opt_monitor<- stats::na.omit(opt_monitor)
 
     out <- list(S0 = S0, pval = pval, data = y, statistic = statistic,
               dgp = dgp, est = est, lower = lower, upper = upper, N = N, type = type,
