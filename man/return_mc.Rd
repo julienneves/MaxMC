@@ -41,4 +41,3 @@ the p-value function produce. The possible values are
 S3 class \code{mc}.
 }
 \keyword{internal}
-

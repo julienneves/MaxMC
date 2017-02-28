@@ -8,7 +8,7 @@ Maintainer: Julien Neves <neves.julien@gmail.com>
 Description: Functions that implements the Maximized Monte Carlo technique based of Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters: A general approach to finite sample inference and nonstandard asymptotics in econometrics, Journal of Econometrics 133(2), 443-447.
 License: GPL(>= 3)
 LazyData: TRUE
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 URL: https://github.com/julienneves/mmc
 Suggests:
   fUnitRoots,
@@ -22,5 +22,8 @@ Imports:
   pso,
   GA,
   NMOF,
-  scales
+  scales,
+  stats,
+  graphics,
+  utils
 VignetteBuilder: knitr

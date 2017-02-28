@@ -33,4 +33,3 @@ The vector of replication of test statistic.
 Generates N Monte Carlo replicates of a statistic.
 }
 \keyword{internal}
-

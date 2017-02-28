@@ -1,23 +1,12 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
-\usepackage{graphicx,float,amssymb, amsmath,titlesec}
-\usepackage[round, sort]{natbib}
-\usepackage[singlespacing]{setspace}
+%\VignetteIndexEntry{MMC}
+%\VignetteEngine{knitr::knitr}
+%\VignetteEncoding{UTF-8}
 
-\DeclareMathOperator{\Corr}{Corr}
-\DeclareMathOperator{\Var}{Var}
-\DeclareMathOperator{\Cov}{Cov}
-\DeclareMathOperator{\E}{\mathbb{E}}
-\DeclareMathOperator{\R}{\mathbb{R}}
-\DeclareMathOperator{\dist}{\mathcal{F}}
-
- %\VignetteIndexEntry{MMC}
- %\VignetteEngine{knitr::knitr}
- %\VignetteEncoding{UTF-8}
-
-\newcommand{\pkg}[1]{{\normalfont\fontseries{b}\selectfont #1}}
-\let\proglang=\textsf
-\let\code=\texttt
+\usepackage{graphicx, float, amssymb, amsmath, titlesec}
+\usepackage[citestyle=authoryear, natbib=true, backend=biblatex]{biblatex}
+\addbibresource{Neves_2016_MMC_Rpack.bib}
 
 \addcontentsline{toc}{section}{References}
 
@@ -28,26 +17,38 @@
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
+\newcommand{\pkg}[1]{{\normalfont\fontseries{b}\selectfont #1}}
+\let\proglang=\textsf
+\let\code=\texttt
+
+\DeclareMathOperator{\Corr}{Corr}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\dist}{\mathcal{F}}
+
 <<setup, echo=FALSE, message = FALSE, include = FALSE>>=
 library(knitr)
 opts_chunk$set(tidy.opts=list(width.cutoff=50),fig.path="fig/")
 @
 
+\begin{document}
+	
 \title{Maximized Monte Carlo: an \proglang{R} package}
 \author{Julien Neves \thanks{Graduate student, Department of Economics, McGill University}}
-
-\begin{document}
+\date{February 27th, 2017}
+	
 \maketitle
 
-\clearpage
 \begin{abstract}
 	This paper describes the \proglang{R} package \pkg{MMC}, which implements the Maximized Monte Carlo (MMC) technique and the simple Monte Carlo technique with tie-breaker for discrete statistics. To illustrate how to use the \pkg{MMC} package, we present two examples: a goodness-of-fit test and the Behrens-Fisher problem.
 
 	We perform a simulation study, in order to demonstrate the utility of the package, of irregular Wald-type tests and unit root tests for autoregressive models. We compare the MMC procedure implemented in the \pkg{MMC} package to the parametric bootstrap and usual asymptotic tests in both cases.
 \end{abstract}
 
-
 \clearpage
+
 \tableofcontents
 
 \clearpage
@@ -768,8 +769,7 @@ Consequently, compared to the usual $\chi^2$ distribution of the $W_n$, the true
 \paragraph{Level}
 
 First, we start by simulating $\hat{\theta_1} \sim N(\theta_1,\frac{1}{n})$, $\hat{\theta_2} \sim N(\theta_2,\frac{1}{n})$, where $n$ is the sample size and $\theta_1=0$, for different values of $\theta_2$. The empirical levels for the Wald statistic are reported in table \ref{tbl:W:1}. Note that since the distribution of the statistic is not dependent on any nuisance parameter, the MMC is not directly applicable. Therefore, we only report the result for the asymptotic test and the LMC.
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:29 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -799,8 +799,7 @@ As expected, the empirical level shows that the asymptotic test under-rejects in
 \paragraph{Power}
 
 Now, we test for the power of the Wald statistic based on $\chi_2^2$ critical values and the LMC, by simulating the test statistic under the alternative by picking different values for $\theta_1\neq 0$ (e.g. $\theta_1=\frac{1}{4},\frac{1}{2},1$). The empirical levels are reported in table \ref{tbl:W:2}, \ref{tbl:W:3} and \ref{tbl:W:4}.
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:29 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -824,9 +823,6 @@ Now, we test for the power of the Wald statistic based on $\chi_2^2$ critical va
 	\label{tbl:W:2}
 \end{table}
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:29 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -850,9 +846,6 @@ Now, we test for the power of the Wald statistic based on $\chi_2^2$ critical va
 	\label{tbl:W:3}
 \end{table}
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:29 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -918,8 +911,6 @@ which implies that the test might lead to under-rejection for low $p$ and severe
 
 We simulate $\hat{\theta_i} \sim N(0,\frac{1}{n})$ for $i=1,...p$, where $p$ is the number of parameters in the restriction. The empirical levels are reported in table \ref{tbl:W:5}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:29 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -951,8 +942,7 @@ The really interesting part of this example is how the asymptotic test starts of
 \paragraph{Power}
 
 In this section, we let $\theta_1$ vary from the null hypothesis that $\theta_1=0$. Results for the empirical levels when $\hat{\theta}$ is generated under the alternative are reported in tables \ref{tbl:W:6}, \ref{tbl:W:7} and  \ref{tbl:W:8}.
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -976,9 +966,6 @@ In this section, we let $\theta_1$ vary from the null hypothesis that $\theta_1=
 	\label{tbl:W:6}
 \end{table}
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -1002,9 +989,6 @@ In this section, we let $\theta_1$ vary from the null hypothesis that $\theta_1=
 	\label{tbl:W:7}
 \end{table}
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.9}{
@@ -1085,8 +1069,6 @@ Since the usual Wald-statistic would use $\chi^2_2$ critical values to test $H_0
 
 As for the example 1, we simulate $\hat{\theta_1} \sim N(\theta_1,\frac{1}{n})$, $\hat{\theta_2} \sim N(\theta_2,\frac{1}{n})$, where $n$ is the sample size and $\theta_1=0$, for different values of $\theta_2$. The empirical levels are reported in table \ref{tbl:W:9}. Note that since $\theta_2$ is a nuisance parameter, the MMC is always reported along the asymptotic test and the LMC. Note that for the MMC, we build a 99\% confidence interval using maximum likelihood for $\theta_2$ and test the p-value against a level of 4\%. Then, this two-stage procedure should yield an exact test at the 5\% level.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.65}{
@@ -1116,8 +1098,6 @@ In this example, every test under-rejects. What is interesting is that, as $\the
 
 Results for empirical levels when $\theta_1\neq 0$ are reported in tables \ref{tbl:W:10}, \ref{tbl:W:11} and  \ref{tbl:W:12}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.65}{
@@ -1140,8 +1120,6 @@ Results for empirical levels when $\theta_1\neq 0$ are reported in tables \ref{t
 	\label{tbl:W:10}
 \end{table}
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:30 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.65}{
@@ -1165,8 +1143,6 @@ Results for empirical levels when $\theta_1\neq 0$ are reported in tables \ref{t
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:31 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.65}{
@@ -1273,8 +1249,6 @@ and
 
 In this example, $\theta_2$ and $\rho$ are nuisance parameters. Thus, for the MMC, we build a 99\% confidence interval for $\theta_2$ and $\rho$, and we test the p-value against a level of 4\%. The empirical levels are reported in table \ref{tbl:W:13}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:31 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.6}{
@@ -1332,8 +1306,7 @@ Note that for high $\rho$, as $n$ increases, the empirical level of the LMC goes
 
 Empirical levels when simulating under $H_1$ are reported in tables \ref{tbl:W:14}, \ref{tbl:W:15} and \ref{tbl:W:16}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:31 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.6}{
@@ -1381,8 +1354,6 @@ Empirical levels when simulating under $H_1$ are reported in tables \ref{tbl:W:1
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:31 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.6}{
@@ -1430,8 +1401,6 @@ Empirical levels when simulating under $H_1$ are reported in tables \ref{tbl:W:1
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:31 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.6}{
@@ -1622,8 +1591,6 @@ where we see that the coefficient of $Y_{t-1}$ disappears (i.e. we are under the
 
 The results are reported in tables \ref{tbl:AR:1}, \ref{tbl:AR:2}, and \ref{tbl:AR:3}. Note that the term $nc$ refers to the augmented Dickey-Fuller model without drift, $c$ refers to the augmented Dickey-Fuller model with drift , and $ct$ refers to the augmented Dickey-Fuller model with time-trend.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1679,8 +1646,8 @@ where $u_t \sim N(0,\sigma^2)$ and $n=25$. Then in figure \ref{fig:ct-trend}, we
 As we can see in figure \ref{fig:ct-trend}, we get the same results as in figure \ref{fig:c-drift}. In fact, the effect is exacerbated by $\beta$ explaining why the bootstrap and the LMC over-reject even more when the model used is $ct$.
 
 Now, in table \ref{tbl:AR:2} and table \ref{tbl:AR:3}, we give the results for $H_1: \gamma > 0$ and $H_1 : \gamma \neq 0$.
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
+
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1700,9 +1667,6 @@ Now, in table \ref{tbl:AR:2} and table \ref{tbl:AR:3}, we give the results for $
 \end{table}
 
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1734,8 +1698,7 @@ where the $u_t \sim N(0,1)$ are $i.i.d.$
 
 The results are reported in tables \ref{tbl:AR:4}, \ref{tbl:AR:5}  and \ref{tbl:AR:6}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1757,8 +1720,7 @@ The results are reported in tables \ref{tbl:AR:4}, \ref{tbl:AR:5}  and \ref{tbl:
 
 We can see from table \ref{tbl:AR:4} the asymptotic test slightly over-rejects except for the case where the data generating process is $(1-L)(1+L)Y_t=u_t$ where the empirical levels are fairly close to the nominal ones. In the case of the bootstrap and LMC, when the model is well specified both tests are consistent with the asymptotic results. In the case where the model is misspecified, the bootstrap and MMC have empirical levels well over 15\%. Finally, the MMC is still consistent with the level of 5\%. It usually under rejects except in one case where the empirical level is 5.6\%.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1778,8 +1740,6 @@ We can see from table \ref{tbl:AR:4} the asymptotic test slightly over-rejects e
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1804,8 +1764,7 @@ Interestingly, the augmented Dickey-Fuller critical values do over-reject for $\
 
 We now relax the assumption that $u_t~N(0,1)$ and let $u_t$ follow the Student's t distribution with different degrees of freedom (e.g. $df=1,2,3$). The results are reported in tables \ref{tbl:AR:7}, \ref{tbl:AR:8}  and \ref{tbl:AR:9}.
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1825,8 +1784,6 @@ We now relax the assumption that $u_t~N(0,1)$ and let $u_t$ follow the Student's
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1846,8 +1803,6 @@ We now relax the assumption that $u_t~N(0,1)$ and let $u_t$ follow the Student's
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1871,8 +1826,7 @@ The results of tables \ref{tbl:AR:7}, \ref{tbl:AR:8}  and \ref{tbl:AR:9} are con
 
 Finally, we change the order of integration of the process by simulating an I(1) process with increasing order $p$. The results are reported in tables \ref{tbl:AR:10}, \ref{tbl:AR:11}  and \ref{tbl:AR:12}
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1892,9 +1846,6 @@ Finally, we change the order of integration of the process by simulating an I(1)
 \end{table}
 
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:32 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1914,9 +1865,6 @@ Finally, we change the order of integration of the process by simulating an I(1)
 \end{table}
 
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:33 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1950,8 +1898,8 @@ Now, we turn our attention to the power of the different tests. We look at three
 \end{enumerate}
 
 The results are described in tables \ref{tbl:AR:13}, \ref{tbl:AR:14}  and \ref{tbl:AR:15}
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:33 2016
+
+
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1971,9 +1919,6 @@ The results are described in tables \ref{tbl:AR:13}, \ref{tbl:AR:14}  and \ref{t
 \end{table}
 
 
-
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:33 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -1993,8 +1938,6 @@ The results are described in tables \ref{tbl:AR:13}, \ref{tbl:AR:14}  and \ref{t
 \end{table}
 
 
-% latex table generated in R 3.2.5 by xtable 1.8-2 package
-% Fri Sep 02 02:30:33 2016
 \begin{table}[H]
 	\centering
 	\scalebox{0.8}{
@@ -2025,6 +1968,5 @@ Future development of the \pkg{MMC} package will provide additional tools such a
 
 \clearpage
 
-\bibliographystyle{aer}
-\bibliography{Neves_2016_MMC_Rpack}
+\printbibliography
 \end{document}

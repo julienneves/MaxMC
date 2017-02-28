@@ -49,4 +49,3 @@ A general approach to finite sample inference and nonstandard asymptotics in eco
 Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 }
-

@@ -290,6 +290,7 @@ kept?}
 }
 }
 }
+
 \examples{
 \donttest{## Example 1
 ## Exact Unit Root Test
@@ -398,4 +399,3 @@ in Finance. \emph{Academic Press}.
 \seealso{
 \code{\link{mc}}, \code{\link{pvalue}}
 }
-

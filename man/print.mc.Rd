@@ -21,4 +21,3 @@ The \code{mc} object is returned invisibly.
 This is a method for the function \code{print()} for objects of the
 class \code{mmc}.
 }
-

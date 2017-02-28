@@ -41,4 +41,3 @@ The vector of replication of test statistic.
 Generates N Monte Carlo replicates of a statistic for given nuisance parameter value.
 }
 \keyword{internal}
-

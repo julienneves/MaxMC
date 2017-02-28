@@ -75,4 +75,3 @@ of class \code{mc} corresponding the Local Monte Carlo test}
 S3 class \code{mmc}.
 }
 \keyword{internal}
-

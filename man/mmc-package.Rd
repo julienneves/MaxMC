@@ -12,11 +12,6 @@ A general approach to finite sample inference and nonstandard asymptotics in eco
 
 The main functions of \pkg{mmc} is \code{\link{mmc}} and \code{\link{mc}}.
 }
-\author{
-Julien Neves, neves.julien@gmail.com, (Maintainer)
-
-Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
-}
 \references{
 Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 A general approach to finite sample inference and nonstandard asymptotics in econometrics.
@@ -25,4 +20,8 @@ A general approach to finite sample inference and nonstandard asymptotics in eco
 Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 }
+\author{
+Julien Neves, neves.julien@gmail.com, (Maintainer)
 
+Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+}

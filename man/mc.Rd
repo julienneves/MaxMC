@@ -109,4 +109,3 @@ in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwel
 \seealso{
 \code{\link{mmc}}, \code{\link{pvalue}}
 }
-

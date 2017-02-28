@@ -32,4 +32,3 @@ This function provides a way to merge the user specified controls for the
 optimization methods with their respective default controls.
 }
 \keyword{internal}
-
