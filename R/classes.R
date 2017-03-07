@@ -11,7 +11,7 @@
 #' @param lmc An object of class \code{mc}. If \code{par} is specified, it returns an object
 #' of class \code{mc} corresponding the Local Monte Carlo test
 #' @param opt_result An object returning the optimization results
-#' @param opt_monitor An object returning the optimization results
+#' @param opt_trace An object returning the optimization results
 #'
 #' @inheritParams mmc
 #' @inheritParams pvalue
@@ -19,7 +19,7 @@
 #' @keywords internal
 #'
 return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
-                       method, alpha, control, call, seed, lmc, opt_result, opt_monitor) {
+                       method, alpha, control, call, seed, lmc, opt_result, opt_trace) {
     # Extract the p-value from the optimization results
     if (method == "GenSA") {
         pval <- abs(opt_result$value)
@@ -31,12 +31,12 @@ return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
         pval <- abs(opt_result$minfun)
     }
 
-    opt_monitor<- stats::na.omit(opt_monitor)
+    opt_trace<- stats::na.omit(opt_trace)
 
     out <- list(S0 = S0, pval = pval, data = y, statistic = statistic,
               dgp = dgp, est = est, lower = lower, upper = upper, N = N, type = type,
               method = method, control = control, call = call, seed = seed,
-              lmc = lmc, opt_result = opt_result, opt_monitor = opt_monitor)
+              lmc = lmc, opt_result = opt_result, opt_trace = opt_trace)
     # If alpha is specified, test for rejection at specified level
     if (!is.null(alpha)){
       rejection <- out$pval <= alpha

@@ -1,15 +1,15 @@
 #' @title Maximized Monte Carlo
 #' @docType package
 #' @name mmc-package
-#' @author Julien Neves, neves.julien@gmail.com, (Maintainer)
 #' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+#' @author Julien Neves, neves.julien@gmail.com (Maintainer)
 #'
 #' @description Functions that implements the Maximized Monte Carlo technique based of
 #' Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
-#' The main functions of \pkg{mmc} is \code{\link{mmc}} and \code{\link{mc}}.
+#' The main functions of \pkg{mmc} are \code{\link{mmc}} and \code{\link{mc}}.
 #'
 #' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
@@ -397,9 +397,9 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
 
         # Update iteration counter
         ite <<- ite + 1
-        opt_monitor[ite,] <<- c(ite,pval,max(pval,opt_monitor$pval, na.rm = TRUE))
+        opt_trace[ite,] <<- c(ite,pval,max(pval,opt_trace$pval, na.rm = TRUE))
 
-        monitor_mmc(opt_monitor, alpha = alpha, monitor = monitor)
+        monitor_mmc(opt_trace, alpha = alpha, monitor = monitor)
 
         return(pval)
     }
@@ -417,7 +417,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         }
         opt_control <- get_control(method, control)
 
-        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
+        opt_trace <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
                                             dimnames = list(NULL,c("ite","pval","max"))))
 
 
@@ -438,7 +438,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         opt_control <- get_control(method, control)
 
 
-        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
+        opt_trace <- as.data.frame(matrix(data = NA, opt_control$maxit, 3,
                                             dimnames = list(NULL,c("ite","pval","max"))))
 
         # Run particle swarm optimization on min_fn
@@ -454,7 +454,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         # Get controls for global optimization
         opt_control <- get_control(method, control)
 
-        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$maxiter, 3,
+        opt_trace <- as.data.frame(matrix(data = NA, opt_control$maxiter, 3,
                                             dimnames = list(NULL,c("ite","pval","max"))))
 
         # Run Genetic Algorithm on max_fn
@@ -472,7 +472,7 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         # Get controls for global optimization
         opt_control <- get_control(method, control)
 
-        opt_monitor <- as.data.frame(matrix(data = NA, opt_control$n^length(lower), 3,
+        opt_trace <- as.data.frame(matrix(data = NA, opt_control$n^length(lower), 3,
                                             dimnames = list(NULL,c("ite","pval","max"))))
         # Run Genetic Algorithm on max_fn
         opt_result <- NMOF::gridSearch(fun = min_fn, lower = lower, upper = upper,
@@ -488,5 +488,5 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
     return_mmc(S0 = S0, y = y, statistic = statistic, dgp = dgp, est = est, lower = lower,
                upper = upper, N = N, type = type, method = method, alpha = alpha,
                control = control, call = call, seed = seed, lmc = lmc,
-               opt_result = opt_result, opt_monitor = opt_monitor)
+               opt_result = opt_result, opt_trace = opt_trace)
 }

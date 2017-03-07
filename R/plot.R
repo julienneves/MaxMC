@@ -11,12 +11,12 @@
 #'
 plot.mmc <- function(x, ...) {
     # Extract information from mmc object
-    opt_monitor <- x$opt_monitor
+    opt_trace <- x$opt_trace
     alpha <- x$alpha
 
-    graphics::plot(opt_monitor$pval, xlab="Iterations",
+    graphics::plot(opt_trace$pval, xlab="Iterations",
          ylab="P-value", main = "Evolution of mmc", ...)
-    graphics::lines(opt_monitor$max,col="green")
+    graphics::lines(opt_trace$max,col="green")
 
     # Add line if level is specified
     if(!is.null(alpha)){

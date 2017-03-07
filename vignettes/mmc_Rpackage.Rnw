@@ -1,12 +1,12 @@
 \documentclass[]{article}
 
-%\VignetteIndexEntry{Maximized Monte Carlo}
+%\VignetteIndexEntry{Maximized Monte Carlo: an R package}
 %\VignetteEngine{knitr::knitr}
 %\VignetteEncoding{UTF-8}
 
 \usepackage{graphicx, float, amssymb, amsmath, titlesec}
-\usepackage[citestyle=authoryear, natbib=true]{biblatex}
-\addbibresource{mmc_R_biblio.bib}
+\usepackage[citestyle=authoryear, natbib=true, backend=bibtex]{biblatex}
+\bibliography{mmc_Rpackage_biblio}
 
 \addcontentsline{toc}{section}{References}
 
@@ -77,7 +77,7 @@ Second, we turn our attention to test for the order of integration of time serie
 
 Now, the augmented Dickey-Fuller type tests are based on I(1) processes and do not technically preclude I(2) processes. But, as described in \cite{david_a._dickey_determining_1987}, \cite{haldrup_robustness_2002} and \cite{pantula_testing_1989}, the null-distribution of the augmented Dickey-Fuller statistic is not invariant to the order of integration of the process. In fact, \cite{david_a._dickey_determining_1987} showed using Monte Carlo simulations that when testing for a unit root in an I(2) process, the lower-tailed test critical values given in \cite[Table 8.5.2]{fuller_introduction_1976} will slightly over-reject. Additionally,  \cite{haldrup_robustness_2002} confirmed that the lower-tail of the distribution (associated with $H_1: \gamma<0$) is only slightly affected by the presence of a unit root of multiplicity of 2, but, \cite{haldrup_robustness_2002} also showed that the upper-tail of the distribution (associated with $H_1: \gamma>0$) is severely distorted. Therefore, in this paper we present a way to correct for this distortion using the MMC technique developed by \cite{dufour_monte_2006} and implemented in this package.
 
-This paper is organized as follows. Section 2 provides the framework for both the MC technique with tie-breaker in the case of a discrete statistic and the MMC. Section 3 gives the details for the implementation of the \pkg{MMC} package. Also included in section 3 is an example of test of goodness of fit and an example based on testing the equality of means in populations with different variances to demonstrate how the \pkg{MMC} package can be directly applied. Section 4 sets the framework for Wald-type tests, describes four example of irregular Wald statistics, and reports their respective simulation study results. Section 5 provides the framework for the augmented Dickey-Fuller test, and the results for the unit root test simulation study. Finally, the source code of the package is provided in the appendix. Note that $.Rd$ files are excluded as we are using the package \pkg{roxygen2} \citep{wickham_roxygen2:_2015} to generate them directly from our $.R$ files.
+This paper is organized as follows. Section 2 provides the framework for both the MC technique with tie-breaker in the case of a discrete statistic and the MMC. Section 3 gives the details for the implementation of the \pkg{MMC} package. Also included in section 3 is an example of test of goodness of fit and an example based on testing the equality of means in populations with different variances to demonstrate how the \pkg{MMC} package can be directly applied. Section 4 sets the framework for Wald-type tests, describes four example of irregular Wald statistics, and reports their respective simulation study results. Section 5 provides the framework for the augmented Dickey-Fuller test, and the results for the unit root test simulation study. Finally, the source code of the package is provided in the appendix. Note that \textbf{.Rd} files are excluded as we are using the package \pkg{roxygen2} \citep{wickham_roxygen2:_2015} to generate them directly from our \textbf{.R} files.
 
 \section{Monte Carlo tests}
 
@@ -584,7 +584,7 @@ Note that one issue we have to face when choosing an algorithm is that the p-val
 
 	The following packages offer some sort of implementation of the genetic algorithm:
 	\begin{itemize}
-		\item \pkg{soma} \citep{zelinka_soma:_2014}
+		\item \pkg{soma} \citep{clayden_soma:_2014}
 		\item \pkg{GA} \citep{scrucca_ga:_2013,scrucca_extensions_2016}
 		\item \pkg{genalg} \citep{willighagen_genalg:_2015}
 		\item \pkg{mcga} \citep{satman_machine_2013}

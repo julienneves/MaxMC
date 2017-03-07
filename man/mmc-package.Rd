@@ -10,7 +10,7 @@ Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 A general approach to finite sample inference and nonstandard asymptotics in econometrics.
 \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 
-The main functions of \pkg{mmc} is \code{\link{mmc}} and \code{\link{mc}}.
+The main functions of \pkg{mmc} are \code{\link{mmc}} and \code{\link{mc}}.
 }
 \references{
 Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
@@ -21,7 +21,7 @@ Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
 }
 \author{
-Julien Neves, neves.julien@gmail.com, (Maintainer)
-
 Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+
+Julien Neves, neves.julien@gmail.com (Maintainer)
 }

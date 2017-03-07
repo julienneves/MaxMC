@@ -1,0 +1,2122 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{banerjee_co-integration_1993}{report}{}
+    \name{author}{4}{}{%
+      {{hash=BA}{%
+         family={Banerjee},
+         familyi={B\bibinitperiod},
+         given={Anindya},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dolado},
+         familyi={D\bibinitperiod},
+         given={Juan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Galbraith},
+         familyi={G\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hendry},
+         familyi={H\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BADJGJHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    This book provides a wide-ranging account of the literature on
+  co-integration and the modelling of integrated processes (those which
+  accumulate the effects of past shocks). Data series which display integrated
+  behaviour are common in economics, although techniques appropriate to
+  analysing such data are of recent origin and there are few existing
+  expositions of the literature. This book focuses on the exploration of
+  relationships among integrated data series and the exploitation of these
+  relationships in dynamic econometric modelling. The concepts of
+  co-integration and error-correction models are fundamental components of the
+  modelling strategy. This area of time-series econometrics has grown in
+  importance over the past decade and is of interest to econometric theorists
+  and applied econometricians alike. By explaining the important concepts
+  informally, but also presenting them formally, the book bridges the gap
+  between purely descriptive and purely theoretical accounts of the literature.
+  The asymptotic theory of integrated processes is described and the tools
+  provided by this theory are used to develop the distributions of estimators
+  and test statistics. Practical modelling advice, and the use of techniques
+  for systems estimation, are also emphasized. A knowledge of econometrics,
+  statistics, and matrix algebra at the level of a final-year undergraduate or
+  first-year undergraduate course in econometrics is sufficient for most of the
+  book. Other mathematical tools are described as they occur.%
+    }
+    \field{note}{bibtex: banerjee\_co-integration\_1993}
+    \field{title}{Co-integration, Error Correction, and the Econometric
+  Analysis of Non-Stationary Data}
+    \verb{url}
+    \verb http://econpapers.repec.org/bookchap/oxpobooks/9780198288107.htm
+    \endverb
+    \list{institution}{1}{%
+      {Oxford University Press}%
+    }
+    \verb{file}
+    \verb RePEc Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\
+    \verb Profiles\\6kppnqrd.default\\zotero\\storage\\BW99JKBE\\9780198288107.
+    \verb html:text/html
+    \endverb
+    \field{type}{{OUP} Catalogue}
+    \field{year}{1993}
+    \field{urlday}{27}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{barnard_comment_1963}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BGA}{%
+         family={Barnard},
+         familyi={B\bibinitperiod},
+         given={G.\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BGA1}
+    \strng{fullhash}{BGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1963}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The spectral analysis of stationary point processes in one dimension is
+  developed in some detail as a statistical method of analysis. The asymptotic
+  sampling theory previously established by the author for a class of doubly
+  stochastic Poisson processes is shown to apply also for a class of clustering
+  processes, the spectra of which are contrasted with those of renewal
+  processes. The analysis is given for two illustrative examples, one an
+  artificial Poisson process, the other of some traffic data. In addition to
+  testing the fit of a clustering model to the latter example, the analysis of
+  these two examples is used where possible to check the validity of the
+  sampling theory.%
+    }
+    \field{issn}{0035-9246}
+    \field{note}{bibtex: barnard\_comment\_1963}
+    \field{number}{2}
+    \field{pages}{294}
+    \field{shortjournal}{Journal of the Royal Statistical Society. Series B
+  (Methodological)}
+    \field{title}{Comment on: "The Spectral Analysis of Point Processes" by
+  M.S. Bartlett}
+    \field{volume}{25}
+    \field{journaltitle}{Journal of the Royal Statistical Society. Series B
+  (Methodological)}
+    \field{year}{1963}
+    \field{urlday}{30}
+    \field{urlmonth}{07}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{behrens_beitrag_1929}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BWU}{%
+         family={Behrens},
+         familyi={B\bibinitperiod},
+         given={W.\bibnamedelima U.},
+         giveni={W\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BWU1}
+    \strng{fullhash}{BWU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1929}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{bibtex: behrens\_beitrag\_1929}
+    \field{pages}{807\bibrangedash 837}
+    \field{title}{Ein Beitrag zur Fehlerberechnung bei wenigen Beobachtungen}
+    \field{volume}{68}
+    \field{journaltitle}{Landwirtschaftliche Jahrbucher.}
+    \field{year}{1929}
+  \endentry
+
+  \entry{bendtsen_pso:_2012}{book}{}
+    \name{author}{1}{}{%
+      {{hash=BC}{%
+         family={Bendtsen},
+         familyi={B\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BC1}
+    \strng{fullhash}{BC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{R package version 1.0.3 bibtex: bendtsen\_pso:\_2012}
+    \field{title}{pso: Particle Swarm Optimization}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=pso
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{bornn_pawl:_2012}{book}{}
+    \name{author}{2}{}{%
+      {{hash=BL}{%
+         family={Bornn},
+         familyi={B\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JPE}{%
+         family={Jacob},
+         familyi={J\bibinitperiod},
+         given={Pierre\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BLJPE1}
+    \strng{fullhash}{BLJPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{note}{R package version 0.5 bibtex: bornn\_pawl:\_2012}
+    \field{title}{{PAWL}: Implementation of the {PAWL} algorithm}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=PAWL
+    \endverb
+    \field{year}{2012}
+  \endentry
+
+  \entry{boudjellaba_simplified_1992}{report}{}
+    \name{author}{3}{}{%
+      {{hash=BH}{%
+         family={Boudjellaba},
+         familyi={B\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{econometrics, {ECONOMIC} {MODELS}}
+    \strng{namehash}{BHDJMRR1}
+    \strng{fullhash}{BHDJMRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{extrayear}{1}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    No abstract is available for this item.%
+    }
+    \field{note}{bibtex: boudjellaba\_simplified\_1992}
+    \field{number}{9236}
+    \field{title}{Simplified Conditions for Non-Causality Between Vectors in
+  Multivariate Arma Models}
+    \verb{url}
+    \verb https://ideas.repec.org/p/mtl/montde/9236.html
+    \endverb
+    \list{institution}{1}{%
+      {Universite de Montreal, Departement de sciences economiques}%
+    }
+    \verb{file}
+    \verb RePEc Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\
+    \verb Profiles\\6kppnqrd.default\\zotero\\storage\\VJJNW7V7\\9236.html:text
+    \verb /html
+    \endverb
+    \field{type}{Cahiers de recherche}
+    \field{year}{1992}
+    \field{urlday}{22}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{boudjellaba_testing_1992}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BH}{%
+         family={Boudjellaba},
+         familyi={B\bibinitperiod},
+         given={Hafida},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={Roch},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BHDJMRR2}
+    \strng{fullhash}{BHDJMRR2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{extrayear}{2}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In the analysis of economic time series, a question often raised is whether
+  a vector of variables causes another one in the sense of Granger. Most of the
+  literature on this topic is concerned with bivariate relationships or uses
+  finite-order autoregressive specifications. The purpose of this article is to
+  develop a causality analysis in the sense of Granger for general vector
+  autoregressive moving average ({ARMA}) models. We give a definition of
+  Granger noncausality between vectors, which is a natural and simple extension
+  of the notion of Granger noncausality between two variables. In our context,
+  this definition is shown to be equivalent to a more complex definition
+  proposed by Tjostheim. For the class of linear invertible processes, we
+  derive a necessary and sufficient condition for noncausality between two
+  vectors of variables when the latter do not necessarily include all the
+  variables considered in the analysis. This result is then specialized to the
+  class of stationary invertible {ARMA} processes. Further, relatively simple
+  necessary and sufficient conditions are obtained for two important cases: (1)
+  the case where the two vectors reduce to two variables inside a larger vector
+  including other variables; and (2) the case where the two vectors embody all
+  the variables considered. Test procedures for these necessary and sufficient
+  conditions are discussed. Among other things, it is noted that the necessary
+  and sufficient conditions for noncausality may involve singularities at which
+  standard asymptotic regularity conditions do not hold. To deal with such
+  situations, we propose a sequential approach that leads to bounds tests.
+  Finally, the tests suggested are applied to Canadian money and income data.
+  The tests are based on bivariate and trivariate models of changes in nominal
+  income and two money stocks (M1 and M2). In contrast with the evidence based
+  on bivariate models, we find from the trivariate model that money causes
+  income unidirectionally.%
+    }
+    \verb{doi}
+    \verb 10.2307/2290645
+    \endverb
+    \field{issn}{0162-1459}
+    \field{note}{bibtex: boudjellaba\_testing\_1992}
+    \field{number}{420}
+    \field{pages}{1082\bibrangedash 1090}
+    \field{shortjournal}{Journal of the American Statistical Association}
+    \field{title}{Testing Causality Between Two Vectors in Multivariate
+  Autoregressive Moving Average Models}
+    \verb{url}
+    \verb http://www.jstor.org/stable/2290645
+    \endverb
+    \field{volume}{87}
+    \field{journaltitle}{Journal of the American Statistical Association}
+    \field{year}{1992}
+    \field{urlday}{22}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{caffo_exactloglintest:_2013}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CB}{%
+         family={Caffo},
+         familyi={C\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CB1}
+    \strng{fullhash}{CB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{R package version 1.4.2 bibtex: caffo\_exactloglintest:\_2013}
+    \field{title}{{exactLoglinTest}: Monte Carlo Exact Tests for Log-linear
+  models}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=exactLoglinTest
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{canty_boot:_2016}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CA}{%
+         family={Canty},
+         familyi={C\bibinitperiod},
+         given={Angelo},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RBD}{%
+         family={Ripley},
+         familyi={R\bibinitperiod},
+         given={B.\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CARBD1}
+    \strng{fullhash}{CARBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{R package version 1.3-18 bibtex: canty\_boot:\_2016}
+    \field{title}{boot: Bootstrap R (S-Plus) Functions}
+    \field{year}{2016}
+  \endentry
+
+  \entry{ciupke_psoptim:_2016}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CK}{%
+         family={Ciupke},
+         familyi={C\bibinitperiod},
+         given={Krzysztof},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CK1}
+    \strng{fullhash}{CK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{R package version 1.0 = \{psoptim: Particle Swarm
+  Optimization\} bibtex: ciupke\_psoptim:\_2016}
+    \field{title}{psoptim: Particle Swarm Optimization}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=psoptim
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{clayden_soma:_2014}{book}{}
+    \name{author}{2}{}{%
+      {{hash=CJ}{%
+         family={Clayden},
+         familyi={C\bibinitperiod},
+         given={Jon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZI}{%
+         family={Zelinka},
+         familyi={Z\bibinitperiod},
+         given={Ivan},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJZI1}
+    \strng{fullhash}{CJZI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{R package version 1.1.1}
+    \field{title}{soma: General-Purpose Optimisation With the Self-Organising
+  Migrating Algorithm}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=soma
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{david_a._dickey_determining_1987}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DADSGP}{%
+         family={David A.\bibnamedelima Dickey},
+         familyi={D\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+         given={Sastry G.\bibnamedelima Pantula},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DADSGP1}
+    \strng{fullhash}{DADSGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1987}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    One way of handling nonstationarity in time series is to compute first
+  differences and fit a model to the differenced series unless the differenced
+  series also looks nonstationary. In that case, second- or higher-order
+  differencing is done. To decide if the current degree of differencing is
+  sufficient, one can look at the autocorrelation function for slow decay. A
+  formal statistical test for the need to difference further is available if
+  one is willing to assume that at most one more difference will render the
+  series stationary. In this article, we present a proper sequence of
+  statistical tests that allows the practitioner to handle cases in which a
+  high order of differencing may be needed. The proper sequence is not the
+  traditional sequence, which begins with a test for a single unit root.%
+    }
+    \field{issn}{07350015}
+    \field{note}{bibtex: david\_a.\_dickey\_determining\_1987}
+    \field{number}{4}
+    \field{pages}{455\bibrangedash 461}
+    \field{title}{Determining the Order of Differencing in Autoregressive
+  Processes}
+    \verb{url}
+    \verb http://www.jstor.org/stable/1391997
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Journal of Business Economic Statistics}
+    \field{year}{1987}
+  \endentry
+
+  \entry{dickey_distribution_1979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DDA}{%
+         family={Dickey},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=FWA}{%
+         family={Fuller},
+         familyi={F\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DDAFWA1}
+    \strng{fullhash}{DDAFWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1979}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Let n observations Y$_{\textrm{1}}$, Y$_{\textrm{2}}$, ...,
+  Y$_{\textrm{n}}$ be generated by the model Y$_{\textrm{t}}$ = ρ
+  Y$_{\textrm{t - 1}}$ + e$_{\textrm{t}}$, where Y$_{\textrm{0}}$ is a fixed
+  constant and \{e$_{\textrm{t}}$\}$_{\textrm{t = 1}}$$^{\textrm{n}}$ is a
+  sequence of independent normal random variables with mean 0 and variance
+  σ$^{\textrm{2}}$. Properties of the regression estimator of ρ are obtained
+  under the assumption that ρ = ± 1. Representations for the limit
+  distributions of the estimator of ρ and of the regression t test are
+  derived. The estimator of ρ and the regression t test furnish methods of
+  testing the hypothesis that ρ = 1.%
+    }
+    \verb{doi}
+    \verb 10.2307/2286348
+    \endverb
+    \field{issn}{0162-1459}
+    \field{number}{366}
+    \field{pages}{427\bibrangedash 431}
+    \field{shortjournal}{Journal of the American Statistical Association}
+    \field{title}{Distribution of the Estimators for Autoregressive Time Series
+  With a Unit Root}
+    \verb{url}
+    \verb http://www.jstor.org/stable/2286348
+    \endverb
+    \field{volume}{74}
+    \field{journaltitle}{Journal of the American Statistical Association}
+    \field{year}{1979}
+    \field{urlday}{28}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{dufour_monte_2006}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJM1}
+    \strng{fullhash}{DJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2006}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    The technique of Monte Carlo ({MC}) tests [Dwass (1957), Barnard (1963)]
+  provides an attractive method of building exact tests from statistics whose
+  finite sample distribution is intractable but can be simulated (provided it
+  does not involve nuisance parameters). We extend this method in two ways:
+  first, by allowing for {MC} tests based on exchangeable possibly discrete
+  test statistics; second, by generalizing the method to statistics whose null
+  distributions involve nuisance parameters (maximized {MC} tests, {MMC}).
+  Simplified asymptotically justified versions of the {MMC} method are also
+  proposed and it is shown that they provide a simple way of improving standard
+  asymptotics and dealing with nonstandard asymptotics (e.g., unit root
+  asymptotics). Parametric bootstrap tests may be interpreted as a simplified
+  version of the {MMC} method (without the general validity properties of the
+  latter).{\textless}P{\textgreater}(This abstract was borrowed from another
+  version of this item.)%
+    }
+    \field{note}{bibtex: dufour\_monte\_2006}
+    \field{number}{2}
+    \field{pages}{443\bibrangedash 477}
+    \field{shorttitle}{Monte Carlo tests with nuisance parameters}
+    \field{title}{Monte Carlo tests with nuisance parameters: A general
+  approach to finite-sample inference and nonstandard asymptotics}
+    \field{volume}{133}
+    \verb{file}
+    \verb RePEc Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\
+    \verb Profiles\\6kppnqrd.default\\zotero\\storage\\HFQRWTDN\\v133y2006i2p44
+    \verb 3-477.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Econometrics}
+    \field{year}{2006}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{dufour_exact_2001}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Farhat},
+         familyi={F\bibinitperiod},
+         given={Abdeljelil},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJMFA1}
+    \strng{fullhash}{DJMFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{bibtex: dufour\_exact\_2001}
+    \field{title}{Exact Nonparametric Two-Sample Homogeneity Tests for Possibly
+  Discrete Distributions.}
+    \field{year}{2001}
+  \endentry
+
+  \entry{dufour_monte_2003}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Khalaf},
+         familyi={K\bibinitperiod},
+         given={Lynda},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=BBH}{%
+         family={Baltagi},
+         familyi={B\bibinitperiod},
+         given={Badi\bibnamedelima H.},
+         giveni={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Blackwell Publishing Ltd}%
+    }
+    \keyw{econometrics, Monte Carlo test methods, multivariate regression
+  models, nuisance parameters, randomized test procedure}
+    \strng{namehash}{DJMKL1}
+    \strng{fullhash}{DJMKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2003}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    This chapter contains section titled: * {INTRODUCTION} * {STATISTICAL}
+  {ISSUES}: A {PRACTICAL} {APPROACH} {TO} {CORE} {QUESTIONS} * {THE} {MONTE}
+  {CARLO} {TEST} {TECHNIQUE}: {AN} {EXACT} {RANDOMIZED} {TEST} {PROCEDURE} *
+  {MONTE} {CARLO} {TESTS}: {ECONOMETRIC} {APPLICATIONS} * {CONCLUSION}%
+    }
+    \field{booktitle}{A Companion to Theoretical Econometrics}
+    \field{isbn}{978-0-470-99624-9}
+    \field{note}{bibtex: dufour\_monte\_2003}
+    \field{pages}{494\bibrangedash 519}
+    \field{title}{Monte Carlo Test Methods in Econometrics}
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\Profil
+    \verb es\\6kppnqrd.default\\zotero\\storage\\8RUIDBI8\\summary.html:text/ht
+    \verb ml
+    \endverb
+    \field{year}{2003}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{dufour_exact_1996}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kiviet},
+         familyi={K\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJMKJ1}
+    \strng{fullhash}{DJMKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{issn}{0304-4076}
+    \field{note}{bibtex: dufour\_exact\_1996}
+    \field{number}{1}
+    \field{pages}{39\bibrangedash 68}
+    \field{title}{Exact tests for structural change in first-order dynamic
+  models}
+    \verb{url}
+    \verb http://econpapers.repec.org/article/eeeeconom/v_3a70_3ay_3a1996_3ai_3
+    \verb a1_3ap_3a39-68.htm
+    \endverb
+    \field{volume}{70}
+    \verb{file}
+    \verb RePEc Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\
+    \verb Profiles\\6kppnqrd.default\\zotero\\storage\\Q6H7Q9FV\\v_3a70_3ay_3a1
+    \verb 996_3ai_3a1_3ap_3a39-68.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Econometrics}
+    \field{year}{1996}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{dufour_wald_2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Renault},
+         familyi={R\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ZWV}{%
+         family={Zinde-Walsh},
+         familyi={Z\bibinitperiod-W\bibinitperiod},
+         given={Victoria},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{62FO3, Mathematics - Statistics Theory}
+    \strng{namehash}{DJMREZWV1}
+    \strng{fullhash}{DJMREZWV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Wald-type tests are convenient because they allow one to test a wide array
+  of linear and nonlinear restrictions from a single unrestricted estimator; we
+  focus on the problem of implementing Wald-type tests for nonlinear
+  restrictions. We provide examples showing that Wald statistics in non-regular
+  cases can have several asymptotic distributions; the usual critical values
+  based on a chi-square distribution can both lead to under-rejections and
+  over-rejections; indeed, the Wald statistic may diverge under the null
+  hypothesis. We study the asymptotic distribution of Wald-type statistics for
+  the class of polynomial restrictions and show that the Wald statistic either
+  has a non-degenerate asymptotic distribution, or diverges to infinity. We
+  provide conditions for convergence and a general characterization of this
+  distribution. We provide bounds on the asymptotic distribution (when it
+  exists). In several cases of interest, this bound yields an easily available
+  conservative critical value. We propose an adaptive consistent strategy for
+  determining whether the asymptotic distribution exists and which form it
+  takes.%
+    }
+    \verb{eprint}
+    \verb 1312.0569
+    \endverb
+    \field{note}{bibtex: dufour\_wald\_2013}
+    \field{title}{Wald tests when restrictions are locally singular}
+    \verb{file}
+    \verb arXiv\:1312.0569 PDF:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zo
+    \verb tero\\Profiles\\6kppnqrd.default\\zotero\\storage\\3B58HVVV\\Dufour e
+    \verb t al. - 2013 - Wald tests when restrictions are locally singular.pdf:
+    \verb application/pdf;arXiv.org Snapshot:C\:\\Users\\Julien\\AppData\\Roami
+    \verb ng\\Zotero\\Zotero\\Profiles\\6kppnqrd.default\\zotero\\storage\\FNZV
+    \verb 6TQF\\1312.html:text/html
+    \endverb
+    \field{journaltitle}{{arXiv}:1312.0569 [math, stat]}
+    \field{eprinttype}{arxiv}
+    \field{day}{02}
+    \field{month}{12}
+    \field{year}{2013}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{dufour_rank-robust_2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DJM}{%
+         family={Dufour},
+         familyi={D\bibinitperiod},
+         given={Jean-Marie},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=VP}{%
+         family={Valéry},
+         familyi={V\bibinitperiod},
+         given={Pascale},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJMVP1}
+    \strng{fullhash}{DJMVP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{note}{bibtex: dufour\_rank-robust\_2016}
+    \field{title}{Rank-robust Wald-type tests: a regularization approach}
+    \field{year}{2016}
+  \endentry
+
+  \entry{dwass_modified_1957}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DM}{%
+         family={Dwass},
+         familyi={D\bibinitperiod},
+         given={Meyer},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DM1}
+    \strng{fullhash}{DM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1957}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Suppose X1,⋯,Xm,Y1,⋯,{YnX}\_1, {\textbackslash}cdots, X\_m, Y\_1,
+  {\textbackslash}cdots, Y\_n are m+n=Nm + n = N independent random variables,
+  the {XX}'s identically distributed and the {YY}'s identically distributed,
+  each with a continuous cdf. Let
+  z=(z1,⋯,zm,zm+1,⋯,{zN})=(x1,⋯,xm,y1,⋯,yn)z = (z\_1,
+  {\textbackslash}cdots, z\_m, z\_\{m + 1\}, {\textbackslash}cdots, z\_N) =
+  (x\_1, {\textbackslash}cdots, x\_m, y\_1, {\textbackslash}cdots, y\_n)
+  represent an observation on the {NN} random variables and let
+  u(z)=(1/m)m∑i=1zi−(1/n)N∑i=m+1zi=ˉx−ˉyu(z) = (1/m)
+  {\textbackslash}sum{\textasciicircum}m\_\{i = 1\} z\_i - (1/n)
+  {\textbackslash}sum{\textasciicircum}N\_\{i = m + 1\} z\_i =
+  {\textbackslash}bar x - {\textbackslash}bar y. Consider the r=N!Nr = N!
+  N-tuples obtained from (z1,⋯,{zN})(z\_1, {\textbackslash}cdots, z\_N) by
+  making all permutations of the indices (1,⋯,N)(1, {\textbackslash}cdots,
+  N). Since we assume continuous cdf's, then with probability one, these {rNr}
+  N-tuples will be distinct. Denote them by
+  z(1),⋯,z(r)z{\textasciicircum}\{(1)\}, {\textbackslash}cdots,
+  z{\textasciicircum}\{(r)\}, and suppose that they have been ordered so that
+  u(z(1)≧⋯≧u(z(r))u(z{\textasciicircum}\{(1)\} {\textbackslash}geqq
+  {\textbackslash}cdots {\textbackslash}geqq u(z{\textasciicircum}\{(r)\}).
+  Notice that since
+  ˉx−ˉy=(1/m)N∑i=1zi−(N/m)ˉy=(N/n)ˉx−(1/n)N∑i=1zi,{\textbackslash}bar
+  x - {\textbackslash}bar y = (1/m) {\textbackslash}sum{\textasciicircum}N\_\{i
+  = 1\} z\_i - (N/m){\textbackslash}bar y = (N/n){\textbackslash}bar x - (1/n)
+  {\textbackslash}sum{\textasciicircum}N\_\{i = 1\} z\_i, the same ordering can
+  be induced by choosing u(z)=cˉxu(z) = c{\textbackslash}bar x or
+  u(z)=−cˉyu(z) = - c{\textbackslash}bar y for any c{\textgreater}0c
+  {\textgreater} 0. Assuming that the cdf's of X1,Y1X\_1, Y\_1 are of the form
+  F(x),F(x−Δ)F(x), F(x - {\textbackslash}Delta) respectively, Pitman [2]
+  suggested essentially the following test of the hypothesis H′H' that
+  Δ=0{\textbackslash}Delta = 0. Select a set of k(k{\textgreater}0)k (k
+  {\textgreater} 0) integers
+  i1,⋯,ik,(1≦i1{\textless}⋯{\textless}ik≦r)i\_1, {\textbackslash}cdots,
+  i\_k, (1 {\textbackslash}leqq i\_1 {\textless} {\textbackslash}cdots
+  {\textless} i\_k {\textbackslash}leqq r). If the observed zz is one of the
+  points z(i1),⋯,z(ik)z{\textasciicircum}\{(i\_1)\}, {\textbackslash}cdots,
+  z{\textasciicircum}\{(i\_k)\}, reject H′H', otherwise accept. When H′H'
+  is true, the type one error does not depend on the specific form of the
+  distribution of the {XX}'s and the {YY}'s and is in fact equal to k/rk/r. The
+  choice of the rejection set i1,⋯,iki\_1, {\textbackslash}cdots, i\_k should
+  depend on the alternative hypothesis. For instance, if the experimenter wants
+  protection against the alternative that the "{XX}'s tend to be larger than
+  the {YY}'s," then the labels 1,⋯,k1, {\textbackslash}cdots, k might be
+  reasonable. For the alternative that the "{XX}'s tend to be smaller than the
+  {YY}'s" the analogous procedure is to use the other tail, r−k+1,⋯,rr - k
+  + 1, {\textbackslash}cdots, r. Against both alternatives, a two-tail
+  procedure could be used. Lehmann and Stein have shown in [1] that in the
+  class of all tests (of size α=k/r{\textbackslash}alpha = k/r) of the
+  hypothesis H:the distribution {ofX}1⋯,Xm,Y1,⋯,Ynis invariant under all
+  permutations,H: {\textbackslash}text\{the distribution of\} X\_1
+  {\textbackslash}cdots, X\_m, Y\_1, {\textbackslash}cdots, Y\_n
+  {\textbackslash}text\{is invariant under all permutations\}, the single-tail
+  test based on 1,⋯,k1, {\textbackslash}cdots, k is uniformly most powerful
+  against the alternatives that F1F\_1 is an N(θ,σ)N({\textbackslash}theta,
+  {\textbackslash}sigma) cdf, F2F\_2 is an N(θ+Δ,σ)N({\textbackslash}theta +
+  {\textbackslash}Delta, {\textbackslash}sigma) cdf,
+  Δ{\textless}0{\textbackslash}Delta {\textless} 0; the test based on
+  r−k+1,⋯,rr - k + 1, {\textbackslash}cdots, r is uniformly most powerful
+  for Δ{\textgreater}0{\textbackslash}Delta {\textgreater} 0. A practical
+  shortcoming of this procedure is the great difficulty in enumerating the
+  points z(i)z{\textasciicircum}\{(i)\} and the evaluation of
+  u(z(i))u(z{\textasciicircum}\{(i)\}) for each of them. For instance, even
+  after eliminating those permutations which always give the same value of uu,
+  then for sample sizes m=n=5m = n = 5, there are
+  (105)=252{\textbackslash}binom\{10\}\{5\} = 252 permutations to examine, and
+  for sample sizes m=n=10m = n = 10, there are
+  (2010)=184,765{\textbackslash}binom\{20\}\{10\} = 184,765 permutations to
+  examine. In the following section, we propose the almost obvious procedure of
+  examining a "random sample" of permutations and making the decision to accept
+  or reject {HH} on the basis of those permutations only. Bounds are determined
+  for the ratio of the power of the original procedure to the modified one.
+  Some numerical values of these bounds are given in Table 1. The bounds there
+  listed correspond to tests which in both original and modified form have size
+  α{\textbackslash}alpha, and for which the modified test is based on a random
+  sample of ss permutations drawn with replacement. These have been computed
+  for a certain class of alternatives which is described below. For simplicity,
+  we have restricted the main exposition to the two-sample problem. In Section
+  5, we point out extensions to the more general hypotheses of invariance
+  studied in [1].%
+    }
+    \verb{doi}
+    \verb 10.1214/aoms/1177707045
+    \endverb
+    \field{issn}{0003-4851, 2168-8990}
+    \field{note}{bibtex: dwass\_modified\_1957}
+    \field{number}{1}
+    \field{pages}{181\bibrangedash 187}
+    \field{shortjournal}{Ann. Math. Statist.}
+    \field{title}{Modified Randomization Tests for Nonparametric Hypotheses}
+    \field{volume}{28}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\Profil
+    \verb es\\6kppnqrd.default\\zotero\\storage\\29HM4EVJ\\1177707045.html:text
+    \verb /html
+    \endverb
+    \field{journaltitle}{The Annals of Mathematical Statistics}
+    \field{month}{03}
+    \field{year}{1957}
+    \field{urlday}{29}
+    \field{urlmonth}{07}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{eberhart_new_1995}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ERC}{%
+         family={Eberhart},
+         familyi={E\bibinitperiod},
+         given={Russ\bibnamedelima C},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kennedy},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=o}{%
+         family={{others}},
+         familyi={o\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {New York, {NY}}%
+    }
+    \strng{namehash}{ERCKJo1}
+    \strng{fullhash}{ERCKJo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1995}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{Proceedings of the sixth international symposium on micro
+  machine and human science}
+    \field{note}{bibtex: eberhart\_new\_1995}
+    \field{pages}{39\bibrangedash 43}
+    \field{title}{A new optimizer using particle swarm theory}
+    \field{volume}{1}
+    \field{year}{1995}
+  \endentry
+
+  \entry{cerny_thermodynamical_1985}{article}{}
+    \name{author}{1}{}{%
+      {{hash=eV}{%
+         family={Černý},
+         familyi={e\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{eV1}
+    \strng{fullhash}{eV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{1985}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    We present a Monte Carlo algorithm to find approximate solutions of the
+  traveling salesman problem. The algorithm generates randomly the permutations
+  of the stations of the traveling salesman trip, with probability depending on
+  the length of the corresponding route. Reasoning by analogy with statistical
+  thermodynamics, we use the probability given by the Boltzmann-Gibbs
+  distribution. Surprisingly enough, using this simple algorithm, one can get
+  very close to the optimal solution of the problem or even find the true
+  optimum. We demonstrate this on several examples.We conjecture that the
+  analogy with thermodynamics can offer a new insight into optimization
+  problems and can suggest efficient algorithms for solving them.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF00940812
+    \endverb
+    \field{issn}{0022-3239, 1573-2878}
+    \field{note}{bibtex: cerny\_thermodynamical\_1985}
+    \field{number}{1}
+    \field{pages}{41\bibrangedash 51}
+    \field{shortjournal}{J Optim Theory Appl}
+    \field{shorttitle}{Thermodynamical approach to the traveling salesman
+  problem}
+    \field{title}{Thermodynamical approach to the traveling salesman problem:
+  An efficient simulation algorithm}
+    \verb{url}
+    \verb http://link.springer.com/article/10.1007/BF00940812
+    \endverb
+    \field{volume}{45}
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\Profil
+    \verb es\\6kppnqrd.default\\zotero\\storage\\78AP9FFF\\10.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Optimization Theory and Applications}
+    \field{year}{1985}
+    \field{urlday}{26}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{fisher_asymptotic_1941}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FRA}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRA1}
+    \strng{fullhash}{FRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1941}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1111/j.1469-1809.1941.tb02281.x
+    \endverb
+    \field{note}{bibtex: fisher\_asymptotic\_1941}
+    \field{pages}{141\bibrangedash 172}
+    \field{title}{The asymptotic approach to Behrens' integral, with further
+  tables for the d test of significance}
+    \field{volume}{11}
+    \field{journaltitle}{Annals of Eugenics.}
+    \field{year}{1941}
+  \endentry
+
+  \entry{fisher_fiducial_1935}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FRA}{%
+         family={Fisher},
+         familyi={F\bibinitperiod},
+         given={R.\bibnamedelima A.},
+         giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FRA1}
+    \strng{fullhash}{FRA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1935}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \verb{doi}
+    \verb 10.1111/j.1469-1809.1935.tb02120.x
+    \endverb
+    \field{note}{bibtex: fisher\_fiducial\_1935}
+    \field{pages}{391\bibrangedash 398}
+    \field{title}{The fiducial argument in statistical inference}
+    \field{journaltitle}{Annals of Eugenics.}
+    \field{year}{1935}
+  \endentry
+
+  \entry{fuller_introduction_1976}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FWA}{%
+         family={Fuller},
+         familyi={F\bibinitperiod},
+         given={W.\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {John Wiley}%
+    }
+    \strng{namehash}{FWA1}
+    \strng{fullhash}{FWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1976}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{note}{bibtex: fuller\_introduction\_1976}
+    \field{title}{Introduction to Statistical Time Series}
+    \list{location}{1}{%
+      {New York, {NY}}%
+    }
+    \field{year}{1976}
+  \endentry
+
+  \entry{geyer_mcmc:_2015}{book}{}
+    \name{author}{2}{}{%
+      {{hash=GCJ}{%
+         family={Geyer},
+         familyi={G\bibinitperiod},
+         given={Charles\bibnamedelima J.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=JLT}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Leif\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCJJLT1}
+    \strng{fullhash}{GCJJLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{R package version 0.9-4 bibtex: geyer\_mcmc:\_2015}
+    \field{title}{mcmc: Markov Chain Monte Carlo}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=mcmc
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{gilli_numerical_2011}{book}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Gilli},
+         familyi={G\bibinitperiod},
+         given={Manfred},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Maringer},
+         familyi={M\bibinitperiod},
+         given={Dietmar},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schumann},
+         familyi={S\bibinitperiod},
+         given={Enrico},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academic Press}%
+    }
+    \strng{namehash}{GMMDSE1}
+    \strng{fullhash}{GMMDSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{note}{bibtex: gilli\_numerical\_2011}
+    \field{title}{Numerical Methods and Optimization in Finance}
+    \verb{url}
+    \verb http://nmof.net
+    \endverb
+    \list{location}{1}{%
+      {Waltham, {MA}, {USA}}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{gourieroux_size_2013}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=GC}{%
+         family={Gourieroux},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jasiak},
+         familyi={J\bibinitperiod},
+         given={Joann},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=HVN}{%
+         family={Huynh},
+         familyi={H\bibinitperiod},
+         given={Van-Nam},
+         giveni={V\bibinitperiod-N\bibinitperiod},
+      }}%
+      {{hash=KV}{%
+         family={Kreinovich},
+         familyi={K\bibinitperiod},
+         given={Vladik},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sriboonchitta},
+         familyi={S\bibinitperiod},
+         given={Songsak},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Suriya},
+         familyi={S\bibinitperiod},
+         given={Komsan},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Artificial Intelligence (incl. Robotics), {BEKK} Model, Boundary,
+  C10, C32, Computational Intelligence, econometrics, G10, G12,
+  Identifiability, Invertibility Test, Multivariate Volatility, Risk Premium,
+  Volatility Transmission}
+    \strng{namehash}{GCJJ1}
+    \strng{fullhash}{GCJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Let us assume that Â {TA}{\textasciicircum}T{\textbackslash}hat\{A\}\_T is
+  a consistent, asymptotically normal estimator of a matrix A (where T is the
+  sample size), this paper shows that test statistics used in empirical work to
+  test 1) the noninvertibility of A, i.e. det A = 0, 2) the positivite
+  semi-definiteness A {\textgreater} {\textgreater} 0, have a different
+  asymptotic distribution in the case where A = 0 than in the case where A ≠
+  0. Moreover, the paper shows that an estimator of A constrained by symmetry
+  or reduced rank has a different asymptotic distribution when A = 0 than when
+  A ≠ 0. The implication is that inference procedures that use critical
+  values equal to appropriate quantiles from the distribution when A ≠ 0 may
+  be size distorted. The paper points out how the above statistical problems
+  arise in standard models in Finance in the analysis of risk effects.A Monte
+  Carlo study explores how the asymptotic results are reflected in finite
+  sample.%
+    }
+    \field{booktitle}{Uncertainty Analysis in Econometrics with Applications}
+    \field{isbn}{978-3-642-35442-7 978-3-642-35443-4}
+    \field{note}{{DOI}: 10.1007/978-3-642-35443-4\_7 bibtex:
+  gourieroux\_size\_2013}
+    \field{number}{200}
+    \field{pages}{91\bibrangedash 118}
+    \field{series}{Advances in Intelligent Systems and Computing}
+    \field{title}{Size Distortion in the Analysis of Volatility and
+  Covolatility Effects}
+    \verb{url}
+    \verb http://link.springer.com/chapter/10.1007/978-3-642-35443-4_7
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Julien\\AppData\\Roaming\\Zotero\\Zotero\\Profil
+    \verb es\\6kppnqrd.default\\zotero\\storage\\6XVKM8PJ\\10.html:text/html
+    \endverb
+    \field{year}{2013}
+    \field{urlday}{22}
+    \field{urlmonth}{08}
+    \field{urlyear}{2016}
+  \endentry
+
+  \entry{haldrup_robustness_2002}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HN}{%
+         family={Haldrup},
+         familyi={H\bibinitperiod},
+         given={Niels},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lildholdt},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Dickey–Fuller test, I(1) versus I(2), Phillips–Perron test, Unit
+  root tests}
+    \strng{namehash}{HNLP1}
+    \strng{fullhash}{HNLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1111/1467-9892.00260
+    \endverb
+    \field{issn}{1467-9892}
+    \field{note}{bibtex: haldrup\_robustness\_2002}
+    \field{number}{2}
+    \field{pages}{155\bibrangedash 171}
+    \field{title}{On the Robustness of Unit Root Tests in the Presence of
+  Double Unit Roots}
+    \field{volume}{23}
+    \field{journaltitle}{Journal of Time Series Analysis}
+    \field{year}{2002}
+  \endentry
+
+  \entry{holland_adaptation_1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJH}{%
+         family={Holland},
+         familyi={H\bibinitperiod},
+         given={John\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJH1}
+    \strng{fullhash}{HJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{note}{bibtex: holland\_adaptation\_1992}
+    \field{title}{Adaptation in natural and artificial systems. 1975}
+    \field{journaltitle}{Ann Arbor, {MI}: University of Michigan Press and}
+    \field{year}{1992}
+  \endentry
+
+  \entry{kirkpatrick_optimization_1983}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KS}{%
+         family={Kirkpatrick},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GCD}{%
+         family={Gelatt},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima D.},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=VMP}{%
+         family={Vecchi},
+         familyi={V\bibinitperiod},
+         given={M.\bibnamedelima P.},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSGCDVMP1}
+    \strng{fullhash}{KSGCDVMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1983}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    There is a deep and useful connection between statistical mechanics (the
+  behavior of systems with many degrees of freedom in thermal equilibrium at a
+  finite temperature) and multivariate or combinatorial optimization (finding
+  the minimum of a given function depending on many parameters). A detailed
+  analogy with annealing in solids provides a framework for optimization of the
+  properties of very large and complex systems. This connection to statistical
+  mechanics exposes new information and provides an unfamiliar perspective on
+  traditional optimization problems and methods.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.220.4598.671
+    \endverb
+    \field{issn}{0036-8075}
+    \field{note}{bibtex: kirkpatrick\_optimization\_1983}
+    \field{number}{4598}
+    \field{pages}{671\bibrangedash 680}
+    \field{shortjournal}{Science}
+    \field{title}{Optimization by simulated annealing}
+    \field{volume}{220}
+    \field{journaltitle}{Science (New York, N.Y.)}
+    \field{day}{13}
+    \field{month}{05}
+    \field{year}{1983}
+  \endentry
+
+  \entry{fernandez-i-marin_ggmcmc:_2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FiMX}{%
+         prefix={Fernández-i},
+         prefixi={F\bibinitperiod-i\bibinitperiod},
+         family={Marín},
+         familyi={M\bibinitperiod},
+         given={Xavier},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MXFi1}
+    \strng{fullhash}{MXFi1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.18637/jss.v070.i09
+    \endverb
+    \field{note}{bibtex: fernandez-i-marin\_ggmcmc:\_2016}
+    \field{number}{9}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{ggmcmc: Analysis of {MCMC} Samples and Bayesian Inference}
+    \field{volume}{70}
+    \field{journaltitle}{Journal of Statistical Software}
+    \field{year}{2016}
+  \endentry
+
+  \entry{martin_mcmcpack:_2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MAD}{%
+         family={Martin},
+         familyi={M\bibinitperiod},
+         given={Andrew\bibnamedelima D.},
+         giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=QKM}{%
+         family={Quinn},
+         familyi={Q\bibinitperiod},
+         given={Kevin\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PJH}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Jong\bibnamedelima Hee},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MADQKMPJH1}
+    \strng{fullhash}{MADQKMPJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{bibtex: martin\_mcmcpack:\_2011}
+    \field{number}{9}
+    \field{pages}{22}
+    \field{title}{{MCMCpack}: Markov Chain Monte Carlo in R}
+    \verb{url}
+    \verb http://www.jstatsoft.org/v42/i09/
+    \endverb
+    \field{volume}{42}
+    \field{journaltitle}{Journal of Statistical Software}
+    \field{year}{2011}
+  \endentry
+
+  \entry{mersmann_microbenchmark:_2015}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MO}{%
+         family={Mersmann},
+         familyi={M\bibinitperiod},
+         given={Olaf},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MO1}
+    \strng{fullhash}{MO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{R package version 1.4-2.1 bibtex:
+  mersmann\_microbenchmark:\_2015}
+    \field{title}{microbenchmark: Accurate Timing Functions}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=microbenchmark
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{mullen_continuous_2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MKM}{%
+         family={Mullen},
+         familyi={M\bibinitperiod},
+         given={Katharine\bibnamedelima M},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=o}{%
+         family={{others}},
+         familyi={o\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKMo1}
+    \strng{fullhash}{MKMo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{bibtex: mullen\_continuous\_2014}
+    \field{number}{6}
+    \field{pages}{1\bibrangedash 45}
+    \field{title}{Continuous global optimization in R}
+    \field{volume}{60}
+    \field{journaltitle}{Journal of Statistical Software}
+    \field{year}{2014}
+  \endentry
+
+  \entry{pantula_testing_1989}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PSG}{%
+         family={Pantula},
+         familyi={P\bibinitperiod},
+         given={Sastry\bibnamedelima G.},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PSG1}
+    \strng{fullhash}{PSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1989}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Let Yt satisfy the stochastic difference equation Yt=Σ j=1 pα {jYt}-j+Σ
+  j=1 qθ jet-j+et, for t = 1,2,..., where et are independent and identically
+  distributed random variables with mean zero and variance σ 2 and the initial
+  conditions (Y-p+1,...,Y0) are fixed constants. It is assumed that the process
+  is invertible and that the true, but unknown, roots m1,m2,...,mp of mp-Σ j=1
+  pα jmp-j=0 satisfy the hypothesis Hd: m1=...=md=1 and
+  {\textbar}m$_{\textrm{j}}${\textbar}{\textless}1 for j = d + 1,...,p. We
+  present a reparameterization of the model for Yt that is convenient for
+  testing the hypothesis Hd. We consider the asymptotic properties of (i) a
+  likelihood ratio type "F-statistic" for testing the hypothesis Hd, (ii) a
+  likelihood ratio type t-statistic for testing the hypothesis Hd against the
+  alternative Hd-1. Using these asymptotic results, we obtain two sequential
+  testing procedures that are asymptotically consistent.%
+    }
+    \field{issn}{02664666, 14694360}
+    \field{note}{bibtex: pantula\_testing\_1989}
+    \field{number}{2}
+    \field{pages}{256\bibrangedash 271}
+    \field{title}{Testing for Unit Roots in Time Series Data}
+    \verb{url}
+    \verb http://www.jstor.org/stable/3532498
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Econometric Theory}
+    \field{year}{1989}
+  \endentry
+
+  \entry{r_core_team_r:_2016}{book}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{R Core Team}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {R Foundation for Statistical Computing}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{bibtex: r\_core\_team\_r:\_2016}
+    \field{title}{R: A Language and Environment for Statistical Computing}
+    \verb{url}
+    \verb https://www.R-project.org/
+    \endverb
+    \list{location}{1}{%
+      {Vienna, Austria}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{satman_machine_2013}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SMH}{%
+         family={Satman},
+         familyi={S\bibinitperiod},
+         given={Mehmet\bibnamedelima Hakan},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMH1}
+    \strng{fullhash}{SMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{= \{Machine Coded Genetic Algorithms For Real Parameter
+  Optimization Problems\} bibtex: satman\_machine\_2013}
+    \field{number}{1}
+    \field{pages}{85\bibrangedash 95}
+    \field{title}{Machine Coded Genetic Algorithms For Real Parameter
+  Optimization Problems}
+    \verb{url}
+    \verb http://gujs.gazi.edu.tr/article/view/1060000982
+    \endverb
+    \field{volume}{26}
+    \field{journaltitle}{Gazi University Journal of Science}
+    \field{year}{2013}
+  \endentry
+
+  \entry{scrucca_ga:_2013}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Scrucca},
+         familyi={S\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{bibtex: scrucca\_ga:\_2013}
+    \field{number}{4}
+    \field{pages}{1\bibrangedash 37}
+    \field{title}{{GA}: A Package for Genetic Algorithms in R}
+    \verb{url}
+    \verb http://www.jstatsoft.org/v53/i04/
+    \endverb
+    \field{volume}{53}
+    \field{journaltitle}{Journal of Statistical Software}
+    \field{year}{2013}
+  \endentry
+
+  \entry{scrucca_extensions_2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SL}{%
+         family={Scrucca},
+         familyi={S\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SL1}
+    \strng{fullhash}{SL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{Pre-print available at {arXiv} bibtex:
+  scrucca\_extensions\_2016}
+    \field{title}{On some extensions to {GA} package: hybrid optimisation,
+  parallelisation and islands evolution}
+    \verb{url}
+    \verb http://arxiv.org/abs/1605.01931
+    \endverb
+    \field{journaltitle}{Submitted to R Journal}
+    \field{year}{2016}
+  \endentry
+
+  \entry{shi_modified_1998}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SY}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Yuhui},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={Eberhart},
+         familyi={E\bibinitperiod},
+         given={Russell},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{IEEE}}%
+    }
+    \strng{namehash}{SYER1}
+    \strng{fullhash}{SYER1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Evolutionary Computation Proceedings, 1998. {IEEE} World
+  Congress on Computational Intelligence., The 1998 {IEEE} International
+  Conference on}
+    \field{note}{bibtex: shi\_modified\_1998}
+    \field{pages}{69\bibrangedash 73}
+    \field{title}{A modified particle swarm optimizer}
+    \field{year}{1998}
+  \endentry
+
+  \entry{smirnoff_sur_1939}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SN}{%
+         family={Smirnoff},
+         familyi={S\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+    }
+    \strng{namehash}{SN1}
+    \strng{fullhash}{SN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1939}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{bibtex: smirnoff\_sur\_1939}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 26}
+    \field{title}{Sur les écarts de la courbe de distribution empirique}
+    \field{volume}{48}
+    \field{journaltitle}{Matematicheskii Sbornik}
+    \field{year}{1939}
+  \endentry
+
+  \entry{smirnov_table_1948}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SN}{%
+         family={Smirnov},
+         familyi={S\bibinitperiod},
+         given={Nickolay},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SN2}
+    \strng{fullhash}{SN2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1948}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{note}{bibtex: smirnov\_table\_1948}
+    \field{number}{2}
+    \field{pages}{279\bibrangedash 281}
+    \field{title}{Table for estimating the goodness of fit of empirical
+  distributions}
+    \field{volume}{19}
+    \field{journaltitle}{The annals of mathematical statistics}
+    \field{year}{1948}
+  \endentry
+
+  \entry{venables_modern_2002}{book}{}
+    \name{author}{2}{}{%
+      {{hash=VWN}{%
+         family={Venables},
+         familyi={V\bibinitperiod},
+         given={W.\bibnamedelima N.},
+         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=RBD}{%
+         family={Ripley},
+         familyi={R\bibinitperiod},
+         given={B.\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{VWNRBD1}
+    \strng{fullhash}{VWNRBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{edition}{Fourth}
+    \field{note}{{ISBN} 0-387-95457-0 bibtex: venables\_modern\_2002}
+    \field{title}{Modern Applied Statistics with S}
+    \verb{url}
+    \verb http://www.stats.ox.ac.uk/pub/MASS4
+    \endverb
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2002}
+  \endentry
+
+  \entry{welch_generalization_1947}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WBL}{%
+         family={Welch},
+         familyi={W\bibinitperiod},
+         given={B.\bibnamedelima L.},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WBL1}
+    \strng{fullhash}{WBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1947}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.2307/2332510
+    \endverb
+    \field{note}{bibtex: welch\_generalization\_1947}
+    \field{pages}{28\bibrangedash 35}
+    \field{title}{The generalization of 'Student's' problem when several
+  different population variances are involved}
+    \field{volume}{34}
+    \field{journaltitle}{Biometrika.}
+    \field{year}{1947}
+  \endentry
+
+  \entry{welch_significance_1938}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WBL}{%
+         family={Welch},
+         familyi={W\bibinitperiod},
+         given={B.\bibnamedelima L.},
+         giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WBL1}
+    \strng{fullhash}{WBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1938}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.2307/2332010
+    \endverb
+    \field{note}{bibtex: welch\_significance\_1938}
+    \field{pages}{350\bibrangedash 362}
+    \field{title}{The significance or the difference between two means when the
+  population variances are unequal}
+    \field{volume}{29}
+    \field{journaltitle}{Biometrika.}
+    \field{year}{1938}
+  \endentry
+
+  \entry{wickham_ggplot2:_2009}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WH}{%
+         family={Wickham},
+         familyi={W\bibinitperiod},
+         given={Hadley},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag New York}%
+    }
+    \strng{namehash}{WH1}
+    \strng{fullhash}{WH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{isbn}{978-0-387-98140-6}
+    \field{note}{bibtex: wickham\_ggplot2:\_2009}
+    \field{title}{ggplot2: Elegant Graphics for Data Analysis}
+    \verb{url}
+    \verb http://ggplot2.org
+    \endverb
+    \field{year}{2009}
+  \endentry
+
+  \entry{wickham_devtools:_2016}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WH}{%
+         family={Wickham},
+         familyi={W\bibinitperiod},
+         given={Hadley},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Winston},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WHCW1}
+    \strng{fullhash}{WHCW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{R package version 1.5.0.99 bibtex: wickham\_devtools:\_2016}
+    \field{title}{devtools: Tools to make developing R code easier}
+    \field{year}{2016}
+  \endentry
+
+  \entry{wickham_roxygen2:_2015}{book}{}
+    \name{author}{3}{}{%
+      {{hash=WH}{%
+         family={Wickham},
+         familyi={W\bibinitperiod},
+         given={Hadley},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Danenberg},
+         familyi={D\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=EM}{%
+         family={Eugster},
+         familyi={E\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WHDPEM1}
+    \strng{fullhash}{WHDPEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{R package version 5.0.1 bibtex: wickham\_roxygen2:\_2015}
+    \field{title}{roxygen2: In-Source Documentation for R}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=roxygen2
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{willighagen_genalg:_2015}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WE}{%
+         family={Willighagen},
+         familyi={W\bibinitperiod},
+         given={Egon},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Ballings},
+         familyi={B\bibinitperiod},
+         given={Michel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WEBM1}
+    \strng{fullhash}{WEBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{R package version 0.2.0 bibtex: willighagen\_genalg:\_2015}
+    \field{title}{genalg: R Based Genetic Algorithm}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=genalg
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{wuertz_funitroots:_2013}{book}{}
+    \name{author}{2}{}{%
+      {{hash=WD}{%
+         family={Wuertz},
+         familyi={W\bibinitperiod},
+         given={Diethelm},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=e}{%
+         family={{et al.}},
+         familyi={e\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WDe1}
+    \strng{fullhash}{WDe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{note}{R package version 3010.78 bibtex: wuertz\_funitroots:\_2013}
+    \field{title}{{fUnitRoots}: Trends and Unit Roots}
+    \verb{url}
+    \verb https://CRAN.R-project.org/package=fUnitRoots
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{yang_xiang_generalized_2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=Y}{%
+         family={{Yang Xiang}},
+         familyi={Y\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gubian},
+         familyi={G\bibinitperiod},
+         given={Sylvain},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Suomela},
+         familyi={S\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hoeng},
+         familyi={H\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Y+1}
+    \strng{fullhash}{YGSSBHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{note}{bibtex: yang\_xiang\_generalized\_2013}
+    \field{title}{Generalized Simulated Annealing for Efficient Global
+  Optimization: the {GenSA} Package for R.}
+    \verb{url}
+    \verb http://journal.r-project.org/
+    \endverb
+    \field{journaltitle}{The R Journal Volume 5/1, June 2013}
+    \field{year}{2013}
+  \endentry
+
+  \entry{zambrano-bigiarini_hydropso:_2014}{book}{}
+    \name{author}{2}{}{%
+      {{hash=ZBM}{%
+         family={Zambrano-Bigiarini},
+         familyi={Z\bibinitperiod-B\bibinitperiod},
+         given={Mauricio},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rojas},
+         familyi={R\bibinitperiod},
+         given={Rodrigo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZBMRR1}
+    \strng{fullhash}{ZBMRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{note}{R package version 0.3-4}
+    \field{title}{{hydroPSO}: Particle Swarm Optimisation, with focus on
+  Environmental Models}
+    \verb{url}
+    \verb http://www.rforge.net/hydroPSO, http://cran.r-project.org/web/package
+    \verb s/hydroPSO
+    \endverb
+    \field{year}{2014}
+  \endentry
+
+  \entry{zeileis_dynlm:_2014}{book}{}
+    \name{author}{1}{}{%
+      {{hash=ZA}{%
+         family={Zeileis},
+         familyi={Z\bibinitperiod},
+         given={Achim},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZA1}
+    \strng{fullhash}{ZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{note}{R package version 0.3-3 bibtex: zeileis\_dynlm:\_2014}
+    \field{title}{dynlm: Dynamic Linear Regression}
+    \verb{url}
+    \verb http://CRAN.R-project.org/package=dynlm
+    \endverb
+    \field{year}{2014}
+  \endentry
+\endsortlist
+\endinput

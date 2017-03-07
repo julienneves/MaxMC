@@ -5,7 +5,7 @@
 \title{S3 class \code{mmc}.}
 \usage{
 return_mmc(S0, y, statistic, dgp, est, lower, upper, N, type, method, alpha,
-  control, call, seed, lmc, opt_result, opt_monitor)
+  control, call, seed, lmc, opt_result, opt_trace)
 }
 \arguments{
 \item{S0}{An atomic vector. Value of the test statistic
@@ -69,7 +69,7 @@ of class \code{mc} corresponding the Local Monte Carlo test}
 
 \item{opt_result}{An object returning the optimization results}
 
-\item{opt_monitor}{An object returning the optimization results}
+\item{opt_trace}{An object returning the optimization results}
 }
 \description{
 S3 class \code{mmc}.
