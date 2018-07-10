@@ -1,80 +1,66 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.26)  26 JUN 2018 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.9)  9 JUL 2018 16:51
 entering extended mode
 **./mmc_Rpackage.tex
 (mmc_Rpackage.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+LaTeX2e <2018-04-01> patch level 5
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip43
 \fb@frw=\dimen105
 \fb@frh=\dimen106
 \FrameRule=\dimen107
 \FrameSep=\dimen108
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count87
+\c@float@type=\count88
 \float@exts=\toks15
 \float@box=\box26
 \@float@everytoks=\toks16
 \@floatcapt=\box27
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
@@ -82,34 +68,29 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
-
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen109
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen110
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count89
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count90
+\leftroot@=\count91
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count92
+\DOTSCASE@=\count93
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -118,15 +99,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen111
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks19
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks20
 \eqnshift@=\dimen112
 \alignsep@=\dimen113
@@ -140,8 +121,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box30
 \beforetitleunit=\skip47
@@ -152,109 +132,94 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen120
 \titlewidthlast=\dimen121
 \titlewidthfirst=\dimen122
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
 Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
-
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
-
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count100
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+\etb@tempcnta=\count101
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)))
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+))) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count101
-
+\lrq@indent=\count102
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+)) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
-(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
+) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty (C:
+\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex
 \@xs@message=\write3
-\integerpart=\count102
-\decimalpart=\count103
+\integerpart=\count103
+\decimalpart=\count104
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count104
-\c@listtotal=\count105
-\c@listcount=\count106
-\c@liststart=\count107
-\c@liststop=\count108
-\c@citecount=\count109
-\c@citetotal=\count110
-\c@multicitecount=\count111
-\c@multicitetotal=\count112
-\c@instcount=\count113
-\c@maxnames=\count114
-\c@minnames=\count115
-\c@maxitems=\count116
-\c@minitems=\count117
-\c@citecounter=\count118
-\c@savedcitecounter=\count119
-\c@uniquelist=\count120
-\c@uniquename=\count121
-\c@refsection=\count122
-\c@refsegment=\count123
-\c@maxextratitle=\count124
-\c@maxextratitleyear=\count125
-\c@maxextradate=\count126
-\c@maxextraalpha=\count127
-\c@abbrvpenalty=\count128
-\c@highnamepenalty=\count129
-\c@lownamepenalty=\count130
-\c@maxparens=\count131
-\c@parenlevel=\count132
-\blx@tempcnta=\count133
-\blx@tempcntb=\count134
-\blx@tempcntc=\count135
-\blx@maxsection=\count136
-\blx@maxsegment@0=\count137
-\blx@notetype=\count138
-\blx@parenlevel@text=\count139
-\blx@parenlevel@foot=\count140
-\blx@sectionciteorder@0=\count141
+\c@tabx@nest=\count105
+\c@listtotal=\count106
+\c@listcount=\count107
+\c@liststart=\count108
+\c@liststop=\count109
+\c@citecount=\count110
+\c@citetotal=\count111
+\c@multicitecount=\count112
+\c@multicitetotal=\count113
+\c@instcount=\count114
+\c@maxnames=\count115
+\c@minnames=\count116
+\c@maxitems=\count117
+\c@minitems=\count118
+\c@citecounter=\count119
+\c@savedcitecounter=\count120
+\c@uniquelist=\count121
+\c@uniquename=\count122
+\c@refsection=\count123
+\c@refsegment=\count124
+\c@maxextratitle=\count125
+\c@maxextratitleyear=\count126
+\c@maxextradate=\count127
+\c@maxextraalpha=\count128
+\c@abbrvpenalty=\count129
+\c@highnamepenalty=\count130
+\c@lownamepenalty=\count131
+\c@maxparens=\count132
+\c@parenlevel=\count133
+\blx@tempcnta=\count134
+\blx@tempcntb=\count135
+\blx@tempcntc=\count136
+\blx@maxsection=\count137
+\blx@maxsegment@0=\count138
+\blx@notetype=\count139
+\blx@parenlevel@text=\count140
+\blx@parenlevel@foot=\count141
+\blx@sectionciteorder@0=\count142
 \labelnumberwidth=\skip49
 \labelalphawidth=\skip50
 \biblabelsep=\skip51
@@ -265,12 +230,11 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip56
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count142
-\c@maxcomprange=\count143
-\c@mincompwidth=\count144
+\c@mincomprange=\count143
+\c@maxcomprange=\count144
+\c@mincompwidth=\count145
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def
 File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
@@ -278,74 +242,74 @@ Package biblatex Info: Trying to load biblatex citestyle data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count145
-\c@savedafterword=\count146
-\c@annotator=\count147
-\c@savedannotator=\count148
-\c@author=\count149
-\c@savedauthor=\count150
-\c@bookauthor=\count151
-\c@savedbookauthor=\count152
-\c@commentator=\count153
-\c@savedcommentator=\count154
-\c@editor=\count155
-\c@savededitor=\count156
-\c@editora=\count157
-\c@savededitora=\count158
-\c@editorb=\count159
-\c@savededitorb=\count160
-\c@editorc=\count161
-\c@savededitorc=\count162
-\c@foreword=\count163
-\c@savedforeword=\count164
-\c@holder=\count165
-\c@savedholder=\count166
-\c@introduction=\count167
-\c@savedintroduction=\count168
-\c@namea=\count169
-\c@savednamea=\count170
-\c@nameb=\count171
-\c@savednameb=\count172
-\c@namec=\count173
-\c@savednamec=\count174
-\c@translator=\count175
-\c@savedtranslator=\count176
-\c@shortauthor=\count177
-\c@savedshortauthor=\count178
-\c@shorteditor=\count179
-\c@savedshorteditor=\count180
-\c@labelname=\count181
-\c@savedlabelname=\count182
-\c@institution=\count183
-\c@savedinstitution=\count184
-\c@lista=\count185
-\c@savedlista=\count186
-\c@listb=\count187
-\c@savedlistb=\count188
-\c@listc=\count189
-\c@savedlistc=\count190
-\c@listd=\count191
-\c@savedlistd=\count192
-\c@liste=\count193
-\c@savedliste=\count194
-\c@listf=\count195
-\c@savedlistf=\count196
-\c@location=\count197
-\c@savedlocation=\count198
-\c@organization=\count199
-\c@savedorganization=\count266
-\c@origlocation=\count267
-\c@savedoriglocation=\count268
-\c@origpublisher=\count269
-\c@savedorigpublisher=\count270
-\c@publisher=\count271
-\c@savedpublisher=\count272
-\c@language=\count273
-\c@savedlanguage=\count274
-\c@origlanguage=\count275
-\c@savedoriglanguage=\count276
-\c@pageref=\count277
-\c@savedpageref=\count278
+\c@afterword=\count146
+\c@savedafterword=\count147
+\c@annotator=\count148
+\c@savedannotator=\count149
+\c@author=\count150
+\c@savedauthor=\count151
+\c@bookauthor=\count152
+\c@savedbookauthor=\count153
+\c@commentator=\count154
+\c@savedcommentator=\count155
+\c@editor=\count156
+\c@savededitor=\count157
+\c@editora=\count158
+\c@savededitora=\count159
+\c@editorb=\count160
+\c@savededitorb=\count161
+\c@editorc=\count162
+\c@savededitorc=\count163
+\c@foreword=\count164
+\c@savedforeword=\count165
+\c@holder=\count166
+\c@savedholder=\count167
+\c@introduction=\count168
+\c@savedintroduction=\count169
+\c@namea=\count170
+\c@savednamea=\count171
+\c@nameb=\count172
+\c@savednameb=\count173
+\c@namec=\count174
+\c@savednamec=\count175
+\c@translator=\count176
+\c@savedtranslator=\count177
+\c@shortauthor=\count178
+\c@savedshortauthor=\count179
+\c@shorteditor=\count180
+\c@savedshorteditor=\count181
+\c@labelname=\count182
+\c@savedlabelname=\count183
+\c@institution=\count184
+\c@savedinstitution=\count185
+\c@lista=\count186
+\c@savedlista=\count187
+\c@listb=\count188
+\c@savedlistb=\count189
+\c@listc=\count190
+\c@savedlistc=\count191
+\c@listd=\count192
+\c@savedlistd=\count193
+\c@liste=\count194
+\c@savedliste=\count195
+\c@listf=\count196
+\c@savedlistf=\count197
+\c@location=\count198
+\c@savedlocation=\count199
+\c@organization=\count266
+\c@savedorganization=\count267
+\c@origlocation=\count268
+\c@savedoriglocation=\count269
+\c@origpublisher=\count270
+\c@savedorigpublisher=\count271
+\c@publisher=\count272
+\c@savedpublisher=\count273
+\c@language=\count274
+\c@savedlanguage=\count275
+\c@origlanguage=\count276
+\c@savedoriglanguage=\count277
+\c@pageref=\count278
+\c@savedpageref=\count279
 \shorthandwidth=\skip57
 \shortjournalwidth=\skip58
 \shortserieswidth=\skip59
@@ -362,16 +326,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \localshorteditorwidth=\skip70
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def
 File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load BibTeX backend compatibility...
 Package biblatex Info: ... file 'blx-bibtex.def' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-bibtex.def
 File: blx-bibtex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-
 
 Package biblatex Warning: Using fall-back BibTeX(8) backend:
 (biblatex)                functionality may be reduced/unavailable.
@@ -379,25 +340,23 @@ Package biblatex Warning: Using fall-back BibTeX(8) backend:
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
+(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def
 File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
-\c@textcitecount=\count279
-\c@textcitetotal=\count280
-\c@textcitemaxnames=\count281
-\c@biburlnumpenalty=\count282
-\c@biburlucpenalty=\count283
-\c@biburllcpenalty=\count284
-\c@smartand=\count285
+\c@textcitecount=\count280
+\c@textcitetotal=\count281
+\c@textcitemaxnames=\count282
+\c@biburlnumpenalty=\count283
+\c@biburlucpenalty=\count284
+\c@biburllcpenalty=\count285
+\c@smartand=\count286
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-natbib.def
 File: blx-natbib.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\numeric.bbx
 File: numeric.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
@@ -405,8 +364,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx
 File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count286
-\c@bbx:relatedtotal=\count287
+\c@bbx:relatedcount=\count287
+\c@bbx:relatedtotal=\count288
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -424,7 +383,7 @@ Package biblatex Info: Redefining '\textcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
+(C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg
 File: biblatex.cfg 
 )) (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\upquote\upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
@@ -432,47 +391,43 @@ tim
 )
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
-\@quotelevel=\count288
-\@quotereset=\count289
+\@quotelevel=\count289
+\@quotereset=\count290
 (mmc_Rpackage.aux)
 \openout1 = `mmc_Rpackage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 (C:\Users\Julien\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
+\scratchcounter=\count291
 \scratchdimen=\dimen123
 \scratchbox=\box31
-\nofMPsegments=\count291
-\nofMParguments=\count292
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count293
+\MPscratchCnt=\count294
 \MPscratchDim=\dimen124
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
@@ -483,1167 +438,784 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Package biblatex Info: No input encoding detected.
-(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'ascii'.
-Package biblatex Info: Input encoding 'ascii' specified.
-Package biblatex Info: Data encoding 'ascii' specified.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
 \openout4 = `mmc_Rpackage-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'mmc_Rpackage.bbl' is wrong format version - exp
-ected 2.9.
-
 Package biblatex Info: ... file 'mmc_Rpackage.bbl' found.
-(mmc_Rpackage.bbl
-! Undefined control sequence.
-l.19 \sortlist
-              [entry]{nty/global/}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.20 ...ry{banerjee_co-integration_1993}{report}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.96   \endentry
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.96   \endentry
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.98   \entry{barnard_comment_1963}{article}{}
-                                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.141   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.141   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.143   \entry{behrens_beitrag_1929}{article}{}
-                                               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.165   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.165   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.167   \entry{bendtsen_pso:_2012}{book}{}
-                                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.189   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.189   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.191   \entry{bornn_pawl:_2012}{book}{}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.219   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.219   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.221 ...ry{boudjellaba_simplified_1992}{report}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.274   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.274   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.276 ...ntry{boudjellaba_testing_1992}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.353   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.353   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.355 ...ntry{caffo_exactloglintest:_2013}{book}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.378   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.378   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.380   \entry{canty_boot:_2016}{book}{}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.405   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.405   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.407   \entry{ciupke_psoptim:_2016}{book}{}
-                                            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.430   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.430   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.432   \entry{clayden_soma:_2014}{book}{}
-                                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.461   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.461   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.463 ...id_a._dickey_determining_1987}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.506   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.506   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.508 ...ntry{dickey_distribution_1979}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.560   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.560   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.562   \entry{dufour_monte_2006}{article}{}
-                                            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.611   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.611   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.613   \entry{dufour_exact_2001}{article}{}
-                                            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.639   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.639   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.641   \entry{dufour_monte_2003}{incollection}{}
-                                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.697   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.697   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.699   \entry{dufour_exact_1996}{article}{}
-                                            
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.742   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.742   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.744   \entry{dufour_wald_2013}{article}{}
-                                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.812   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.812   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.814   \entry{dufour_rank-robust_2016}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.839   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.839   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.841   \entry{dwass_modified_1957}{article}{}
-                                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.959   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.959   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.961   \entry{eberhart_new_1995}{inproceedings}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.997   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.997   \endentry
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.999 ...ry{cerny_thermodynamical_1985}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1053   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1053   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1055   \entry{fisher_asymptotic_1941}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1081   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1081   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1083   \entry{fisher_fiducial_1935}{article}{}
-                                                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1107   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1107   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1109   \entry{fuller_introduction_1976}{book}{}
-                                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1134   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1134   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1136   \entry{geyer_mcmc:_2015}{book}{}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1164   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1164   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1166   \entry{gilli_numerical_2011}{book}{}
-                                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1206   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1206   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1208 ...ry{gourieroux_size_2013}{incollection}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1300   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1300   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1302 ...ntry{haldrup_robustness_2002}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1338   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1338   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1340 ...ntry{holland_adaptation_1992}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1360   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1360   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1362 ...irkpatrick_optimization_1983}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1414   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1414   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1416 ...rnandez-i-marin_ggmcmc:_2016}{article}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1444   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1444   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1446   \entry{martin_mcmcpack:_2011}{article}{}
-                                                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1484   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1484   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1486 ...y{mersmann_microbenchmark:_2015}{book}{}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{entry} {\listcsxadd {blx...
-l.1509   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<argument> ...equal \expandafter {\blx@dlist@type 
-                                                  }{list} {\blx@bbl@labelfie...
-l.1509   \endentry
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\entry ...ata@\the \c@refsection @\blx@dlist@name 
-                                                  @\abx@field@entrykey }\blx...
-l.1511   \entry{mullen_continuous_2014}{article}{}
-                                                  
-(That makes 100 errors; please try again.) 
+(mmc_Rpackage.bbl)
+Package biblatex Info: Reference section=0 on input line 85.
+Package biblatex Info: Reference segment=0 on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 91.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 91.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 91.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+[1
+
+{C:/Users/Julien/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (mmc_Rpack
+age.toc)
+\tf@toc=\write5
+\openout5 = `mmc_Rpackage.toc'.
+
+[2
+
+]
+
+LaTeX Warning: Citation 'canty_boot:_2016' on page 3 undefined on input line 10
+8.
+
+
+LaTeX Warning: Citation 'geyer_mcmc:_2015' on page 3 undefined on input line 10
+8.
+
+
+LaTeX Warning: Citation 'martin_mcmcpack:_2011' on page 3 undefined on input li
+ne 108.
+
+
+LaTeX Warning: Citation 'bornn_pawl:_2012' on page 3 undefined on input line 10
+8.
+
+
+LaTeX Warning: Citation 'fernandez-i-marin_ggmcmc:_2016' on page 3 undefined on
+ input line 108.
+
+
+LaTeX Warning: Citation 'caffo_exactloglintest:_2013' on page 3 undefined on in
+put line 108.
+
+
+Overfull \hbox (64.96391pt too wide) in paragraph at lines 108--109
+\OT1/cmr/m/n/10 ([]), \OT1/cmr/b/n/10 mcmc \OT1/cmr/m/n/10 ([]), \OT1/cmr/b/n/1
+0 MCM-C-pack \OT1/cmr/m/n/10 ([]),
+ []
+
+
+LaTeX Warning: Citation 'dwass_modified_1957' on page 3 undefined on input line
+ 110.
+
+
+LaTeX Warning: Citation 'barnard_comment_1963' on page 3 undefined on input lin
+e 110.
+
+
+LaTeX Warning: Citation 'dufour_monte_2003' on page 3 undefined on input line 1
+10.
+
+
+Overfull \hbox (42.48872pt too wide) in paragraph at lines 110--111
+[]\OT1/cmr/m/n/10 Monte Carlo tech-niques were first in-tro-duced in-de-pen-den
+tly by []
+ []
+
+
+LaTeX Warning: Citation 'dwass_modified_1957' on page 3 undefined on input line
+ 114.
+
+
+LaTeX Warning: Citation 'barnard_comment_1963' on page 3 undefined on input lin
+e 114.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 3 undefined on input line 1
+14.
+
+
+Overfull \hbox (36.57207pt too wide) in paragraph at lines 114--115
+[]\OT1/cmr/m/n/10 Note that the orig-i-nal Monte Carlo tech-nique, as de-scribe
+d by []
+ []
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 3 undefined on input line 1
+16.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 3 undefined on input line 1
+18.
+
+[3
+
+]
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 4 undefined on input line 12
+0.
+
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 4 undefined on input line 12
+0.
+
+
+LaTeX Warning: Citation 'boudjellaba_testing_1992' on page 4 undefined on input
+ line 120.
+
+
+LaTeX Warning: Citation 'boudjellaba_simplified_1992' on page 4 undefined on in
+put line 120.
+
+
+LaTeX Warning: Citation 'gourieroux_size_2013' on page 4 undefined on input lin
+e 120.
+
+
+LaTeX Warning: Citation 'dickey_distribution_1979' on page 4 undefined on input
+ line 124.
+
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 4 undefined on input
+ line 124.
+
+
+LaTeX Warning: Citation 'david_a._dickey_determining_1987' on page 4 undefined 
+on input line 127.
+
+
+LaTeX Warning: Citation 'haldrup_robustness_2002' on page 4 undefined on input 
+line 127.
+
+
+LaTeX Warning: Citation 'pantula_testing_1989' on page 4 undefined on input lin
+e 127.
+
+
+LaTeX Warning: Citation 'david_a._dickey_determining_1987' on page 4 undefined 
+on input line 127.
+
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 4 undefined on input
+ line 127.
+
+
+LaTeX Warning: Citation 'haldrup_robustness_2002' on page 4 undefined on input 
+line 127.
+
+
+LaTeX Warning: Citation 'haldrup_robustness_2002' on page 4 undefined on input 
+line 127.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 4 undefined on input line 1
+27.
+
+
+Overfull \hbox (90.99724pt too wide) in paragraph at lines 127--128
+\OT1/cmr/m/n/10 do not tech-ni-cally pre-clude I(2) pro-cesses. But, as de-scri
+bed in [],
+ []
+
+[4]
+
+LaTeX Warning: Citation 'wickham_roxygen2:_2015' on page 5 undefined on input l
+ine 129.
+
+
+LaTeX Warning: Citation 'dufour_monte_2003' on page 5 undefined on input line 1
+46.
+
+[5]
+
+LaTeX Warning: Citation 'dufour_monte_2003' on page 6 undefined on input line 1
+59.
+
+
+Overfull \hbox (14.79268pt too wide) in paragraph at lines 159--160
+[]\OT1/cmr/m/n/10 Let $\OML/cmm/m/it/10 $ \OT1/cmr/m/n/10 be the de-sired leve
+l for the test. Then, as de-tailed in [],
+ []
+
+
+LaTeX Warning: Citation 'dufour_monte_2003' on page 6 undefined on input line 1
+70.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 6 undefined on input line 1
+85.
+
+[6]
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 7 undefined on input line 2
+05.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 7 undefined on input line 2
+28.
+
+
+Overfull \hbox (13.34023pt too wide) in paragraph at lines 227--229
+\OT1/cmr/m/n/10 To solve this type of prob-lem and re-trieve an ex-act pro-ce-d
+ure, []
+ []
+
+[7]
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 8 undefined on input line 2
+63.
+
+[8]
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 9 undefined on input line 2
+93.
+
+
+Overfull \hbox (35.72797pt too wide) in paragraph at lines 292--294
+\OT1/cmr/m/n/10 which im-plies that the test is ex-act at level $\OML/cmm/m/it/
+10 $\OT1/cmr/m/n/10 ; again for a proof, see []. 
+ []
+
+[9]
+Overfull \hbox (2.61046pt too wide) in paragraph at lines 329--330
+[]\OT1/cmr/m/n/10 This pro-ce-dure is re-ferred to as the con-sis-tent set es-t
+i-mate MMC (CSEMMC),
+ []
+
+[10]
+
+LaTeX Warning: Citation 'dufour_exact_1996' on page 11 undefined on input line 
+376.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 11 undefined on input line 
+376.
+
+
+LaTeX Warning: Citation 'dufour_monte_2006' on page 11 undefined on input line 
+386.
+
+
+LaTeX Warning: Citation 'wickham_devtools:_2016' on page 11 undefined on input 
+line 397.
+
+Package color Info: Redefining color shadecolor on input line 399.
+[11]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 401.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 409.
+Package color Info: Redefining color shadecolor on input line 414.
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 416--416
+[][]\OT1/cmtt/m/n/10 mc[][](y, statistic, ...,[] []dgp[] []=[] []function[][]([
+][]y[][])[] []sample[][](y,[] []replace[] []=[] []TRUE[][]),[][] 
+ []
+
+[12]
+
+LaTeX Warning: Citation 'smirnoff_sur_1939' on page 13 undefined on input line 
+471.
+
+
+LaTeX Warning: Citation 'smirnov_table_1948' on page 13 undefined on input line
+ 471.
+
+
+Overfull \hbox (35.97502pt too wide) in paragraph at lines 471--472
+[]\OT1/cmr/m/n/10 To solve this prob-lem, we use the Kolmogorov-Smirnov statis-
+tic ([];
+ []
+
+[13]
+
+LaTeX Warning: Citation 'dufour_exact_2001' on page 14 undefined on input line 
+491.
+
+Package color Info: Redefining color shadecolor on input line 495.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 505
+.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 505.
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 505.
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 522--522
+[]\OT1/cmtt/m/n/10 ## Warning in ks.test(data$x, data$y): cannot compute exact 
+p-value
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 543--543
+[]\OT1/cmtt/m/n/10 ## mc(y = data, statistic = statistic, dgp = dgp, N = 999, t
+ype = "geq")[] 
+ []
+
+[14]
+Package color Info: Redefining color shadecolor on input line 555.
+[15] [16]
+
+LaTeX Warning: Citation 'gilli_numerical_2011' on page 17 undefined on input li
+ne 642.
+
+
+LaTeX Warning: Citation 'r_core_team_r:_2016' on page 17 undefined on input lin
+e 642.
+
+
+Overfull \hbox (11.02605pt too wide) in paragraph at lines 642--643
+[]\OT1/cmr/m/n/10 The pack-age \OT1/cmr/b/n/10 NMOF \OT1/cmr/m/n/10 ([]) pro-vi
+des the func-tion \OT1/cmtt/m/n/10 gridSearch
+ []
+
+
+Overfull \hbox (28.0625pt too wide) in paragraph at lines 642--643
+\OT1/cmr/m/n/10 easy way to par-al-lelize the prob-lem us-ing the pack-age \OT1
+/cmr/b/n/10 par-al-lel \OT1/cmr/m/n/10 by [].
+ []
+
+[17]
+
+LaTeX Warning: Citation 'kirkpatrick_optimization_1983' on page 18 undefined on
+ input line 646.
+
+
+LaTeX Warning: Citation 'cerny_thermodynamical_1985' on page 18 undefined on in
+put line 646.
+
+
+LaTeX Warning: Citation 'yang_xiang_generalized_2013' on page 18 undefined on i
+nput line 652.
+
+
+LaTeX Warning: Citation 'mullen_continuous_2014' on page 18 undefined on input 
+line 654.
+
+
+LaTeX Warning: Citation 'yang_xiang_generalized_2013' on page 18 undefined on i
+nput line 656.
+
+
+LaTeX Warning: Citation 'eberhart_new_1995' on page 18 undefined on input line 
+663.
+
+
+LaTeX Warning: Citation 'shi_modified_1998' on page 18 undefined on input line 
+663.
+
+
+Overfull \hbox (61.04251pt too wide) in paragraph at lines 663--664
+\OT1/cmr/m/n/10 Particle swarm op-ti-miza-tion was in-tro-duced by [] and [].
+ []
+
+[18]
+
+LaTeX Warning: Citation 'bendtsen_pso:_2012' on page 19 undefined on input line
+ 665.
+
+
+LaTeX Warning: Citation 'zambrano-bigiarini_hydropso:_2014' on page 19 undefine
+d on input line 665.
+
+
+LaTeX Warning: Citation 'ciupke_psoptim:_2016' on page 19 undefined on input li
+ne 665.
+
+
+Overfull \hbox (118.68253pt too wide) in paragraph at lines 665--666
+[]\OT1/cmr/m/n/10 Multiple pack-ages like \OT1/cmr/b/n/10 pso \OT1/cmr/m/n/10 (
+[]), \OT1/cmr/b/n/10 hy-droPSO \OT1/cmr/m/n/10 ([])
+ []
+
+
+LaTeX Warning: Citation 'mullen_continuous_2014' on page 19 undefined on input 
+line 667.
+
+
+LaTeX Warning: Citation 'mullen_continuous_2014' on page 19 undefined on input 
+line 667.
+
+
+LaTeX Warning: Citation 'bendtsen_pso:_2012' on page 19 undefined on input line
+ 669.
+
+
+LaTeX Warning: Citation 'holland_adaptation_1992' on page 19 undefined on input
+ line 674.
+
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 678.
+
+LaTeX Warning: Citation 'clayden_soma:_2014' on page 19 undefined on input line
+ 678.
+
+
+LaTeX Warning: Citation 'scrucca_ga:_2013' on page 19 undefined on input line 6
+79.
+
+
+LaTeX Warning: Citation 'scrucca_extensions_2016' on page 19 undefined on input
+ line 679.
+
+
+LaTeX Warning: Citation 'willighagen_genalg:_2015' on page 19 undefined on inpu
+t line 680.
+
+
+LaTeX Warning: Citation 'satman_machine_2013' on page 19 undefined on input lin
+e 681.
+
+
+LaTeX Warning: Citation 'gilli_numerical_2011' on page 19 undefined on input li
+ne 682.
+
+
+LaTeX Warning: Citation 'fisher_fiducial_1935' on page 19 undefined on input li
+ne 689.
+
+
+LaTeX Warning: Citation 'fisher_asymptotic_1941' on page 19 undefined on input 
+line 689.
+
+
+LaTeX Warning: Citation 'behrens_beitrag_1929' on page 19 undefined on input li
+ne 689.
+
+[19]
+
+LaTeX Warning: Citation 'welch_generalization_1947' on page 20 undefined on inp
+ut line 697.
+
+
+LaTeX Warning: Citation 'welch_significance_1938' on page 20 undefined on input
+ line 705.
+
+Package color Info: Redefining color shadecolor on input line 714.
+
+Overfull \hbox (17.24684pt too wide) in paragraph at lines 764--764
+[]\OT1/cmtt/m/n/10 ## alternative hypothesis: true difference in means is not e
+qual to 0[] 
+ []
+
+
+Overfull \hbox (53.99652pt too wide) in paragraph at lines 782--782
+[]\OT1/cmtt/m/n/10 ## mmc(y = data, statistic = statistic, dgp = dgp, est = est
+, lower = lower,[] 
+ []
+
+[20] [21]
+
+LaTeX Warning: Citation 'venables_modern_2002' on page 22 undefined on input li
+ne 786.
+
+
+LaTeX Warning: Citation 'r_core_team_r:_2016' on page 22 undefined on input lin
+e 788.
+
+
+LaTeX Warning: Citation 'mersmann_microbenchmark:_2015' on page 22 undefined on
+ input line 792.
+
+
+LaTeX Warning: Citation 'wickham_ggplot2:_2009' on page 22 undefined on input l
+ine 792.
+
+<fig/BF_compare.pdf, id=94, 614.295pt x 794.97pt>
+File: fig/BF_compare.pdf Graphic file (type pdf)
+<use fig/BF_compare.pdf>
+Package pdftex.def Info: fig/BF_compare.pdf  used on input line 796.
+(pdftex.def)             Requested size: 310.4979pt x 401.82666pt.
+[22] [23 <./fig/BF_compare.pdf>]
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 24 undefined on input line 8
+07.
+
+
+LaTeX Warning: Citation 'dufour_rank-robust_2016' on page 24 undefined on input
+ line 807.
+
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 24 undefined on input line 8
+30.
+
+
+LaTeX Warning: Citation 'dufour_rank-robust_2016' on page 24 undefined on input
+ line 830.
+
+[24]
+
+LaTeX Warning: Citation 'dufour_rank-robust_2016' on page 25 undefined on input
+ line 854.
+
+[25] [26]
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 27 undefined on input line 1
+002.
+
+[27] [28] [29]
+
+LaTeX Warning: Citation 'dufour_wald_2013' on page 30 undefined on input line 1
+147.
+
+[30]
+Overfull \hbox (10.24031pt too wide) in paragraph at lines 1213--1214
+ [][] 
+ []
+
+
+Overfull \hbox (12.29866pt too wide) in paragraph at lines 1242--1243
+ [][] 
+ []
+
+[31]
+Overfull \hbox (19.15979pt too wide) in paragraph at lines 1264--1265
+ [][] 
+ []
+
+
+Overfull \hbox (18.56398pt too wide) in paragraph at lines 1287--1288
+ [][] 
+ []
+
+[32] [33] [34]
+Overfull \hbox (9.32092pt too wide) in paragraph at lines 1475--1476
+ [][] 
+ []
+
+[35]
+Overfull \hbox (15.57104pt too wide) in paragraph at lines 1522--1523
+ [][] 
+ []
+
+
+Overfull \hbox (12.02101pt too wide) in paragraph at lines 1569--1570
+ [][] 
+ []
+
+[36] [37]
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 38 undefined on inpu
+t line 1629.
+
+
+LaTeX Warning: Citation 'banerjee_co-integration_1993' on page 38 undefined on 
+input line 1629.
+
+[38]
+
+LaTeX Warning: Citation 'banerjee_co-integration_1993' on page 39 undefined on 
+input line 1661.
+
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 39 undefined on inpu
+t line 1661.
+
+[39]
+
+LaTeX Warning: Citation 'banerjee_co-integration_1993' on page 40 undefined on 
+input line 1692.
+
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 40 undefined on inpu
+t line 1692.
+
+
+Overfull \hbox (36.2358pt too wide) in paragraph at lines 1692--1693
+[]\OT1/cmr/m/n/10 Again, the crit-i-cal points ta-bles are avail-able in both [
+]
+ []
+
+
+LaTeX Warning: Citation 'wuertz_funitroots:_2013' on page 40 undefined on input
+ line 1697.
+
+
+LaTeX Warning: Citation 'banerjee_co-integration_1993' on page 40 undefined on 
+input line 1697.
+
+
+Overfull \hbox (67.47348pt too wide) in paragraph at lines 1697--1698
+\OT1/cmr/m/n/10 In or-der to test the aug-mented Dickey-Fuller, we use the \OT1
+/cmr/b/n/10 fU-ni-t-roots \OT1/cmr/m/n/10 ([])
+ []
+
+
+Overfull \hbox (85.92993pt too wide) in paragraph at lines 1697--1698
+\OT1/cmr/m/n/10 that pro-vides the func-tion \OT1/cmtt/m/n/10 adfTest \OT1/cmr/
+m/n/10 that uses the ta-bles pro-vided by []
+ []
+
+
+LaTeX Warning: Citation 'zeileis_dynlm:_2014' on page 40 undefined on input lin
+e 1699.
+
+[40]
+Overfull \hbox (5.7131pt too wide) in paragraph at lines 1731--1732
+ [][] 
+ []
+
+
+LaTeX Warning: Citation 'david_a._dickey_determining_1987' on page 41 undefined
+ on input line 1736.
+
+
+Overfull \hbox (89.50632pt too wide) in paragraph at lines 1736--1737
+[]\OT1/cmr/m/n/10 As we can see we get a slight over-rejection, as pre-dicted b
+y [],
+ []
+
+<fig/c-drift.pdf, id=162, 614.295pt x 794.97pt>
+File: fig/c-drift.pdf Graphic file (type pdf)
+<use fig/c-drift.pdf>
+Package pdftex.def Info: fig/c-drift.pdf  used on input line 1748.
+(pdftex.def)             Requested size: 241.49895pt x 312.52376pt.
+[41]
+
+LaTeX Warning: Citation 'fuller_introduction_1976' on page 42 undefined on inpu
+t line 1753.
+
+<fig/ct-trend.pdf, id=166, 614.295pt x 794.97pt>
+File: fig/ct-trend.pdf Graphic file (type pdf)
+<use fig/ct-trend.pdf>
+Package pdftex.def Info: fig/ct-trend.pdf  used on input line 1765.
+(pdftex.def)             Requested size: 241.49895pt x 312.52376pt.
+[42 <./fig/c-drift.pdf>]
+Overfull \hbox (8.24648pt too wide) in paragraph at lines 1788--1789
+ [][] 
+ []
+
+
+Overfull \hbox (8.24648pt too wide) in paragraph at lines 1807--1808
+ [][] 
+ []
+
+[43 <./fig/ct-trend.pdf>]
+
+LaTeX Warning: Citation 'haldrup_robustness_2002' on page 44 undefined on input
+ line 1813.
+
+
+Overfull \hbox (5.7131pt too wide) in paragraph at lines 1839--1840
+ [][] 
+ []
+
+
+Overfull \hbox (7.40202pt too wide) in paragraph at lines 1861--1862
+ [][] 
+ []
+
+
+Overfull \hbox (7.40202pt too wide) in paragraph at lines 1880--1881
+ [][] 
+ []
+
+[44]
+Overfull \hbox (7.40202pt too wide) in paragraph at lines 1905--1906
+ [][] 
+ []
+
+
+Overfull \hbox (8.24648pt too wide) in paragraph at lines 1924--1925
+ [][] 
+ []
+
+
+Overfull \hbox (8.24648pt too wide) in paragraph at lines 1943--1944
+ [][] 
+ []
+
+
+Overfull \hbox (5.7131pt too wide) in paragraph at lines 1967--1968
+ [][] 
+ []
+
+[45]
+Overfull \hbox (5.7131pt too wide) in paragraph at lines 1986--1987
+ [][] 
+ []
+
+
+Overfull \hbox (5.7131pt too wide) in paragraph at lines 2005--2006
+ [][] 
+ []
+
+
+Overfull \hbox (28.92947pt too wide) in paragraph at lines 2040--2041
+ [][] 
+ []
+
+[46]
+Overfull \hbox (28.92947pt too wide) in paragraph at lines 2059--2060
+ [][] 
+ []
+
+
+Overfull \hbox (28.92947pt too wide) in paragraph at lines 2078--2079
+ [][] 
+ []
+
+[47]
+
+LaTeX Warning: Empty bibliography on input line 2095.
+
+(mmc_Rpackage.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                mmc_Rpackage
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'mmc_Rpackage.run.xml'.
+\openout1 = `mmc_Rpackage.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9401 strings out of 493305
- 159889 string characters out of 3138871
- 417327 words of memory out of 3000000
- 12864 multiletter control sequences out of 15000+200000
- 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 9670 strings out of 492973
+ 163515 string characters out of 3135930
+ 556150 words of memory out of 3000000
+ 13401 multiletter control sequences out of 15000+200000
+ 14152 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,2n,41p,837b,742s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,18n,41p,1834b,1123s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmitt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb>
+Output written on mmc_Rpackage.pdf (47 pages, 569908 bytes).
+PDF statistics:
+ 286 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
