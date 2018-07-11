@@ -6,7 +6,7 @@
 
 \usepackage{graphicx, float, amssymb, amsmath, titlesec}
 \usepackage[citestyle=authoryear, natbib=true, backend=bibtex]{biblatex}
-\addbibresource{mmc_Rpackage.bib}
+\bibliography{mmc-Rpackage-biblio}
 
 
 \addcontentsline{toc}{section}{References}
@@ -37,8 +37,8 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50),fig.path="fig/")
 \begin{document}
 
 \title{Maximized Monte Carlo: an \proglang{R} package}
-\author{Julien Neves \thanks{Graduate student, Department of Economics, McGill University}}
-\date{February 27th, 2017}
+\author{Julien Neves \thanks{Graduate student, Department of Economics, Cornell University}}
+\date{July 10th, 2018}
 
 \maketitle
 

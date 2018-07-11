@@ -41,14 +41,14 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>mmc_Rpackage.aux</file>
-      <file>mmc_Rpackage-blx.bib</file>
+      <file>mmc-Rpackage.aux</file>
+      <file>mmc-Rpackage-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>mmc_Rpackage.bbl</file>
+      <file>mmc-Rpackage.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -63,28 +63,28 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>bibtex</generic>
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>mmc_Rpackage</infile>
+      <infile>mmc-Rpackage</infile>
     </cmdline>
     <input>
-      <file>mmc_Rpackage.aux</file>
+      <file>mmc-Rpackage.aux</file>
     </input>
     <output>
-      <file>mmc_Rpackage.bbl</file>
+      <file>mmc-Rpackage.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>mmc_Rpackage.bbl</file>
+      <file>mmc-Rpackage.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>mmc_Rpackage.aux</file>
-      <file>mmc_Rpackage-blx.bib</file>
+      <file>mmc-Rpackage.aux</file>
+      <file>mmc-Rpackage-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>mmc_Rpackage.bib</file>
+      <file>mmc-Rpackage-biblio.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

@@ -38,6 +38,11 @@
 #' @export
 #'
 pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
+    # NaN in S
+    if (any(is.na(S))){
+        warning("Simulated statistics contain NaN")
+        S <- na.omit(S)
+    }
     # Extract the number of simulation
     N <- length(S)
     # Combine S0 and S to obtain the total set where we rank S0
