@@ -80,7 +80,7 @@ distribution.
 ## Kolmogorov-Smirnov Test using Monte Carlo
 
 # Set seed
-set.seed(123)
+set.seed(999)
 
 # Generate sample data
 y <- rgamma(8, shape = 2, rate = 1)

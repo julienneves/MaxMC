@@ -374,6 +374,11 @@ mmc <- function(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE
         S0 <- lmc$S0
     }
 
+    # Test if S0 is a number
+    if (!is.numeric(S0)) {
+        stop("'statistic' must return a number")
+    }
+
     # Test if S0 is a vector of length 1
     if (length(S0)!=1 && !is.atomic(S0)) {
         stop("'statistic' must return an atomic vector of

@@ -11,7 +11,7 @@ pvalue(S0, S, type = c("geq", "leq", "absolute", "two-tailed"))
 applied to the data.}
 
 \item{S}{A vector. Replications of the test statistic.
-\code{S} must have length greater than one, with no missing values.}
+\code{S} must have length greater than one.}
 
 \item{type}{A character string. Specifies the type of test
 the p-value function produce. The possible values are

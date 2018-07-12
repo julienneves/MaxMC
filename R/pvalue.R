@@ -21,7 +21,7 @@
 #' @param S0 An atomic vector. Value of the test statistic
 #' applied to the data.
 #' @param S A vector. Replications of the test statistic.
-#' \code{S} must have length greater than one, with no missing values.
+#' \code{S} must have length greater than one.
 #' @param type A character string. Specifies the type of test
 #' the p-value function produce. The possible values are
 #' \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
@@ -38,10 +38,10 @@
 #' @export
 #'
 pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
-    # NaN in S
+    # Check for NaN in S
     if (any(is.na(S))){
-        warning("Simulated statistics contain NaN")
-        S <- na.omit(S)
+        warning("simulated statistics contain NaN")
+        S <- stats::na.omit(S)
     }
     # Extract the number of simulation
     N <- length(S)
