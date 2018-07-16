@@ -6,7 +6,7 @@
 
 \usepackage{graphicx, float, amssymb, amsmath, titlesec}
 \usepackage[citestyle=authoryear, natbib=true, backend=bibtex]{biblatex}
-\bibliography{mmc-Rpackage-biblio}
+\bibliography{MaxMC-package-biblio}
 
 
 \addcontentsline{toc}{section}{References}
@@ -43,9 +43,9 @@ opts_chunk$set(tidy.opts=list(width.cutoff=50),fig.path="fig/")
 \maketitle
 
 \begin{abstract}
-	This paper describes the \proglang{R} package \pkg{MMC}, which implements the Maximized Monte Carlo (MMC) technique and the simple Monte Carlo technique with tie-breaker for discrete statistics. To illustrate how to use the \pkg{MMC} package, we present two examples: a goodness-of-fit test and the Behrens-Fisher problem.
+	This paper describes the \proglang{R} package \pkg{MaxMC}, which implements the Maximized Monte Carlo (MMC) technique and the simple Monte Carlo technique with tie-breaker for discrete statistics. To illustrate how to use the \pkg{MaxMC} package, we present two examples: a goodness-of-fit test and the Behrens-Fisher problem.
 
-	We perform a simulation study, in order to demonstrate the utility of the package, of irregular Wald-type tests and unit root tests for autoregressive models. We compare the MMC procedure implemented in the \pkg{MMC} package to the parametric bootstrap and usual asymptotic tests in both cases.
+	We perform a simulation study, in order to demonstrate the utility of the package, of irregular Wald-type tests and unit root tests for autoregressive models. We compare the MMC procedure implemented in the \pkg{MaxMC} package to the parametric bootstrap and usual asymptotic tests in both cases.
 \end{abstract}
 
 \clearpage
@@ -67,7 +67,7 @@ Note that the original Monte Carlo technique, as described by \cite{dwass_modifi
 
 Even though the Monte Carlo technique provides a straightforward procedure to build exact tests, one of its main shortfalls is the requirement that the finite-sample distribution of the statistic be free of any nuisance parameters. Sadly, statistics of interest in economics usually depend on some nuisance parameters. Techniques such as the bootstrap and its variants provide asymptotically valid method of inference when the distribution of the statistic is not stable. In order to retrieve exactness in tests where the finite-sample distribution of the statistic depends on some nuisance parameters, \cite{dufour_monte_2006} proposed an extension of the original Monte Carlo technique to deal with such complications also known as the Maximized Monte Carlo (MMC).
 
-In this paper, we present an implementation of both the MMC and MC with tie-breaker techniques as described by \cite{dufour_monte_2006} for \proglang{R} through the \pkg{MMC} package. Readers should note that the main goal of the \pkg{MMC} package is not to replace any existing package, but to supplement \proglang{R} users with an accessible and effortless way to apply Monte Carlo tests, and more specifically the MMC procedure which is not yet available anywhere. In order to demonstrate where the use of the \pkg{MMC} package could be advantageous, we investigate two different types of common tests: Wald-type tests and unit root tests.
+In this paper, we present an implementation of both the MMC and MC with tie-breaker techniques as described by \cite{dufour_monte_2006} for \proglang{R} through the \pkg{MaxMC} package. Readers should note that the main goal of the \pkg{MaxMC} package is not to replace any existing package, but to supplement \proglang{R} users with an accessible and effortless way to apply Monte Carlo tests, and more specifically the MMC procedure which is not yet available anywhere. In order to demonstrate where the use of the \pkg{MaxMC} package could be advantageous, we investigate two different types of common tests: Wald-type tests and unit root tests.
 
 First, we look at Wald-type tests. The popularity of Wald-type tests can be attributed to the fact that they offer a simple way of testing a wide array of linear and non-linear restrictions using only estimators of the unrestricted model. One issue Wald-type statistics is that, since they are based on asymptotically normal estimators, they need strong regularity assumptions in order to derive any valid inference. Under these regularity conditions, the usual Wald statistic is asymptotically distributed as a chi-squared with degrees of freedom equal to the number of restrictions. As described by \cite{dufour_wald_2013}, these regularity conditions will be violated whenever the covariance matrix of the set of restrictions does not have full column rank in an open neighborhood of the true value of the parameter vector. Note that this does not preclude the  covariance matrix of the set of restrictions to have full column rank in finite samples. Indeed, we could have a covariance matrix where in finite sample the matrix is well-defined and invertible, but, as the sample size goes to infinity, the covariance matrix would converge to a singular matrix. Then, in this case, regularity conditions would be violated. As a matter of fact, situations of this type might be more common than one would first assume. \cite{dufour_wald_2013} list a set of common examples where regularity conditions needed by the Wald-type statistics are breached due to an asymptotically singular covariance matrix of the set of restrictions, including, but not limited to, tests of Granger non-causality in VARMA models, see \cite{boudjellaba_testing_1992, boudjellaba_simplified_1992}, and test of volatility and co-volatility, see \cite{gourieroux_size_2013}.
 
@@ -78,7 +78,7 @@ Second, we turn our attention to test for the order of integration of time serie
 
 Now, the augmented Dickey-Fuller type tests are based on I(1) processes and do not technically preclude I(2) processes. But, as described in \cite{david_a._dickey_determining_1987}, \cite{haldrup_robustness_2002} and \cite{pantula_testing_1989}, the null-distribution of the augmented Dickey-Fuller statistic is not invariant to the order of integration of the process. In fact, \cite{david_a._dickey_determining_1987} showed using Monte Carlo simulations that when testing for a unit root in an I(2) process, the lower-tailed test critical values given in \cite[Table 8.5.2]{fuller_introduction_1976} will slightly over-reject. Additionally,  \cite{haldrup_robustness_2002} confirmed that the lower-tail of the distribution (associated with $H_1: \gamma<0$) is only slightly affected by the presence of a unit root of multiplicity of 2, but, \cite{haldrup_robustness_2002} also showed that the upper-tail of the distribution (associated with $H_1: \gamma>0$) is severely distorted. Therefore, in this paper we present a way to correct for this distortion using the MMC technique developed by \cite{dufour_monte_2006} and implemented in this package.
 
-This paper is organized as follows. Section 2 provides the framework for both the MC technique with tie-breaker in the case of a discrete statistic and the MMC. Section 3 gives the details for the implementation of the \pkg{MMC} package. Also included in section 3 is an example of test of goodness of fit and an example based on testing the equality of means in populations with different variances to demonstrate how the \pkg{MMC} package can be directly applied. Section 4 sets the framework for Wald-type tests, describes four example of irregular Wald statistics, and reports their respective simulation study results. Section 5 provides the framework for the augmented Dickey-Fuller test, and the results for the unit root test simulation study. Finally, the source code of the package is provided in the appendix. Note that \textbf{.Rd} files are excluded as we are using the package \pkg{roxygen2} \citep{wickham_roxygen2:_2015} to generate them directly from our \textbf{.R} files.
+This paper is organized as follows. Section 2 provides the framework for both the MC technique with tie-breaker in the case of a discrete statistic and the MMC. Section 3 gives the details for the implementation of the \pkg{MaxMC} package. Also included in section 3 is an example of test of goodness of fit and an example based on testing the equality of means in populations with different variances to demonstrate how the \pkg{MaxMC} package can be directly applied. Section 4 sets the framework for Wald-type tests, describes four example of irregular Wald statistics, and reports their respective simulation study results. Section 5 provides the framework for the augmented Dickey-Fuller test, and the results for the unit root test simulation study. Finally, the source code of the package is provided in the appendix. Note that \textbf{.Rd} files are excluded as we are using the package \pkg{roxygen2} \citep{wickham_roxygen2:_2015} to generate them directly from our \textbf{.R} files.
 
 \section{Monte Carlo tests}
 
@@ -167,7 +167,7 @@ We can summarize the procedure as the following
 where $\tilde{R}_N(S_0)$ is the randomized sample rank of $S_0$
 \item[Step 4]  Test if $\tilde{p}_{N}(S_{0})\leq \alpha$
 \end{itemize}
-This procedure is known as the MC with tie-breaker, and if the statistic is pivotal and $\alpha(N+1)$ is an integer, the test is exact. Note that the distribution of the statistic is no longer required to be continuous. The MC with tie-breaker is implemented in the \pkg{MMC} package under the function name \code{mc}.
+This procedure is known as the MC with tie-breaker, and if the statistic is pivotal and $\alpha(N+1)$ is an integer, the test is exact. Note that the distribution of the statistic is no longer required to be continuous. The MC with tie-breaker is implemented in the \pkg{MaxMC} package under the function name \code{mc}.
 
 \subsection{Maximized Monte Carlo}
 
@@ -244,7 +244,7 @@ P [\sup_{\nu \in \Omega_0} \tilde{p}_{N}(S_{0} \mid \nu) \leq \alpha] = \alpha
 \end{align}
 which implies that the test is exact at level $\alpha$; again for a proof, see \cite{dufour_monte_2006}.
 
-One issue that arises with the MMC is that, as the size of $\Omega_0$ increases, the method becomes computationally heavier. Thankfully, in the past decades, great improvements have been made to both computer hardware and global optimization algorithms. In fact, section 4 presents some of the global optimization algorithms that have been implemented in the \pkg{MMC} package in order to find the supremum of the p-value function. We can hope that future advances in computer science will render the MMC procedure an even more attractive option for any simulation-based test.
+One issue that arises with the MMC is that, as the size of $\Omega_0$ increases, the method becomes computationally heavier. Thankfully, in the past decades, great improvements have been made to both computer hardware and global optimization algorithms. In fact, section 4 presents some of the global optimization algorithms that have been implemented in the \pkg{MaxMC} package in order to find the supremum of the p-value function. We can hope that future advances in computer science will render the MMC procedure an even more attractive option for any simulation-based test.
 
 Regardless of any past or future improvments in the field of computer science, we can simplify the MMC procedure whenever a consistent point set estimate of $\nu$ is available and still maintain the validity of the inference of the test asymptotically. We simply reformulate the previous steps in the following way
 \begin{itemize}
@@ -346,13 +346,13 @@ where $u=(u_1,...u_n)$ is a vector of $i.i.d.$ random variables with known distr
 
 \section{Implementation}
 
-\pkg{MMC} is available on GitHub. In order to install it, simply make sure \pkg{devtools} \citep{wickham_devtools:_2016} is installed, and run the following command lines
+\pkg{MaxMC} is available on GitHub. In order to install it, simply make sure \pkg{devtools} \citep{wickham_devtools:_2016} is installed, and run the following command lines
 <<installation, eval=FALSE, tidy=TRUE>>=
 require(devtools)
 install_github("julienneves/MMC")
 @
 
-In the next sections, we look more closely at the two functions at the core of \pkg{MMC} package: \code{mc} and \code{mmc}.
+In the next sections, we look more closely at the two functions at the core of \pkg{MaxMC} package: \code{mc} and \code{mmc}.
 
 \subsection{\code{MMC::mc}}
 
@@ -435,7 +435,7 @@ To solve this problem, we use the Kolmogorov-Smirnov statistic \citep{smirnoff_s
 
 	In this example, we let $n=m=8$, $X_i \sim Poisson(4)$, and $Y_j \sim Poisson(4)$.
 	<<cache = TRUE, tidy = TRUE>>=
-	library(mmc)
+	library(MaxMC)
 
 	# Generate x ~ Poisson(4), y ~  Poisson(4)
 	x <- rpois(8, lambda = 4)
@@ -563,7 +563,7 @@ Note that one issue we have to face when choosing an algorithm is that the p-val
 
 	As shown in \cite{mullen_continuous_2014}, the \pkg{GenSA} package outperforms the function \code{optim} in terms of convergence and speed. Therefore, the choice was easy for our package.
 
-	The method is set by default to stop when the number of steps without improvement reaches 25. It will also stop when it finds a point where the p-value is either equal to 1 or bigger than the level \code{alpha}. For other details on the settings of this method, see \cite{yang_xiang_generalized_2013} and the documentation for \pkg{MMC} and \pkg{GenSA}.
+	The method is set by default to stop when the number of steps without improvement reaches 25. It will also stop when it finds a point where the p-value is either equal to 1 or bigger than the level \code{alpha}. For other details on the settings of this method, see \cite{yang_xiang_generalized_2013} and the documentation for \pkg{MaxMC} and \pkg{GenSA}.
 
 
 
@@ -572,11 +572,11 @@ Note that one issue we have to face when choosing an algorithm is that the p-val
 
 	Particle swarm optimization was introduced by \cite{eberhart_new_1995} and \cite{shi_modified_1998}. As the simulated annealing the method is metaheuristic. The algorithm involves taking a set of candidate solutions (particles) with random initial position and the particles are set to move around the search. The direction and the velocity associated to the particles are guided toward both the best known position for the individual particle and the best known overall position. As the number of iterations increase, so will the convergence to the best known position for the entire population.
 
-	Multiple packages like \pkg{pso} \citep{bendtsen_pso:_2012}, \pkg{hydroPSO} \citep{zambrano-bigiarini_hydropso:_2014} and \pkg{psoptim}	\citep{ciupke_psoptim:_2016} implement the particle swarm optimization technique in \proglang{R}. For the package \pkg{MMC}, we selected the \pkg{pso} package and its function \code{psoptim} (note that both \pkg{psotim} and \pkg{pso} chose to name their function \code{psoptim} which might be a bit confusing).
+	Multiple packages like \pkg{pso} \citep{bendtsen_pso:_2012}, \pkg{hydroPSO} \citep{zambrano-bigiarini_hydropso:_2014} and \pkg{psoptim}	\citep{ciupke_psoptim:_2016} implement the particle swarm optimization technique in \proglang{R}. For the package \pkg{MaxMC}, we selected the \pkg{pso} package and its function \code{psoptim} (note that both \pkg{psotim} and \pkg{pso} chose to name their function \code{psoptim} which might be a bit confusing).
 
 	When comparing \pkg{pso} and \pkg{hydroPSO}, \cite{mullen_continuous_2014} found that \pkg{pso} perfomed a bit better. At the time \cite{mullen_continuous_2014} was published, \pkg{psoptim} was not avaiable, but if we compare it to \pkg{pso} the controls available are more restricted with \pkg{psoptim}.
 
-	As for the simulated annealing method, the algorithm is set to stop after no improvement to the best known location has been made in 25 steps. For more details on how the velocities, population size, and such are set, see \cite{bendtsen_pso:_2012} and the documentation for \pkg{MMC} and \pkg{GenSA}.
+	As for the simulated annealing method, the algorithm is set to stop after no improvement to the best known location has been made in 25 steps. For more details on how the velocities, population size, and such are set, see \cite{bendtsen_pso:_2012} and the documentation for \pkg{MaxMC} and \pkg{GenSA}.
 
 
 	\paragraph{GA}
@@ -621,7 +621,7 @@ Note that one issue we have to face when choosing an algorithm is that the p-val
 	Therefore, as previously mentioned, an easy way to retrieve an exact test is to apply the MMC procedure. The following \proglang{R} code excerpt shows how the BF problem can be implemented for $X_{1i} \sim N(0,1)$ with $n_1=15$ and $X_{2i} \sim N(0,100)$ with $n_2=25$
 
 <<cache = TRUE, tidy=TRUE>>=
-library(mmc)
+library(MaxMC)
 library(MASS)
 
 # Generate x1 ~ N(0,1) and x2 ~ N(0,100)
@@ -677,7 +677,7 @@ If we return to the topic of global optimization, the choice of the method to us
 
 As we can see, the \code{pso} seems to provide the most efficient method in this case. The \code{GenSA} might take on average the longest time for this example, but we also note that in some cases it finds a solution quite rapidly. Moreover, the grid search method might seem to perform well since it only evaluates the function at $10^3$ points. If we double the accuracy, the time needed would increase by a factor of 8 which would make this method ineffective compared to others. Additionally, we did not use any parallelization in the controls of the methods. As such, \code{GA} and \code{gridSearch} performance could have been improved quite significantly.
 
-Finally, since the methods are metaheuristic, this figure is sadly not enough for us to make any comment on how efficient one method is compared to another in finding a ``good'' solution. In the end, the choice of method might boil down to personal preference. What is important regarding the \pkg{MMC} package is that it is able to provide any tools needed to solve any problem thrown at it.
+Finally, since the methods are metaheuristic, this figure is sadly not enough for us to make any comment on how efficient one method is compared to another in finding a ``good'' solution. In the end, the choice of method might boil down to personal preference. What is important regarding the \pkg{MaxMC} package is that it is able to provide any tools needed to solve any problem thrown at it.
 
 \section{Irregular Wald tests}
 
@@ -1962,9 +1962,9 @@ Looking at the results it seems that the loss of power of MMC compared to the ot
 
 \section{Conclusion}
 
-In this paper, we demonstrated how the \pkg{MMC} package provides an easy way to implement Monte Carlo techniques such as the MC technique with tie-breaker and the MMC. These techniques are widely applicable to a wide set of problems. In fact, we demonstrated that with irregular Wald-type tests and unit root tests, only the MMC provides valid inferences compared to the LMC, the bootstrap and the traditional asymptotic distribution.
+In this paper, we demonstrated how the \pkg{MaxMC} package provides an easy way to implement Monte Carlo techniques such as the MC technique with tie-breaker and the MMC. These techniques are widely applicable to a wide set of problems. In fact, we demonstrated that with irregular Wald-type tests and unit root tests, only the MMC provides valid inferences compared to the LMC, the bootstrap and the traditional asymptotic distribution.
 
-Future development of the \pkg{MMC} package will provide additional tools such as new techniques for global optimization, in order to offer better performance and more versatility to users. Additionally, future versions of \pkg{MMC} might include \proglang{C} code. As for the moment, the package is only coded in pure \proglang{R}. This should decrease the computational load required by the \pkg{MMC} package.
+Future development of the \pkg{MaxMC} package will provide additional tools such as new techniques for global optimization, in order to offer better performance and more versatility to users. Additionally, future versions of \pkg{MaxMC} might include \proglang{C} code. As for the moment, the package is only coded in pure \proglang{R}. This should decrease the computational load required by the \pkg{MaxMC} package.
 
 
 \clearpage

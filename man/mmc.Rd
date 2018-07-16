@@ -98,7 +98,7 @@ Find the Maximized Monte Carlo p-value on a set of nuisance
 parameters.
 }
 \details{
-The \code{ran.gen} function defined by the user is used to
+The \code{dgp} function defined by the user is used to
 generate new observations in order to compute the simulated
  statistics.
 

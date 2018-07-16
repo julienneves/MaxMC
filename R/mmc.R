@@ -1,8 +1,8 @@
 #' @title Maximized Monte Carlo
 #' @docType package
-#' @name MaxMC
-#' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+#' @name MaxMC-package
 #' @author Julien Neves, neves.julien@gmail.com (Maintainer)
+#' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
 #'
 #' @description Functions that implements the Maximized Monte Carlo technique based of
 #' Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
@@ -25,7 +25,7 @@ NA
 #' Find the Maximized Monte Carlo p-value on a set of nuisance
 #' parameters.
 #'
-#' The \code{ran.gen} function defined by the user is used to
+#' The \code{dgp} function defined by the user is used to
 #' generate new observations in order to compute the simulated
 #'  statistics.
 #'
