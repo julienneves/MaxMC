@@ -5,7 +5,7 @@ Date: 2016-10-18
 Version: 0.1.0.9012
 Authors@R: c(person("Julien", "Neves", email = "neves.julien@gmail.com", role = c("aut", "cre")), person("Jean-Marie", "Dufour", email = "jean-marie.dufour@mcgill.ca", role = c("aut", "ths")))
 Maintainer: Julien Neves <neves.julien@gmail.com>
-Description: Functions that implements the Maximized Monte Carlo technique based of Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters: A general approach to finite sample inference and nonstandard asymptotics in econometrics, Journal of Econometrics 133(2), 443-447.
+Description: Functions that implement the Maximized Monte Carlo technique based of Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters: A general approach to finite sample inference and nonstandard asymptotics in econometrics, Journal of Econometrics 133(2), 443-447.
 License: GPL(>= 3)
 LazyData: TRUE
 RoxygenNote: 6.0.1

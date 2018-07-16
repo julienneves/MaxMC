@@ -6,9 +6,9 @@
 #' We allow for four types of p-value: \code{leq}, \code{geq},
 #' \code{absolute} and \code{two-tailed}. For one-tailed test,
 #' \code{leq} returns the proportion of simulated values smaller
-#' than the statistic while \code{geq} return the proportion of
+#' than the statistic while \code{geq} returns the proportion of
 #' simulated values greater than the statistic. For two-tailed
-#' test, if the statistic is symmetric, one can use the
+#' test with a symmetric satistic, one can use the
 #' absolute value of the statistic and its simulated values to
 #' retrieve a two-tailed test (i.e. type = \code{absolute}).
 #' If the statistic is not symmetric, one can specify the p-value
@@ -20,10 +20,10 @@
 #'
 #' @param S0 An atomic vector. Value of the test statistic
 #' applied to the data.
-#' @param S A vector. Replications of the test statistic.
+#' @param S A vector. It consists of replications of the test statistic.
 #' \code{S} must have length greater than one.
-#' @param type A character string. Specifies the type of test
-#' the p-value function produce. The possible values are
+#' @param type A character string. It specifies the type of test
+#' the p-value function produces. The possible values are
 #' \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
 #'  Default is \code{geq}.
 #'

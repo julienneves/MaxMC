@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-EXAMPLE.R
+examples.R
 inst/doc

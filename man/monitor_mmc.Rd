@@ -9,15 +9,14 @@ monitor_mmc(object, alpha = NULL, monitor = TRUE)
 \arguments{
 \item{object}{A data.frame}
 
-\item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
+\item{alpha}{An atomic vector. If \code{mmc} finds a
 p-value over \code{alpha}, then the algorithm will stop. This is particularly
 useful if we are only looking at testing a hypothesis at a particular level.
 Default is NULL.}
 
-\item{monitor}{A logical. If set
-to plot the p-values at every iteration and the cummulative maximum p-value
-are plotted on a graphical device. In non interactive sessions, by
-default monitor = FALSE so any output is suppressed.}
+\item{monitor}{A logical. If set to TRUE, then the p-values at every
+iteration and the cumulative maximum p-value are plotted on a graphical device.
+Default is FALSE.}
 }
 \value{
 A list. Arguments to be used to control the behavior

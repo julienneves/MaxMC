@@ -12,21 +12,21 @@ applied to the data.}
 
 \item{y}{A vector or data frame.}
 
-\item{statistic}{A function or a character string. Specifies
-how the statistic is computed. The function inputs the
-\code{y}, and outputs a scalar numeric.}
+\item{statistic}{A function or a character string that specifies
+how the statistic is computed. The function needs to input the
+\code{y} and output a scalar.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
-It should represent the data generating process under the null.
-Default value is the function sample(y, replace = TRUE), the
+\code{y} and outputs a simulated \code{y}. It should represent the
+data generating process under the null. Default value is the function
+\code{sample(y, replace = TRUE)}, i.e. the
 bootstrap resampling of \code{y}.}
 
 \item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
-\item{type}{A character string. Specifies the type of test
-the p-value function produce. The possible values are
+\item{type}{A character string. It specifies the type of test
+the p-value function produces. The possible values are
 \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
  Default is \code{geq}.}
 

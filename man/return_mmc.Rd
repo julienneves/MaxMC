@@ -13,22 +13,19 @@ applied to the data.}
 
 \item{y}{A vector or data frame.}
 
-\item{statistic}{A function or a character string. Specifies
-how the statistic is computed. The function inputs the
-\code{y}, and outputs a scalar numeric.}
+\item{statistic}{A function or a character string that specifies
+how the statistic is computed. The function needs to input the
+\code{y} and output a scalar.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuisance paramaters \code{v}, and
-outputs a simulated \code{y} (i.e. an object of the same type
-as \code{y}). It is important to respect the order of the arguments.
+\code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
 It should represent the data generating process under the null.
-The function can be specified without any nuisance parameters
-(i.e. without \code{v}). Default value is sample(y, replace = TRUE),
-the bootstrap resampling of \code{y}.}
+Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
+bootstrap resampling of \code{y}.}
 
 \item{est}{A vector with length of v. It is the starting
 point of the algorithm. If \code{est} is a consistent estimate
-of \code{v} then \code{mmc} will return both the mmc and LMC.
+of \code{v} then \code{mmc} will return both the MMC and Local Monte Carlo (LMC).
 Default is NULL, in which case, default values will be generated automatically.}
 
 \item{lower}{A vector with length of v. Lower bounds for
@@ -40,8 +37,8 @@ nuisance parameters under the null.}
 \item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
-\item{type}{A character string. Specifies the type of test
-the p-value function produce. The possible values are
+\item{type}{A character string. It specifies the type of test
+the p-value function produces. The possible values are
 \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
  Default is \code{geq}.}
 
@@ -51,13 +48,13 @@ are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}
 genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
 Default is \code{GenSA},}
 
-\item{alpha}{A atomic vector. Default is NULL. If \code{mmc} finds a
+\item{alpha}{An atomic vector. If \code{mmc} finds a
 p-value over \code{alpha}, then the algorithm will stop. This is particularly
 useful if we are only looking at testing a hypothesis at a particular level.
 Default is NULL.}
 
 \item{control}{A list. Arguments to be used to control the
-behavior of the algorithm chosen in \code{method}. See Controls.}
+behavior of the algorithm chosen in \code{method}. See controls section for more details.}
 
 \item{call}{An object of class \code{call}. Original call to \code{mmc}}
 

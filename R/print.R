@@ -50,7 +50,7 @@ print.mmc <- function(x, digits = getOption("digits"), ...){
 #' Print a Summary of a \code{mc} Object
 #'
 #' This is a method for the function \code{print()} for objects of the
-#' class \code{mmc}.
+#' class \code{mc}.
 #'
 #' @return The \code{mc} object is returned invisibly.
 #'

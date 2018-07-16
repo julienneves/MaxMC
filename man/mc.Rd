@@ -10,44 +10,44 @@ mc(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE), N = 99,
 \arguments{
 \item{y}{A vector or data frame.}
 
-\item{statistic}{A function or a character string. Specifies
-how the statistic is computed. The function inputs the
-\code{y}, and outputs a scalar numeric.}
+\item{statistic}{A function or a character string that specifies
+how the statistic is computed. The function needs to input the
+\code{y} and output a scalar.}
 
 \item{...}{Other named arguments for statistic which are
 passed unchanged each time it is called}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
-It should represent the data generating process under the null.
-Default value is the function sample(y, replace = TRUE), the
+\code{y} and outputs a simulated \code{y}. It should represent the
+data generating process under the null. Default value is the function
+\code{sample(y, replace = TRUE)}, i.e. the
 bootstrap resampling of \code{y}.}
 
 \item{N}{An atomic vector. Number of replications of the test
 statistic.}
 
-\item{type}{A character string. Specifies the type of test
-the p-value function produce. The possible values are
+\item{type}{A character string. It specifies the type of test
+the p-value function produces. The possible values are
 \code{geq}, \code{leq}, \code{absolute} and \code{two-tailed}.
  Default is \code{geq}.}
 }
 \value{
-The returned value if an object of class \code{mc},
+The returned value is an object of class \code{mc}
 containing the following components:
- \item{S0}{Observed value of \code{statistic}}
- \item{pval}{Monte Carlo p-value of \code{statistic}}
- \item{y}{Data specified in call}
- \item{statistic}{\code{statistic} function specified in call}
- \item{dgp}{\code{dgp} function specified in call}
- \item{N}{Number of replications specified in call}
- \item{type}{\code{type} of p-value specified in call}
- \item{call}{Original call to \code{mmc}}
- \item{seed}{value of \code{.Random.seed} at the start of
- \code{mc} call}
+ \item{S0}{Observed value of \code{statistic}.}
+ \item{pval}{Monte Carlo p-value of \code{statistic}.}
+ \item{y}{Data specified in call.}
+ \item{statistic}{\code{statistic} function specified in call.}
+ \item{dgp}{\code{dgp} function specified in call.}
+ \item{N}{Number of replications specified in call.}
+ \item{type}{\code{type} of p-value specified in call.}
+ \item{call}{Original call to \code{mmc}.}
+ \item{seed}{Value of \code{.Random.seed} at the start of
+ \code{mc} call.}
 }
 \description{
-Generates N Monte Carlo replicates of a statistic applied to
-data.
+Find the Monte Carlo (MC) p-value by generating N replications
+of a statistic.
 }
 \details{
 The \code{dgp} function defined by the user is used to
@@ -63,9 +63,9 @@ distribution.
 We allow for four types of p-value: \code{leq}, \code{geq},
 \code{absolute} and \code{two-tailed}. For one-tailed test,
 \code{leq} returns the proportion of simulated values smaller
-than the statistic while \code{geq} return the proportion of
+than the statistic while \code{geq} returns the proportion of
 simulated values greater than the statistic. For two-tailed
-test, if the statistic is symmetric, one can use the
+test with a symmetric satistic, one can use the
 absolute value of the statistic and its simulated values to
 retrieve a two-tailed test (i.e. type = \code{absolute}).
 If the statistic is not symmetric, one can specify the p-value
@@ -104,7 +104,7 @@ A general approach to finite sample inference and nonstandard asymptotics in eco
 \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 
 Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
-in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 }
 \seealso{
 \code{\link{mmc}}, \code{\link{pvalue}}

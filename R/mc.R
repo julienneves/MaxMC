@@ -1,7 +1,7 @@
 #' Monte Carlo with Tie-Breaker
 #'
-#' Generates N Monte Carlo replicates of a statistic applied to
-#' data.
+#' Find the Monte Carlo (MC) p-value by generating N replications
+#' of a statistic.
 #'
 #' The \code{dgp} function defined by the user is used to
 #' generate new observations in order to compute the simulated
@@ -16,9 +16,9 @@
 #' We allow for four types of p-value: \code{leq}, \code{geq},
 #' \code{absolute} and \code{two-tailed}. For one-tailed test,
 #' \code{leq} returns the proportion of simulated values smaller
-#' than the statistic while \code{geq} return the proportion of
+#' than the statistic while \code{geq} returns the proportion of
 #' simulated values greater than the statistic. For two-tailed
-#' test, if the statistic is symmetric, one can use the
+#' test with a symmetric satistic, one can use the
 #' absolute value of the statistic and its simulated values to
 #' retrieve a two-tailed test (i.e. type = \code{absolute}).
 #' If the statistic is not symmetric, one can specify the p-value
@@ -29,33 +29,33 @@
 #' distribution.
 #'
 #' @param dgp A function. The function inputs the first argument
-#' \code{y}, and outputs a simulated \code{y} (i.e. an object of the same type as \code{y}).
-#' It should represent the data generating process under the null.
-#' Default value is the function sample(y, replace = TRUE), the
+#' \code{y} and outputs a simulated \code{y}. It should represent the
+#' data generating process under the null. Default value is the function
+#' \code{sample(y, replace = TRUE)}, i.e. the
 #' bootstrap resampling of \code{y}.
 #'
 #' @inheritParams mmc
 #' @inheritParams pvalue
 #'
-#' @return The returned value if an object of class \code{mc},
+#' @return The returned value is an object of class \code{mc}
 #' containing the following components:
-#'  \item{S0}{Observed value of \code{statistic}}
-#'  \item{pval}{Monte Carlo p-value of \code{statistic}}
-#'  \item{y}{Data specified in call}
-#'  \item{statistic}{\code{statistic} function specified in call}
-#'  \item{dgp}{\code{dgp} function specified in call}
-#'  \item{N}{Number of replications specified in call}
-#'  \item{type}{\code{type} of p-value specified in call}
-#'  \item{call}{Original call to \code{mmc}}
-#'  \item{seed}{value of \code{.Random.seed} at the start of
-#'  \code{mc} call}
+#'  \item{S0}{Observed value of \code{statistic}.}
+#'  \item{pval}{Monte Carlo p-value of \code{statistic}.}
+#'  \item{y}{Data specified in call.}
+#'  \item{statistic}{\code{statistic} function specified in call.}
+#'  \item{dgp}{\code{dgp} function specified in call.}
+#'  \item{N}{Number of replications specified in call.}
+#'  \item{type}{\code{type} of p-value specified in call.}
+#'  \item{call}{Original call to \code{mmc}.}
+#'  \item{seed}{Value of \code{.Random.seed} at the start of
+#'  \code{mc} call.}
 #'
 #' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
 #' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
-#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
 #' @seealso \code{\link{mmc}}, \code{\link{pvalue}}
 #' @example \inst\examples\mc_example.R

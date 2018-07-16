@@ -2,12 +2,12 @@
 % Please edit documentation in R/plot.R
 \name{plot.mmc}
 \alias{plot.mmc}
-\title{Print a Summary of a \code{mmc} Object}
+\title{Plot a \code{mmc} Object}
 \usage{
 \method{plot}{mmc}(x, ...)
 }
 \arguments{
-\item{x}{An object of class "mmc"}
+\item{x}{An object of class \code{mmc}.}
 
 \item{...}{Arguments to be passed to methods, such as \link{graphical parameters} (see \code{\link{par}}).}
 }
@@ -15,6 +15,6 @@
 The \code{mmc} object is returned invisibly.
 }
 \description{
-This is a method for the function \code{print()} for objects of the
-class \code{mmc}.
+The \code{plot()} method for objects of the
+class \code{mmc} gives a plot of the best and current p-value found during the iterations of \code{mmc}.
 }

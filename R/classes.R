@@ -7,11 +7,11 @@
 #'
 #' @param call An object of class \code{call}. Original call to \code{mmc}
 #' @param seed An integer vector. Value of \code{.Random.seed} at the start of
-#'  \code{mmc} call
+#'  \code{mmc} call.
 #' @param lmc An object of class \code{mc}. If \code{par} is specified, it returns an object
-#' of class \code{mc} corresponding the Local Monte Carlo test
-#' @param opt_result An object returning the optimization results
-#' @param opt_trace An object returning the optimization results
+#' of class \code{mc} corresponding the Local Monte Carlo test.
+#' @param opt_result An object returning the optimization results.
+#' @param opt_trace An object returning the optimization results.
 #'
 #' @inheritParams mmc
 #' @inheritParams pvalue

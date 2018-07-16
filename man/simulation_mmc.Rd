@@ -10,18 +10,15 @@ simulation_mmc(y, statistic, dgp = function(y, v) sample(y, replace = TRUE),
 \arguments{
 \item{y}{A vector or data frame.}
 
-\item{statistic}{A function or a character string. Specifies
-how the statistic is computed. The function inputs the
-\code{y}, and outputs a scalar numeric.}
+\item{statistic}{A function or a character string that specifies
+how the statistic is computed. The function needs to input the
+\code{y} and output a scalar.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuisance paramaters \code{v}, and
-outputs a simulated \code{y} (i.e. an object of the same type
-as \code{y}). It is important to respect the order of the arguments.
+\code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
 It should represent the data generating process under the null.
-The function can be specified without any nuisance parameters
-(i.e. without \code{v}). Default value is sample(y, replace = TRUE),
-the bootstrap resampling of \code{y}.}
+Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
+bootstrap resampling of \code{y}.}
 
 \item{v}{A vector paramaters. The vector \code{v} is use to
 specify the \code{dgp}. Note that if \code{dgp} is a

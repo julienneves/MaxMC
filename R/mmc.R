@@ -1,10 +1,10 @@
 #' @title Maximized Monte Carlo
 #' @docType package
-#' @name MaxMC
-#' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
+#' @name MaxMC-package
 #' @author Julien Neves, neves.julien@gmail.com (Maintainer)
+#' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
 #'
-#' @description Functions that implements the Maximized Monte Carlo technique based of
+#' @description Functions that implement the Maximized Monte Carlo technique based on
 #' Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
@@ -22,10 +22,10 @@ NA
 
 #' Maximized Monte Carlo
 #'
-#' Find the Maximized Monte Carlo p-value on a set of nuisance
+#' Find the Maximized Monte Carlo (MMC) p-value on a set of nuisance
 #' parameters.
 #'
-#' The \code{ran.gen} function defined by the user is used to
+#' The \code{dgp} function defined by the user is used to
 #' generate new observations in order to compute the simulated
 #'  statistics.
 #'
@@ -38,9 +38,9 @@ NA
 #' We allow for four types of p-value: \code{leq}, \code{geq},
 #' \code{absolute} and \code{two-tailed}. For one-tailed test,
 #' \code{leq} returns the proportion of simulated values smaller
-#' than the statistic while \code{geq} return the proportion of
+#' than the statistic while \code{geq} returns the proportion of
 #' simulated values greater than the statistic. For two-tailed
-#' test, if the statistic is symmetric, one can use the
+#' test with a symmetric satistic, one can use the
 #' absolute value of the statistic and its simulated values to
 #' retrieve a two-tailed test (i.e. type = \code{absolute}).
 #' If the statistic is not symmetric, one can specify the p-value
@@ -214,24 +214,21 @@ NA
 #'
 #'
 #' @param y A vector or data frame.
-#' @param statistic A function or a character string. Specifies
-#' how the statistic is computed. The function inputs the
-#' \code{y}, and outputs a scalar numeric.
+#' @param statistic A function or a character string that specifies
+#' how the statistic is computed. The function needs to input the
+#' \code{y} and output a scalar.
 #' @param dgp A function. The function inputs the first argument
-#' \code{y} and a vector of nuisance paramaters \code{v}, and
-#' outputs a simulated \code{y} (i.e. an object of the same type
-#' as \code{y}). It is important to respect the order of the arguments.
+#' \code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
 #' It should represent the data generating process under the null.
-#' The function can be specified without any nuisance parameters
-#' (i.e. without \code{v}). Default value is sample(y, replace = TRUE),
-#' the bootstrap resampling of \code{y}.
+#' Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
+#' bootstrap resampling of \code{y}.
 #' @param N An atomic vector. Number of replications of the test
 #' statistic.
 #' @param ... Other named arguments for statistic which are
 #' passed unchanged each time it is called
 #' @param est A vector with length of v. It is the starting
 #' point of the algorithm. If \code{est} is a consistent estimate
-#' of \code{v} then \code{mmc} will return both the mmc and LMC.
+#' of \code{v} then \code{mmc} will return both the MMC and Local Monte Carlo (LMC).
 #' Default is NULL, in which case, default values will be generated automatically.
 #' @param lower A vector with length of v. Lower bounds for
 #' nuisance parameters under the null.
@@ -243,43 +240,41 @@ NA
 #' genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
 #' Default is \code{GenSA},
 #' @param control A list. Arguments to be used to control the
-#' behavior of the algorithm chosen in \code{method}. See Controls.
-#' @param alpha A atomic vector. Default is NULL. If \code{mmc} finds a
+#' behavior of the algorithm chosen in \code{method}. See controls section for more details.
+#' @param alpha An atomic vector. If \code{mmc} finds a
 #' p-value over \code{alpha}, then the algorithm will stop. This is particularly
 #' useful if we are only looking at testing a hypothesis at a particular level.
 #' Default is NULL.
-#' @param monitor A logical. If set
-#' to plot the p-values at every iteration and the cummulative maximum p-value
-#' are plotted on a graphical device. In non interactive sessions, by
-#' default monitor = FALSE so any output is suppressed.
+#' @param monitor A logical. If set to TRUE, then the p-values at every
+#' iteration and the cumulative maximum p-value are plotted on a graphical device.
+#' Default is FALSE.
 #'
 #' @inheritParams pvalue
 #'
-#' @return The returned value if an object of class \code{mmc},
+#' @return The returned value is an object of class \code{mmc}
 #' containing the following components:
-#'  \item{S0}{Observed value of \code{statistic}}
-#'  \item{pval}{Maximized Monte Carlo p-value of \code{statistic} under null}
-#'  \item{y}{Data specified in call}
+#'  \item{S0}{Observed value of \code{statistic}.}
+#'  \item{pval}{Maximized Monte Carlo p-value of \code{statistic} under null.}
+#'  \item{y}{Data specified in call.}
 #'  \item{statistic}{\code{statistic} function specified in
-#'  call}
-#'  \item{dgp}{\code{dgp} function specified in call}
-#'  \item{est}{\code{est} vector if specified in call}
-#'  \item{lower}{\code{lower} vector if specified in call}
-#'  \item{upper}{\code{upper} vector if specified in call}
-#'  \item{N}{Number of replications specified in call}
-#'  \item{type}{\code{type} of p-value specified in call}
-#'  \item{method}{\code{method} specified in call}
-#'  \item{call}{Original call to \code{mmc}}
+#'  call.}
+#'  \item{dgp}{\code{dgp} function specified in call.}
+#'  \item{est}{\code{est} vector if specified in call.}
+#'  \item{lower}{\code{lower} vector if specified in call.}
+#'  \item{upper}{\code{upper} vector if specified in call.}
+#'  \item{N}{Number of replications specified in call.}
+#'  \item{type}{\code{type} of p-value specified in call.}
+#'  \item{method}{\code{method} specified in call.}
+#'  \item{call}{Original call to \code{mmc}.}
 #'  \item{seed}{Value of \code{.Random.seed} at the start of
-#'  \code{mmc} call}
-#'  \item{lmc}{if \code{par} is specified, it returns an
-#'  object of class \code{mc} corresponding the Local Monte
-#'  Carlo test}
-#'  \item{opt_result}{an object returning the optimization
-#'  results}
-#'  \item{rejection}{if \code{alpha} is specified it returns
-#'  an vector specifying is the hypothesis was rejected or
-#'  not at level \code{alpha}}
+#'  \code{mmc} call.}
+#'  \item{lmc}{If \code{par} is specified, it returns an
+#'  object of class \code{mc} corresponding to the Local Monte
+#'  Carlo test.}
+#'  \item{opt_result}{An object returning the optimization
+#'  results.}
+#'  \item{rejection}{If \code{alpha} is specified, it returns
+#'  a vector specifying whether the hypothesis was rejected at level \code{alpha}.}
 #'
 #'
 #' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
@@ -287,7 +282,7 @@ NA
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
 #' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
-#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
 #' @references Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
 #' Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume

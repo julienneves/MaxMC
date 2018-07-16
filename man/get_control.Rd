@@ -14,7 +14,7 @@ genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
 Default is \code{GenSA},}
 
 \item{control}{A list. Arguments to be used to control the
-behavior of the algorithm chosen in \code{method}. See Controls.}
+behavior of the algorithm chosen in \code{method}. See controls section for more details.}
 }
 \value{
 A list. Arguments to be used to control the behavior
