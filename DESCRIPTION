@@ -1,4 +1,4 @@
-Package: mmc
+Package: MaxMC
 Type: Package
 Title: Maximized Monte Carlo
 Date: 2016-10-18
@@ -9,7 +9,7 @@ Description: Functions that implements the Maximized Monte Carlo technique based
 License: GPL(>= 3)
 LazyData: TRUE
 RoxygenNote: 6.0.1
-URL: https://github.com/julienneves/mmc
+URL: https://github.com/julienneves/MaxMC
 Suggests:
   fUnitRoots,
   microbenchmark,

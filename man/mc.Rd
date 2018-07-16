@@ -50,7 +50,7 @@ Generates N Monte Carlo replicates of a statistic applied to
 data.
 }
 \details{
-The \code{ran.gen} function defined by the user is used to
+The \code{dgp} function defined by the user is used to
 generate new observations in order to compute the simulated
 statistics.
 

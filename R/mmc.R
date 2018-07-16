@@ -1,6 +1,6 @@
 #' @title Maximized Monte Carlo
 #' @docType package
-#' @name mmc-package
+#' @name MaxMC
 #' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
 #' @author Julien Neves, neves.julien@gmail.com (Maintainer)
 #'
@@ -9,7 +9,7 @@
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
-#' The main functions of \pkg{mmc} are \code{\link{mmc}} and \code{\link{mc}}.
+#' The main functions of \pkg{MaxMC} are \code{\link{mmc}} and \code{\link{mc}}.
 #'
 #' @references Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 #' A general approach to finite sample inference and nonstandard asymptotics in econometrics.

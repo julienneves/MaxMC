@@ -38,11 +38,20 @@
 #' @export
 #'
 pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
-    # Check for NaN in S
+
     if (any(is.na(S))){
-        warning("simulated statistics contain NaN")
+        # Extract the number of simulation
+        N <- length(S)
+        # Drop NaN
         S <- stats::na.omit(S)
+        if (length(S)!=0){
+            warning(paste("simulated statistics contained NaN:", N-length(S), "replications were omitted"), immediate. = TRUE)
+        }
+        else{
+            stop("simulated statistics vector is empty")
+        }
     }
+
     # Extract the number of simulation
     N <- length(S)
     # Combine S0 and S to obtain the total set where we rank S0
