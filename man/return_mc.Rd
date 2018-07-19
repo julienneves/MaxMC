@@ -33,7 +33,7 @@ the p-value function produces. The possible values are
 \item{call}{An object of class \code{call}. Original call to \code{mmc}}
 
 \item{seed}{An integer vector. Value of \code{.Random.seed} at the start of
-\code{mmc} call}
+\code{mmc} call.}
 
 \item{pval}{An atomic vector. Monte Carlo p-value of \code{statistic}}
 }

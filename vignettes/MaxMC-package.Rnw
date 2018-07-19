@@ -349,7 +349,7 @@ where $u=(u_1,...u_n)$ is a vector of $i.i.d.$ random variables with known distr
 \pkg{MaxMC} is available on GitHub. In order to install it, simply make sure \pkg{devtools} \citep{wickham_devtools:_2016} is installed, and run the following command lines
 <<installation, eval=FALSE, tidy=TRUE>>=
 require(devtools)
-install_github("julienneves/MMC")
+install_github("julienneves/MaxMC")
 @
 
 In the next sections, we look more closely at the two functions at the core of \pkg{MaxMC} package: \code{mc} and \code{mmc}.

@@ -59,14 +59,14 @@ behavior of the algorithm chosen in \code{method}. See controls section for more
 \item{call}{An object of class \code{call}. Original call to \code{mmc}}
 
 \item{seed}{An integer vector. Value of \code{.Random.seed} at the start of
-\code{mmc} call}
+\code{mmc} call.}
 
 \item{lmc}{An object of class \code{mc}. If \code{par} is specified, it returns an object
-of class \code{mc} corresponding the Local Monte Carlo test}
+of class \code{mc} corresponding the Local Monte Carlo test.}
 
-\item{opt_result}{An object returning the optimization results}
+\item{opt_result}{An object returning the optimization results.}
 
-\item{opt_trace}{An object returning the optimization results}
+\item{opt_trace}{An object returning the optimization results.}
 }
 \description{
 S3 class \code{mmc}.

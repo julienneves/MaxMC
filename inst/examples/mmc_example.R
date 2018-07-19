@@ -9,8 +9,8 @@ set.seed(123)
 y <- filter(rnorm(25), c(2,-1), method = "recursive")
 
 # Set bounds for the nuisance parameter v
-lower <- 0.8
-upper <- 1.2
+lower <- -1.2
+upper <- -0.8
 
 # Set the function to generate an AR(2) integrated process
 dgp <- function(y, v) {
