@@ -58,7 +58,7 @@ pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
     set.S <- c(S0, S)
     # Take the absolute value of S0 and S if p-value type is "absolute"
     if (type == "absolute") {
-        set.S <- abs(S)
+        set.S <- abs(set.S)
     }
     # Rank S0 and S
     set.u <- stats::runif(length(set.S[set.S == set.S[1]]))
