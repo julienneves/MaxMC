@@ -29,10 +29,10 @@ of \code{v} then \code{mmc} will return both the MMC and Local Monte Carlo (LMC)
 Default is NULL, in which case, default values will be generated automatically.}
 
 \item{lower}{A vector with length of v. Lower bounds for
-nuisance parameters under the null.}
+nuisance parameters under the null. See Details.}
 
 \item{upper}{A vector with length of v. Upper bounds for
-nuisance parameters under the null.}
+nuisance parameters under the null. See Details.}
 
 \item{N}{An atomic vector. Number of replications of the test
 statistic.}

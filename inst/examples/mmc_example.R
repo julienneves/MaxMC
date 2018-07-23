@@ -5,12 +5,12 @@ library(fUnitRoots)
 # Set seed
 set.seed(123)
 
-# Generate an AR(2) process with phi = (2,-1), and n = 25
-y <- filter(rnorm(25), c(2,-1), method = "recursive")
+# Generate an AR(2) process with phi = (-1.5,0.5), and n = 25
+y <- filter(rnorm(25), c(-1.5, 0.5), method = "recursive")
 
 # Set bounds for the nuisance parameter v
-lower <- -1.2
-upper <- -0.8
+lower <- -1
+upper <- 1
 
 # Set the function to generate an AR(2) integrated process
 dgp <- function(y, v) {

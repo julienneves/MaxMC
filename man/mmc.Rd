@@ -31,10 +31,10 @@ of \code{v} then \code{mmc} will return both the MMC and Local Monte Carlo (LMC)
 Default is NULL, in which case, default values will be generated automatically.}
 
 \item{lower}{A vector with length of v. Lower bounds for
-nuisance parameters under the null.}
+nuisance parameters under the null. See Details.}
 
 \item{upper}{A vector with length of v. Upper bounds for
-nuisance parameters under the null.}
+nuisance parameters under the null. See Details.}
 
 \item{N}{An atomic vector. Number of replications of the test
 statistic.}
@@ -117,6 +117,27 @@ of \code{leq} and \code{geq}.
 
 Ties in the ranking are broken according to a uniform
 distribution.
+
+Usually, to ensure that the MMC procedure is exact, \code{lower} and
+\code{upper} must be set such that any theoretically possible
+values for the nuisance parameters under the null are covered. This
+can be computationally expansive.
+
+Alternatively, the consistent set estimate MMC method (CSEMMC)
+ which is applicable when a consistent set estimator of the nuisance
+ parameters is available can be used. If such set is available, by setting
+ \code{lower} and \code{upper} accordingly, \code{mmc} will yield
+ an asymptotically justified version of the MMC procedure.
+
+One version of this procedure is the Two-stage constrained maximized
+ Monte Carlo test, where first a confidence set of level
+ \eqn{1-\alpha 1} for the nuisance parameters is obtained and then the MMC with
+ confidence level \eqn{\alpha 2} is taken over this particular set.
+ This procedure yields a conservative test with level
+ \eqn{\alpha=\alpha 1+\alpha 2}. Note that we generally advise
+ against using asymptotic Wald-type confidence intervals based on
+ their poor performance. Instead, it is simply best to build
+ confidence set using problem-specific tools.
 }
 \section{Controls}{
 
@@ -290,12 +311,12 @@ library(fUnitRoots)
 # Set seed
 set.seed(123)
 
-# Generate an AR(2) process with phi = (2,-1), and n = 25
-y <- filter(rnorm(25), c(2,-1), method = "recursive")
+# Generate an AR(2) process with phi = (-1.5,0.5), and n = 25
+y <- filter(rnorm(25), c(-1.5, 0.5), method = "recursive")
 
 # Set bounds for the nuisance parameter v
-lower <- 0.8
-upper <- 1.2
+lower <- -1
+upper <- 1
 
 # Set the function to generate an AR(2) integrated process
 dgp <- function(y, v) {
