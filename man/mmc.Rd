@@ -131,10 +131,10 @@ Alternatively, the consistent set estimate MMC method (CSEMMC)
 
 One version of this procedure is the Two-stage constrained maximized
  Monte Carlo test, where first a confidence set of level
- \eqn{1-\alpha 1} for the nuisance parameters is obtained and then the MMC with
- confidence level \eqn{\alpha 2} is taken over this particular set.
+ \eqn{1-\alpha_1} for the nuisance parameters is obtained and then the MMC with
+ confidence level \eqn{\alpha_2} is taken over this particular set.
  This procedure yields a conservative test with level
- \eqn{\alpha=\alpha 1+\alpha 2}. Note that we generally advise
+ \eqn{\alpha=\alpha_1+\alpha_2}. Note that we generally advise
  against using asymptotic Wald-type confidence intervals based on
  their poor performance. Instead, it is simply best to build
  confidence set using problem-specific tools.

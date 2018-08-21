@@ -95,7 +95,7 @@ statistic <- function(y){
 }
 
 # Apply the Monte Carlo test with tie-breaker
-mc(y, statistic = statistic, dgp = dgp, N = 999, type = "geq")
+mc(y, statistic = statistic, dgp = dgp, N = 999, type = "two-tailed")
 
 }
 \references{
