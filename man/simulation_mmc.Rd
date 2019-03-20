@@ -4,8 +4,8 @@
 \alias{simulation_mmc}
 \title{Maximized Monte Carlo Simulation}
 \usage{
-simulation_mmc(y, statistic, dgp = function(y, v) sample(y, replace = TRUE),
-  v, N = 99, ...)
+simulation_mmc(y, statistic, dgp = function(y, v) sample(y, replace =
+  TRUE), v, N = 99, ...)
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -15,12 +15,12 @@ how the statistic is computed. The function needs to input the
 \code{y} and output a scalar.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
+\code{y} and a vector of nuisance parameters \code{v} and outputs a simulated \code{y}.
 It should represent the data generating process under the null.
 Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
 bootstrap resampling of \code{y}.}
 
-\item{v}{A vector paramaters. The vector \code{v} is use to
+\item{v}{A vector parameters. The vector \code{v} is use to
 specify the \code{dgp}. Note that if \code{dgp} is a
 function  of only \code{y} then we do not need to specify
 \code{v}. Default value is NULL.}

@@ -2,12 +2,13 @@
 % Please edit documentation in R/mmc.R
 \name{mmc}
 \alias{mmc}
-\title{Maximized Monte Carlo}
+\title{Find the Maximized Monte Carlo (MMC) p-value on a set of nuisance
+parameters.}
 \usage{
 mmc(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE),
-  est = NULL, lower, upper, N = 99, type = c("geq", "leq", "absolute",
-  "two-tailed"), method = c("GenSA", "pso", "GA", "gridSearch"),
-  control = list(), alpha = NULL, monitor = FALSE)
+  est = NULL, lower, upper, N = 99, type = c("geq", "leq",
+  "absolute", "two-tailed"), method = c("GenSA", "pso", "GA",
+  "gridSearch"), control = list(), alpha = NULL, monitor = FALSE)
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -20,7 +21,7 @@ how the statistic is computed. The function needs to input the
 passed unchanged each time it is called}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
+\code{y} and a vector of nuisance parameters \code{v} and outputs a simulated \code{y}.
 It should represent the data generating process under the null.
 Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
 bootstrap resampling of \code{y}.}
@@ -89,14 +90,11 @@ containing the following components:
  a vector specifying whether the hypothesis was rejected at level \code{alpha}.}
 }
 \description{
-Find the Maximized Monte Carlo (MMC) p-value on a set of nuisance
-parameters.
-}
-\details{
 The \code{dgp} function defined by the user is used to
 generate new observations in order to compute the simulated
  statistics.
-
+}
+\details{
 Then \code{\link{pvalue}} is applied to the statistic and
 its simulated values.\code{\link{pvalue}} computes the
 p-value by ranking the statistic compared to its simulated
@@ -108,7 +106,7 @@ We allow for four types of p-value: \code{leq}, \code{geq},
 \code{leq} returns the proportion of simulated values smaller
 than the statistic while \code{geq} returns the proportion of
 simulated values greater than the statistic. For two-tailed
-test with a symmetric satistic, one can use the
+test with a symmetric statistic, one can use the
 absolute value of the statistic and its simulated values to
 retrieve a two-tailed test (i.e. type = \code{absolute}).
 If the statistic is not symmetric, one can specify the p-value
@@ -391,7 +389,7 @@ in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwe
 Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
 Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume
 \bold{5/1}, June 2013.
-URL \url{http://journal.r-project.org/}.
+URL \url{https://journal.r-project.org/}.
 
 Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
 \url{https://CRAN.R-project.org/package=pso}

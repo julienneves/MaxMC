@@ -1,3 +1,5 @@
+^revdep$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^EXAMPLE\.R$
+^cran-comments\.md$

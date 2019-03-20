@@ -2,7 +2,7 @@
 #'
 #' Generates N Monte Carlo replicates of a statistic for given nuisance parameter value.
 #'
-#' @param v A vector paramaters. The vector \code{v} is use to
+#' @param v A vector parameters. The vector \code{v} is use to
 #'  specify the \code{dgp}. Note that if \code{dgp} is a
 #'  function  of only \code{y} then we do not need to specify
 #'  \code{v}. Default value is NULL.

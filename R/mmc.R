@@ -16,11 +16,11 @@
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
 #' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
-#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
 NA
 
-#' Maximized Monte Carlo
+
 #'
 #' Find the Maximized Monte Carlo (MMC) p-value on a set of nuisance
 #' parameters.
@@ -40,7 +40,7 @@ NA
 #' \code{leq} returns the proportion of simulated values smaller
 #' than the statistic while \code{geq} returns the proportion of
 #' simulated values greater than the statistic. For two-tailed
-#' test with a symmetric satistic, one can use the
+#' test with a symmetric statistic, one can use the
 #' absolute value of the statistic and its simulated values to
 #' retrieve a two-tailed test (i.e. type = \code{absolute}).
 #' If the statistic is not symmetric, one can specify the p-value
@@ -240,7 +240,7 @@ NA
 #' how the statistic is computed. The function needs to input the
 #' \code{y} and output a scalar.
 #' @param dgp A function. The function inputs the first argument
-#' \code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
+#' \code{y} and a vector of nuisance parameters \code{v} and outputs a simulated \code{y}.
 #' It should represent the data generating process under the null.
 #' Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
 #' bootstrap resampling of \code{y}.
@@ -309,7 +309,7 @@ NA
 #' @references Y. Xiang, S. Gubian. B. Suomela, J. Hoeng (2013). Generalized Simulated Annealing for
 #' Efficient Global Optimization: the GenSA Package for R. \emph{The R Journal}, Volume
 #' \bold{5/1}, June 2013.
-#' URL \url{http://journal.r-project.org/}.
+#' URL \url{https://journal.r-project.org/}.
 #'
 #' @references Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.3.
 #' \url{https://CRAN.R-project.org/package=pso}
@@ -329,7 +329,7 @@ NA
 #'
 #' @seealso \code{\link{mc}}, \code{\link{pvalue}}
 #'
-#' @example \inst\examples\mmc_example.R
+#' @example /inst/examples/mmc_example.R
 #'
 #' @export
 #'

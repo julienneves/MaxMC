@@ -4,8 +4,8 @@
 \alias{mc}
 \title{Monte Carlo with Tie-Breaker}
 \usage{
-mc(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE), N = 99,
-  type = c("geq", "leq", "absolute", "two-tailed"))
+mc(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE),
+  N = 99, type = c("geq", "leq", "absolute", "two-tailed"))
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -65,7 +65,7 @@ We allow for four types of p-value: \code{leq}, \code{geq},
 \code{leq} returns the proportion of simulated values smaller
 than the statistic while \code{geq} returns the proportion of
 simulated values greater than the statistic. For two-tailed
-test with a symmetric satistic, one can use the
+test with a symmetric statistic, one can use the
 absolute value of the statistic and its simulated values to
 retrieve a two-tailed test (i.e. type = \code{absolute}).
 If the statistic is not symmetric, one can specify the p-value

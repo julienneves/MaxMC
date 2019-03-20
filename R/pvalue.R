@@ -32,7 +32,7 @@
 #' \emph{Journal of Econometrics}, \bold{133(2)}, 443-447.
 #'
 #' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
-#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econmetrics}, Blackwell Publishing Ltd, 494-519.
+#' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
 #' @return The p-value of the statistic \code{S0} given a vector of replications \code{S}.
 #' @export

@@ -18,7 +18,7 @@
 #' \code{leq} returns the proportion of simulated values smaller
 #' than the statistic while \code{geq} returns the proportion of
 #' simulated values greater than the statistic. For two-tailed
-#' test with a symmetric satistic, one can use the
+#' test with a symmetric statistic, one can use the
 #' absolute value of the statistic and its simulated values to
 #' retrieve a two-tailed test (i.e. type = \code{absolute}).
 #' If the statistic is not symmetric, one can specify the p-value
@@ -58,7 +58,7 @@
 #' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
 #' @seealso \code{\link{mmc}}, \code{\link{pvalue}}
-#' @example \inst\examples\mc_example.R
+#' @example /inst/examples/mc_example.R
 #' @export
 #'
 mc <- function(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE),

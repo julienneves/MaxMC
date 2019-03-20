@@ -4,8 +4,8 @@
 \alias{return_mmc}
 \title{S3 class \code{mmc}.}
 \usage{
-return_mmc(S0, y, statistic, dgp, est, lower, upper, N, type, method, alpha,
-  control, call, seed, lmc, opt_result, opt_trace)
+return_mmc(S0, y, statistic, dgp, est, lower, upper, N, type, method,
+  alpha, control, call, seed, lmc, opt_result, opt_trace)
 }
 \arguments{
 \item{S0}{An atomic vector. Value of the test statistic
@@ -18,7 +18,7 @@ how the statistic is computed. The function needs to input the
 \code{y} and output a scalar.}
 
 \item{dgp}{A function. The function inputs the first argument
-\code{y} and a vector of nuisance paramaters \code{v} and outputs a simulated \code{y}.
+\code{y} and a vector of nuisance parameters \code{v} and outputs a simulated \code{y}.
 It should represent the data generating process under the null.
 Default value is the function \code{sample(y, replace = TRUE)}, i.e. the
 bootstrap resampling of \code{y}.}
