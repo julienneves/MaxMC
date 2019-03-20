@@ -27,4 +27,3 @@ Imports:
   stats,
   graphics,
   utils
-VignetteBuilder: knitr
