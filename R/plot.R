@@ -9,6 +9,8 @@
 #' @param ... Arguments to be passed to methods, such as \link{graphical parameters} (see \code{\link{par}}).
 #' @export
 #'
+#' @example /inst/examples/plot_mmc_example.R
+#'
 plot.mmc <- function(x, ...) {
     # Extract information from mmc object
     opt_trace <- x$opt_trace

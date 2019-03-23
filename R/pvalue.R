@@ -37,6 +37,8 @@
 #' @return The p-value of the statistic \code{S0} given a vector of replications \code{S}.
 #' @export
 #'
+#' @example /inst/examples/pvalue_example.R
+#'
 pvalue <- function(S0, S, type = c("geq", "leq", "absolute", "two-tailed")) {
 
     if (any(is.na(S))){

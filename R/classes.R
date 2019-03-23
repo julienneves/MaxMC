@@ -16,6 +16,8 @@
 #' @inheritParams mmc
 #' @inheritParams pvalue
 #'
+#' @example /inst/examples/return_mmc_example.R
+#'
 #' @keywords internal
 #'
 return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
@@ -58,6 +60,8 @@ return_mmc <- function(S0, y, statistic, dgp, est, lower, upper, N, type,
 #' @inheritParams mc
 #' @inheritParams return_mmc
 #' @inheritParams pvalue
+#'
+#' @example /inst/examples/return_mc_example.R
 #'
 #' @keywords internal
 #'

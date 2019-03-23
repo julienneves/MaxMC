@@ -1,7 +1,7 @@
 #' @title Maximized Monte Carlo
 #' @docType package
 #' @name MaxMC-package
-#' @author Julien Neves, neves.julien@gmail.com (Maintainer)
+#' @author Julien Neves, jmn252@cornell.edu (Maintainer)
 #' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
 #'
 #' @description Functions that implement the Maximized Monte Carlo technique based on

@@ -21,7 +21,7 @@ Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 }
 \author{
-Julien Neves, neves.julien@gmail.com (Maintainer)
+Julien Neves, jmn252@cornell.edu (Maintainer)
 
 Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
 }

@@ -8,6 +8,8 @@
 #' @inheritParams base::print
 #' @export
 #'
+#' @example /inst/examples/print_mmc_example.R
+#'
 print.mmc <- function(x, digits = getOption("digits"), ...){
 
   cat("\nMaximized Monte Carlo\n")
@@ -56,6 +58,8 @@ print.mmc <- function(x, digits = getOption("digits"), ...){
 #'
 #' @inheritParams base::print
 #' @export
+#'
+#' @example /inst/examples/print_mc_example.R
 #'
 print.mc <- function(x, digits = getOption("digits"), ...){
 

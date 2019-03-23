@@ -1,4 +1,4 @@
-\donttest{## Example 1
+## Example 1
 ## Exact Unit Root Test
 library(fUnitRoots)
 
@@ -28,7 +28,7 @@ mmc(y, statistic = statistic , dgp = dgp, lower = lower,
     upper = upper, N = 99, type = "leq", method = "GenSA",
     control = list(max.time = 2))
 
-
+\donttest{
 ## Example 2
 ## Behrens-Fisher Problem
 library(MASS)

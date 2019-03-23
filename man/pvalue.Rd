@@ -41,6 +41,14 @@ of \code{leq} and \code{geq}.
 Ties in the ranking are broken according to a uniform
 distribution.
 }
+\examples{
+# Generate sample S0 and simulate statistics
+S0 = 0
+S = rnorm(99)
+
+# Compute p-value
+pvalue(S0, S, type = "geq")
+}
 \references{
 Dufour, J.-M. (2006), Monte Carlo Tests with nuisance parameters:
 A general approach to finite sample inference and nonstandard asymptotics in econometrics.

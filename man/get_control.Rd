@@ -24,4 +24,15 @@ of the algorithm chosen in \code{method}.
 This function provides a way to merge the user specified controls for the
 optimization methods with their respective default controls.
 }
+\examples{
+# Select method
+method = "GenSA"
+
+# Select control to modify and store in a list
+control = list(maxit = 100)
+
+# Get all controls for the method specify
+MaxMC:::get_control(method = method, control = control)
+
+}
 \keyword{internal}
