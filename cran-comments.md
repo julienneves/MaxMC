@@ -1,7 +1,6 @@
 ## Resubmission
 This is a resubmission. In this version I have:
-* Added checkable toy examples for every Rd-files (except MaxMC-package.Rd)
-* Added <doi:...> to references in the DESCRIPTION file.
+* Added '()' to functions names in DESCRIPTION
 
 ## Test environments
 * local Ubuntu 18.04.02 LTS install, R 3.5.3
