@@ -1,5 +1,4 @@
 #' @title Maximized Monte Carlo
-#' @docType package
 #' @name MaxMC-package
 #' @author Julien Neves, jmn252@cornell.edu (Maintainer)
 #' @author Jean-Marie Dufour, jean-marie.dufour@mcgill.ca
@@ -18,7 +17,7 @@
 #' @references Dufour, J.-M. and Khalaf L. (2003), Monte Carlo Test Methods in Econometrics.
 #' in Badi H. Baltagi, ed., \emph{A Companion to Theoretical Econometrics}, Blackwell Publishing Ltd, 494-519.
 #'
-NA
+NULL
 
 
 #'
@@ -258,8 +257,8 @@ NA
 #' nuisance parameters under the null. See Details.
 #' @param method A character string. Type of algorithm to be
 #' used for global optimization. The four available methods
-#' are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
-#' genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+#' are simulated annealing (\code{\link[GenSA]{GenSA}}), particle swarm (\code{\link[pso]{psoptim}}),
+#' genetic algorithm (\code{\link[GA]{GA}}), and grid search (\code{\link[NMOF]{gridSearch}})
 #' Default is \code{GenSA},
 #' @param control A list. Arguments to be used to control the
 #' behavior of the algorithm chosen in \code{method}. See controls section for more details.
@@ -316,7 +315,7 @@ NA
 #'
 #' @references Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of
 #' Statistical
-#' Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
+#' Software}, \bold{53(4)}, 1-37. URL \url{https://www.jstatsoft.org/article/view/v053i04}.
 #'
 #' @references Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
 #' parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at

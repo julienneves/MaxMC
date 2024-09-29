@@ -4,8 +4,14 @@
 \alias{simulation_mmc}
 \title{Maximized Monte Carlo Simulation}
 \usage{
-simulation_mmc(y, statistic, dgp = function(y, v) sample(y, replace =
-  TRUE), v, N = 99, ...)
+simulation_mmc(
+  y,
+  statistic,
+  dgp = function(y, v) sample(y, replace = TRUE),
+  v,
+  N = 99,
+  ...
+)
 }
 \arguments{
 \item{y}{A vector or data frame.}

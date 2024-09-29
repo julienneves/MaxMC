@@ -10,7 +10,7 @@
 \item{x}{an object used to select a method.}
 
 \item{digits}{minimal number of \emph{significant} digits, see
-    \code{\link{print.default}}.}
+    \code{\link[base]{print.default}}.}
 
 \item{...}{further arguments passed to or from other methods.}
 }

@@ -1,3 +1,9 @@
+# MaxMC 0.1.2
+
+* Remove obsolete namespace directives
+* Updated `DESCRIPTION` file.
+
+
 # MaxMC 0.1.1
 
 * Added toy examples for every functions.

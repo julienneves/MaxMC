@@ -2,7 +2,7 @@
 % Please edit documentation in R/classes.R
 \name{return_mc}
 \alias{return_mc}
-\title{S3 class \code{mc}.}
+\title{S3 class \code{mc} object generating function}
 \usage{
 return_mc(S0, y, statistic, dgp, N, type, call, seed, pval)
 }
@@ -38,7 +38,7 @@ the p-value function produces. The possible values are
 \item{pval}{An atomic vector. Monte Carlo p-value of \code{statistic}}
 }
 \description{
-S3 class \code{mc}.
+S3 class \code{mc} object generating function
 }
 \examples{
 # Generate typical data found inside the function mc()

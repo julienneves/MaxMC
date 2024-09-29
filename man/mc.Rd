@@ -4,8 +4,14 @@
 \alias{mc}
 \title{Monte Carlo with Tie-Breaker}
 \usage{
-mc(y, statistic, ..., dgp = function(y) sample(y, replace = TRUE),
-  N = 99, type = c("geq", "leq", "absolute", "two-tailed"))
+mc(
+  y,
+  statistic,
+  ...,
+  dgp = function(y) sample(y, replace = TRUE),
+  N = 99,
+  type = c("geq", "leq", "absolute", "two-tailed")
+)
 }
 \arguments{
 \item{y}{A vector or data frame.}

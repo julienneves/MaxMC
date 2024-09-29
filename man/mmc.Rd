@@ -5,10 +5,21 @@
 \title{Find the Maximized Monte Carlo (MMC) p-value on a set of nuisance
 parameters.}
 \usage{
-mmc(y, statistic, ..., dgp = function(y, v) sample(y, replace = TRUE),
-  est = NULL, lower, upper, N = 99, type = c("geq", "leq",
-  "absolute", "two-tailed"), method = c("GenSA", "pso", "GA",
-  "gridSearch"), control = list(), alpha = NULL, monitor = FALSE)
+mmc(
+  y,
+  statistic,
+  ...,
+  dgp = function(y, v) sample(y, replace = TRUE),
+  est = NULL,
+  lower,
+  upper,
+  N = 99,
+  type = c("geq", "leq", "absolute", "two-tailed"),
+  method = c("GenSA", "pso", "GA", "gridSearch"),
+  control = list(),
+  alpha = NULL,
+  monitor = FALSE
+)
 }
 \arguments{
 \item{y}{A vector or data frame.}
@@ -47,8 +58,8 @@ the p-value function produces. The possible values are
 
 \item{method}{A character string. Type of algorithm to be
 used for global optimization. The four available methods
-are simulated annealing (\code{\link{GenSA}}), particle swarm (\code{\link{pso}}),
-genetic algorithm (\code{\link{GA}}), and grid search (\code{\link{gridSearch}})
+are simulated annealing (\code{\link[GenSA]{GenSA}}), particle swarm (\code{\link[pso]{psoptim}}),
+genetic algorithm (\code{\link[GA]{GA}}), and grid search (\code{\link[NMOF]{gridSearch}})
 Default is \code{GenSA},}
 
 \item{control}{A list. Arguments to be used to control the
@@ -127,7 +138,7 @@ Alternatively, the consistent set estimate MMC method (CSEMMC)
  \code{lower} and \code{upper} accordingly, \code{mmc} will yield
  an asymptotically justified version of the MMC procedure.
 
-One version of this procedure is the Two-stage constrained maximized
+ One version of this procedure is the Two-stage constrained maximized
  Monte Carlo test, where first a confidence set of level
  \eqn{1-\alpha_1} for the nuisance parameters is obtained and then the MMC with
  confidence level \eqn{\alpha_2} is taken over this particular set.
@@ -396,7 +407,7 @@ Claus Bendtsen. (2012). pso: Particle Swarm Optimization. R package version 1.0.
 
 Luca Scrucca (2013). GA: A Package for Genetic Algorithms in R. \emph{Journal of
 Statistical
-Software}, \bold{53(4)}, 1-37. URL \url{http://www.jstatsoft.org/v53/i04/}.
+Software}, \bold{53(4)}, 1-37. URL \url{https://www.jstatsoft.org/article/view/v053i04}.
 
 Luca Scrucca (2016). On some extensions to GA package: hybrid optimisation,
 parallelisation and islands evolution. Submitted to \emph{R Journal}. Pre-print available at

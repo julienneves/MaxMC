@@ -4,8 +4,13 @@
 \alias{simulation_mc}
 \title{Monte Carlo Simulation}
 \usage{
-simulation_mc(y, statistic, dgp = function(y) sample(y, replace = TRUE),
-  N = 99, ...)
+simulation_mc(
+  y,
+  statistic,
+  dgp = function(y) sample(y, replace = TRUE),
+  N = 99,
+  ...
+)
 }
 \arguments{
 \item{y}{A vector or data frame.}
