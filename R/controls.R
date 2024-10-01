@@ -8,7 +8,6 @@
 #' @return A list. Arguments to be used to control the behavior
 #' of the algorithm chosen in \code{method}.
 #'
-#' @example /inst/examples/get_control_example.R
 #'
 #' @keywords internal
 #'

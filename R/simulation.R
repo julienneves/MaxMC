@@ -13,7 +13,6 @@
 #'
 #' @keywords internal
 #'
-#' @example /inst/examples/simulation_mmc_example.R
 #'
 simulation_mmc <- function(y, statistic, dgp = function(y, v) sample(y, replace = TRUE),
                            v, N = 99, ...) {
@@ -36,9 +35,6 @@ simulation_mmc <- function(y, statistic, dgp = function(y, v) sample(y, replace 
 #' @return The vector of replication of test statistic.
 #'
 #' @keywords internal
-#'
-#' @example /inst/examples/simulation_mc_example.R
-#'
 #'
 simulation_mc <- function(y, statistic, dgp = function(y) sample(y, replace = TRUE),
                           N = 99, ...) {
